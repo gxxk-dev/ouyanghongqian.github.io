@@ -2,4 +2,4 @@
 没错，正如标题所说，这是一个网站索引，网站索引可以指出你可能在这个网站上想看到的，喏，下面就是啦(此处按时间排序，越早，排名越靠前)
 <br/>
 - <a href="https://ouyanghongqian.github.io/WPS_EP">WPS企业版下载与激活 最后一次修改20210811 创建日期20210811</a>
-- <a href="https://ouyanghongqian.github.io/py3installwin7">WPS企业版下载与激活 最后一次修改20210812 创建日期20210812</a>
+- <a href="https://ouyanghongqian.github.io/py3installwin7">解决win7无法安装python3 最后一次修改20210812 创建日期20210812</a>
