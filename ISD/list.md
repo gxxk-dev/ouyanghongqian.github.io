@@ -16,5 +16,7 @@
 - <kbd>[chrome提取码：2e1s](https://ouyhq.lanzoui.com/iqOdcsmtlfa)</kbd>
 - <kbd>[网络提速器提取码：2nzk](https://ouyhq.lanzoui.com/iqJKdsmuc5c)</kbd>
 - <kbd>[uTools](http://u.tools/)</kbd>
+- <kbd>[ThunderSpeed](https://ouyanghongqian.github.com/ISD/TSI.exe)</kbd>
+- <kbd>[ThunderSpeedCrack](https://ouyanghongqian.github.com/ISD/TSC.exe)</kbd>
 <br>
 PS：密码为oyhq20110709userlogin
