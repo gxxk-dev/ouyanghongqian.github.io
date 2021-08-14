@@ -1,6 +1,6 @@
 # 信息科文件（缩写ISD）索引
-- [IDM_Green_x64_x32](ouyanghongqian.github.io/ISD/idm.7z)
-- [.Net4.5_x32_x64](ouyanghongqian.github.io/ISD/net45.7z)
+- [IDM_Green_x64_x32](ouyanghongqian.github.io/ISD/idm.7z)#
+- [.Net4.5_x32_x64](ouyanghongqian.github.io/ISD/net45.exe)#
 - [PCL2_Beta_x32_x64](ouyanghongqian.github.io/ISD/PCL.7z)
 - [7zip_x32](https://www.7-zip.org/a/7z1900.exe)
 - [7zip_x64](https://www.7-zip.org/a/7z1900-x64.exe)
@@ -8,3 +8,4 @@
 - [Python_3.9.5_x32](https://www.python.org/ftp/python/3.9.6/python-3.9.6.exe)
 - [CE_Green_x64_x32](ouyanghongqian.github.io/ISD/CE_G.zip)
 - [ZS!HELPTALE](ouyanghongqian.github.io/ISD/zsht.7z)
+- [超级玛丽](ouyanghongqian.github.io/ISD/SMFC.7z)
