@@ -10,15 +10,14 @@
 - ZS!HELPTALE游戏本体 此版本请前往<http://oyhq.uepan.com>下载
 - [ZS!HELPTALE游戏字体包](ouyanghongqian.github.io/ISD/zshtfont.7z)
 - [超级玛丽\吃豆人](ouyanghongqian.github.io/ISD/VNES.7z)
-- [FDY_OverSave-tale0.23.1-分卷文件1](ouyanghongqian.github.io/ISD/OST0231.7z.001)
-- [FDY_OverSave-tale0.23.1-分卷文件2](ouyanghongqian.github.io/ISD/OST0231.7z.002)
+- [FDY_OverSave-tale0.23.1___提取码：dfxp](https://ouyhq.lanzoui.com/iMRfzsoiddg)
 - [浏览器-集装箱插件](https://a.newday.me/)
-- [chrome提取码：2e1s](https://ouyhq.lanzoui.com/iqOdcsmtlfa)
-- [网络提速器提取码：2nzk](https://ouyhq.lanzoui.com/iqJKdsmuc5c)
+- [chrome___提取码：2e1s](https://ouyhq.lanzoui.com/iqOdcsmtlfa)
+- [网络提速器___提取码：2nzk](https://ouyhq.lanzoui.com/iqJKdsmuc5c)
 - [uTools](http://u.tools/)
 - [ThunderSpeed](https://ouyanghongqian.github.com/ISD/TSI.exe)
 - [ThunderSpeedCrack](https://ouyanghongqian.github.com/ISD/TSC.exe)
-- [JRE8_x32_x64提取码：6ls7](https://ouyhq.lanzoui.com/b02ccecib)
+- [JRE8_x32_x64___提取码：6ls7](https://ouyhq.lanzoui.com/b02ccecib)
 - [JDK16.0.2_x64](https://dfenghuoyunji.jb51.net/202103/tools/Java.SE.Development.Kit.16_jb51.rar)
 <br>
 PS：密码为oyhq20110709userlogin
