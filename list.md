@@ -3,4 +3,4 @@
 <br/>
 - <kbd><a href="https://ouyanghongqian.github.io/WPS_EP">WPS企业版下载与激活</a></kbd>
 - <kbd><a href="https://ouyanghongqian.github.io/py3installwin7">解决win7无法安装python3</a></kbd>
-- <kbd>[信息课文件索引](https://ouyanghongqian.github.io/ISD/list)</kbd>
+- [信息课文件索引](https://ouyanghongqian.github.io/ISD/list)
