@@ -18,5 +18,7 @@
 - [uTools](http://u.tools/)
 - [ThunderSpeed](https://ouyanghongqian.github.com/ISD/TSI.exe)
 - [ThunderSpeedCrack](https://ouyanghongqian.github.com/ISD/TSC.exe)
+- [JRE8_x32_x64提取码：6ls7](https://ouyhq.lanzoui.com/b02ccecib)
+- [JDK16.0.2_x64](https://dfenghuoyunji.jb51.net/202103/tools/Java.SE.Development.Kit.16_jb51.rar)
 <br>
 PS：密码为oyhq20110709userlogin
