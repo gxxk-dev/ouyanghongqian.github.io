@@ -21,5 +21,6 @@
 - [JDK16.0.2_x64](https://dfenghuoyunji.jb51.net/202103/tools/Java.SE.Development.Kit.16_jb51.rar)
 - [Dism++_x32_x64](http://www.chuyu.me/zh-Hans/)
 - [RDT_EL___提取码：8ivf](https://ouyhq.lanzoui.com/iw3gfsp2xjc)
+- [RDT_EL___提取码：fcjj](https://ouyhq.lanzoui.com/ifIKnsp3igf)
 <br>
 PS：密码为oyhq20110709userlogin
