@@ -19,9 +19,9 @@
 [![fqVzkT.png](https://z3.ax1x.com/2021/08/19/fqVzkT.png)](https://imgtu.com/i/fqVzkT)
 10. 在靶机上访问Kali的IP地址，找到app.apk然后就可以在Kali上控制手机了<br>
 <br>
-注：
-1. 可以使用zipalign对apk进行对齐 zipalign -v 4 text.apk text1.apk
-2. 可以生成密钥对 例如 keytool -genkey -v -keystore cg.keystore -alias cg -keyalg RSA -keysize 2048 -validity 10000  模板keytool -genkeypair -keystore 密钥库名 -alias 密钥别名 -validity 天数 -keyalg RSA
-3. 可以对apk签名 例如 apksigner sign --ks cg.keystore --ks-key-alias cg text1.apk 模板apksigner sign --ks 密钥库名 --ks-key-alias 密钥别名 text1.apk
-4. 可以对apk进行签名验证apksigner verify -v --print-certs text1.apk
-还有：直接使用msfvenom生成的裸马，过不了免杀，版本也低，安装不了，捆绑是最简单的，然后做好签名优化就行
+注：<br>
+1. 可以使用zipalign对apk进行对齐 zipalign -v 4 text.apk text1.apk<br>
+2. 可以生成密钥对 例如 keytool -genkey -v -keystore cg.keystore -alias cg -keyalg RSA -keysize 2048 -validity 10000  模板keytool -genkeypair -keystore 密钥库名 -alias 密钥别名 -validity 天数 -keyalg RSA<br>
+3. 可以对apk签名 例如 apksigner sign --ks cg.keystore --ks-key-alias cg text1.apk 模板apksigner sign --ks 密钥库名 --ks-key-alias 密钥别名 text1.apk<br>
+4. 可以对apk进行签名验证apksigner verify -v --print-certs text1.apk<br>
+还有：直接使用msfvenom生成的裸马，过不了免杀，版本也低，安装不了，捆绑是最简单的，然后做好签名优化就行<br>
