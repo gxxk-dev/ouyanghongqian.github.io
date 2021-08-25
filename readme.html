@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<style>
+   .vaptcha-init-main {
+       display: table;
+       width: 100%;
+       height: 100%;
+       background-color: #eeeeee;
+   }
+   .vaptcha-init-loading {
+       display: table-cell;
+       vertical-align: middle;
+       text-align: center;
+   }
+   
+   .vaptcha-init-loading > a {
+       display: inline-block;
+       width: 18px;
+       height: 18px;
+       border: none;
+   }
+   
+   .vaptcha-init-loading .vaptcha-text {
+       font-family: sans-serif;
+       font-size: 12px;
+       color: #cccccc;
+       vertical-align: middle;
+   }
+   </style>
+   <div id="vaptchaContainer" style="width: 300px;height: 36px;">
+   <div class="vaptcha-init-main">
+       <div class="vaptcha-init-loading">
+        <a href="/" target="_blank">
+               <svg
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               width="48px"
+               height="60px"
+               viewBox="0 0 24 30"
+               style="enable-background: new 0 0 50 50; width: 14px; height: 14px; vertical-align: middle"
+               xml:space="preserve"
+               >
+                   <rect x="0" y="9.22656" width="4" height="12.5469" fill="#CCCCCC">
+                       <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                   <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite"></animate>
+                   </rect>
+                   <rect x="10" y="5.22656" width="4" height="20.5469" fill="#CCCCCC">
+                       <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                   <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate>
+                   </rect>
+                   <rect x="20" y="8.77344" width="4" height="13.4531" fill="#CCCCCC">
+                       <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                   <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate>
+                   </rect>
+               </svg>
+           </a>
+        <span class="vaptcha-text">Vaptcha Initializing...</span>
+       </div>
+   </div>
+</div>
+   <script src="/v3.js"></script>
+
+<script>
+vaptcha({
+    vid: '612638002f5cba106028c6fe', // 验证单元id
+    type: 'click', // 显示类型 点击式
+    scene: 0, // 场景值 默认0
+    container: '#vaptchaContainer', // 容器，可为Element 或者 selector
+    //可选参数
+    //lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+    //https: true, // 使用https 默认 true
+    //style: 'dark' //按钮样式 默认dark，可选值 dark,light
+    //color: '#57ABFF' //按钮颜色 默认值#57ABFF
+    //area: 'auto' //验证节点区域,默认 cn,可选值 auto,sea,na,cn
+}).then(function (vaptchaObj) {
+    obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+    vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+    //获取token的方式一：
+    //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加server,token值
+    //获取token的方式二：
+    vaptchaObj.listen('pass', function () {
+
+        serverToken=vaptchaObj.getServerToken()
+
+        // 验证成功进行后续操作
+        var data = {
+            server:serverToken.server,
+            token: serverToken.token,
+        }
+        $.post('login', data, function (r) {
+            if (r.code !== 200) {
+                console.log('登录失败')
+                vaptchaObj.reset() //重置 VAPTCHA
+            }
+        })
+    })
+    //关闭验证弹窗时触发
+    vaptchaObj.listen('close', function () {
+        //验证弹窗关闭触发
+    })
+})
+</script>
+
+
+
+
+
+
+
+
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://ouyanghongqian.github.io/assets/css/style.css?v=064cd6d8d9a6ebfcedf9c2ae2257a2d7f2a4a641">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup theme-color -->
+<!-- start theme color meta headers -->
+<meta name="theme-color" content="#151515">
+<meta name="msapplication-navbutton-color" content="#151515">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- end theme color meta headers -->
+
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>ouyanghongqian.github.io</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="ouyanghongqian.github.io" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://ouyanghongqian.github.io/" />
+<meta property="og:url" content="https://ouyanghongqian.github.io/" />
+<meta property="og:site_name" content="ouyanghongqian.github.io" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ouyanghongqian.github.io" />
+<script type="application/ld+json">
+{"url":"https://ouyanghongqian.github.io/","@type":"WebSite","headline":"ouyanghongqian.github.io","name":"ouyanghongqian.github.io","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>ouyanghongqian.github.io</h1>
+        </a>
+        <h2></h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/ouyanghongqian/ouyanghongqian.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+<h1 id="网站介绍">网站介绍</h1>
+<h2 id="hello我是ouyanghongqian这个网站是我在github上已配置部署好的网站这个网站的域名是-ouyanghongqiangithubio-它是在2021810被创建也是在2021810进行配置的">Hello，我是<u>ouyanghongqian</u>，这个网站是我在github上已<u>配置\部署</u>好的网站，这个网站的域名是<kbd> <a href="https://ouyanghongqian.github.io">ouyanghongqian.github.io</a> </kbd>，它是在2021/8/10被创建，也是在2021/8/10进行配置的</h2>
+<h2 id="这个网站以后会用来做什么">这个网站以后会用来做什么</h2>
+<ul>
+  <li>在上面写博客</li>
+  <li>在上面发一些东西</li>
+</ul>
+
+<p>怎么感觉后面都没什么可说的呢……
+对了，<kbd> <a href="https://ouyanghongqian.github.io/list">这里</a> </kbd>是网站索引你可以去那看看！还有，我生成了<kbd> <a href="https://t.im/ic0h">短网址</a> </kbd>以后可以输入这个网址打开这个页面！
+<br /></p>
+<h2 id="联系我">联系我<br /></h2>
+<p>你可以在<a href="https://icq.im/ou201_">https://icq.im/ou201_</a>或ouyhq0709@aliyun.com与我联系</p>
+
+      </section>
+    </div>
+  </body>
+</html>
