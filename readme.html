@@ -61,19 +61,22 @@
 
 <script>
 vaptcha({
-    vid: '612638002f5cba106028c6fe', // 验证单元id
-    type: 'click', // 显示类型 点击式
-    scene: 0, // 场景值 默认0
-    container: '#vaptchaContainer', // 容器，可为Element 或者 selector
-    //可选参数
-    //lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
-    //https: true, // 使用https 默认 true
-    //style: 'dark' //按钮样式 默认dark，可选值 dark,light
-    //color: '#57ABFF' //按钮颜色 默认值#57ABFF
+    // 必须配置
+    vid: '612638002f5cba106028c6fe', // VID
+    type: 'embed', //显示类型 嵌入式
+    container: '#vaptchaContainer',
+    // 推荐配置
+    scene: 0,
+    // 可选项
+    lang: 'auto',
+    style: 'light',
+    // color: '#00BFFF',
+    //guide: true //是否在底部显示操作指引，默认为 true
     //area: 'auto' //验证节点区域,默认 cn,可选值 auto,sea,na,cn
 }).then(function (vaptchaObj) {
-    obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
-    vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+    obj = vaptchaObj //
+    vaptchaObj.render() // 渲染 VAPTCHA
+
     //获取token的方式一：
     //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加server,token值
     //获取token的方式二：
@@ -81,25 +84,24 @@ vaptcha({
 
         serverToken=vaptchaObj.getServerToken()
 
-        // 验证成功进行后续操作
+         // 验证成功进行后续操作
         var data = {
             server:serverToken.server,
             token: serverToken.token,
         }
         $.post('login', data, function (r) {
             if (r.code !== 200) {
-                console.log('登录失败')
+                console.log('验证失败')
                 vaptchaObj.reset() //重置 VAPTCHA
             }
         })
     })
     //关闭验证弹窗时触发
     vaptchaObj.listen('close', function () {
-        //验证弹窗关闭触发
+        console.log('close emit')
     })
 })
-</script>
-
+<script>
 
 
 
