@@ -1,6 +1,6 @@
 # 信息科文件（缩写ISD）索引_迅雷下载模式
 ## 这是迅雷下载模式，该模式调用了迅雷的下载接口，若无其他特殊情况，请使用该页面下载！（如果实在下载不了，请前往此[页面](/list.md)）
-<script src="//ouyanghongqian.github.io/thunder-link.js"></script>
+<script src="//open.thunderurl.com/thunder-link.js"></script>
 - <a class="thunder-link" href="//ouyanghongqian.github.io/ISD/idm.zip">迅雷下载_IDM_Green_x64_x32</a>
 - <a class="thunder-link" href="//ouyanghongqian.github.io/ISD/net45.exe">迅雷下载_.Net4.5_x32_x64</a>
 - <a class="thunder-link" href="//ouyanghongqian.github.io/ISD/PCL.7z">迅雷下载_PCL2_Beta_x32_x64(前置.net45)</a>
