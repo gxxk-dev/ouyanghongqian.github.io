@@ -5,6 +5,6 @@ Hello，我是<u>ouyanghongqian</u>，这个网站是我在github上已<u>配置
 - 在上面发一些东西
 怎么感觉后面都没什么可说的呢……
 对了，<kbd> <a href="https://ouyanghongqian.github.io/list">这里</a> </kbd>是网站索引你可以去那看看！还有，我生成了<kbd> <a href="https://t.im/ic0h">短网址</a> </kbd>以后可以输入这个网址打开这个页面！
-<br /></p>
+<br />
 <h2 id="联系我">联系我<br /></h2>
 <p>你可以在<a href="https://icq.im/ou201_">https://icq.im/ou201_</a>或ouyhq0709@aliyun.com与我联系</p>
