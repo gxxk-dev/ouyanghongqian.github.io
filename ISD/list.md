@@ -24,5 +24,7 @@
 - [RDT_EL___提取码：fcjj](https://ouyhq.lanzoui.com/ifIKnsp3igf)
 - [百分浏览器__提取码：6d88](https://ouyhq.lanzoui.com/iXMxmsq526h)
 - [谷歌自带游戏破解](/dinoB)
+- [小迅雷](https://ouyhq.lanzoui.com/i5KcQtvae7g)
+- [鼠标连点器__提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d)
 <br>
 PS：密码为oyhq20110709userlogin
