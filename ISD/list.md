@@ -26,5 +26,6 @@
 - [谷歌自带游戏破解](/dinoB)
 - [小迅雷](https://ouyhq.lanzoui.com/i5KcQtvae7g)
 - [鼠标连点器__提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d)
+- [FDM_x86_x64](https://www.freedownloadmanager.org/zh/)
 <br>
 PS：密码为oyhq20110709userlogin
