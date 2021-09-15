@@ -3,5 +3,5 @@
 <br/>
 - <kbd><a href="https://ouyanghongqian.top/WPS_EP">WPS企业版下载与激活</a></kbd>
 - <kbd><a href="https://ouyanghongqian.top/py3installwin7">解决win7无法安装python3</a></kbd>
-- <kbd>[信息课文件索引](https://ouyanghongqian.top/ISD/list)</kbd>
-- <kbd>[kali博客索引](https://ouyanghongqian.top/kali/list)</kbd>
+- <kbd><a href="https://ouyanghongqian.top/ISD/list">信息课文件索引</a></kbd>
+- <kbd><a href="https://ouyanghongqian.top/kali/list">kali博客索引</kbd>
