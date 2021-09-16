@@ -37,3 +37,6 @@ exploit<br>
 3. 可以对apk签名 例如 apksigner sign --ks cg.keystore --ks-key-alias cg text1.apk 模板apksigner sign --ks 密钥库名 --ks-key-alias 密钥别名 text1.apk<br>
 4. 可以对apk进行签名验证apksigner verify -v --print-certs text1.apk<br>
 还有：直接使用msfvenom生成的裸马，过不了免杀，版本也低，安装不了，捆绑是最简单的，然后做好签名优化就行<br>
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
