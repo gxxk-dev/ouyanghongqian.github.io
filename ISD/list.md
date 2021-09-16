@@ -28,6 +28,7 @@
 - [鼠标连点器__提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d)
 - [FDM_x86_x64](https://www.freedownloadmanager.org/zh/)
 - [Undertale_Demo__x86_x64__提取码：5qrb](https://ouyhq.lanzoui.com/i36THtywd2f)
+- [在线_与焦虑的冒险](https://z-lyen.github.io/anxiety/)
 <br>
 PS：密码为oyhq20110709userlogin
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
