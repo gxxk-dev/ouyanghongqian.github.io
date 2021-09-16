@@ -1,7 +1,7 @@
 # WPSPRO（WPS企业版）下载与激活
 ### WPS企业版下载链接
 - 官方网站（推荐）：<a href="https://ep.wps.cn/download">传送门</a>
-- 网盘分流：<a href="https://pan.baidu.com/s/1o1kNRUxgatHnoP47eBIOEA#1234">传送门（提取码：1234）</a>
+- 网盘分流：<a href="#1234">传送门（提取码：1234）</a>
 ### 激活码
 - 终身授权：694BF-YUDBG-EAR69-BPRGB-ATQXH
 - 某政府版激活码：THUV2-32HH7-6NMHN-PTX7Y-QQCTH
@@ -14,3 +14,6 @@
 - 企业版序列号6：U2PWU-H7D9H-69T3B-JEYC2-3R2NG
 - 企业版序列号7：7G2HE-JR8KL-ABB9D-Y7789-GLNFL
 - 企业版序列号8：9DP6T-9AGWG-KWV33-9MPC8-JDCVF
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
