@@ -17,3 +17,6 @@
 先从简单的说，网易版首先需要下载网易版的安装包，你可以在[这里](https://mc.163.com/index.html)下载，下载后，打开安装包，点同意用户协议，再点快速安装，就行了，安装完成后网易版内置新手教程，所以想玩网易版的同学们，完结了！
 再说一下修改版的安装方式，运行安装包，安装客户端，添加账户，下载一个版本，这里推荐1.14，下载后打开游戏，完结~~~
 最后，原版需要在网上下载启动器,这里推荐几个：<kbd>[HMCL](https://hmcl.huangyuhui.net/download)</kbd>，<kbd>[PCL](https://afdian.net/@LTCat)</kbd>。打开后添加账户，下载一个版本，这里推荐1.14，下载后打开游戏，完结~~~
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
