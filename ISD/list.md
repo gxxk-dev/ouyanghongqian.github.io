@@ -29,10 +29,9 @@
 - [FDM_x86_x64](https://www.freedownloadmanager.org/zh/)
 - [Undertale_Demo__x86_x64__提取码：5qrb](https://ouyhq.lanzoui.com/i36THtywd2f)
 - [在线_与焦虑的冒险](https://z-lyen.github.io/anxiety/)
-- [人生重开模拟器](liferestart.syaro.io/view/index.html)
+- [人生重开模拟器](http://liferestart.syaro.io/view/index.html)
 - [人生重开模拟器_破解版](http://restart.sshh.top/view/)
 <br>
-PS：密码为oyhq20110709userlogin
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
