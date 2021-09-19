@@ -12,7 +12,7 @@ Hello，我是<u>ouyanghongqian</u>，这个网站是我在github上已<u>配置
 # 关于站点的一些信息
 - 网站创建时间：2021/8/10
 - 网站的域名变化：
--   https://ouyanghongqian.github.io/(可用，但直接指向了ouyanghongqian.top)
+-   https://ouyanghongqian.github.io/(可用，但指向了ouyanghongqian.top)
 -   https://github.ouyanghongqian.top/
 -   https://ouyanghongqian.top/(现在可用)
 # 鸣谢名单
