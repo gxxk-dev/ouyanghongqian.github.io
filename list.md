@@ -5,6 +5,7 @@
 - <kbd><a href="https://ouyanghongqian.top/py3installwin7">解决win7无法安装python3</a></kbd>
 - <kbd><a href="https://ouyanghongqian.top/ISD/list">游戏索引</a></kbd>
 - <kbd><a href="https://ouyanghongqian.top/kali/list">kali博客索引</a></kbd>
+- <kbd><a href="https://ouyanghongqian.top/mustsee">好康的</a></kbd>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
