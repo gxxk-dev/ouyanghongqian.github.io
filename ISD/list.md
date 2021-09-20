@@ -1,4 +1,4 @@
-# 信息科文件（缩写ISD）索引
+# 游戏索引
 - [IDM_Green_x64_x32](/idm.zip)
 - [.Net4.5_x32_x64](/net45.exe)
 - [PCL2_Beta_x32_x64](/ISD/PCL.7z)
@@ -31,6 +31,9 @@
 - [在线_与焦虑的冒险](https://z-lyen.github.io/anxiety/)
 - [人生重开模拟器](http://liferestart.syaro.io/view/index.html)
 - [人生重开模拟器_破解版](http://restart.sshh.top/view/)
+- <a href="https://ouyanghongqian.top/minecraft_">我的世界2D版</a>
+- <a href="https://ouyanghongqian.top/UTGE_">UndertaleGE线最终Boss战</a>
+- <a href="https://ouyanghongqian.top/PVZ_">植物大战僵尸在线版</a>
 <br>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
