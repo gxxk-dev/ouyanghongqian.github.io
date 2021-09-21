@@ -16,9 +16,11 @@ Hello，我是<u>ouyanghongqian</u>，这个网站是我在github上已<u>配置
 -   https://github.ouyanghongqian.top/
 -   https://ouyanghongqian.top/(可用)
 # 鸣谢名单
-请前往[ouyanghongqian.top/Thankyoulist](/Thankyoulist)
+请前往[https://ouyanghongqian.top/Thankyoulist](/Thankyoulist)
 # 关于作者
-请前往[ouyanghongqian.top/About the author](/About the author)
+请前往https://[ouyanghongqian.top/About the author](/About the author)
+# 赞助作者
+请前往[https://ouyanghongqian.top/Sponsor author](/Sponsor author)
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
