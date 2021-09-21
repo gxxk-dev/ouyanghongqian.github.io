@@ -12,10 +12,12 @@ Hello，我是<u>ouyanghongqian</u>，这个网站是我在github上已<u>配置
 # 关于站点的一些信息
 - 网站创建时间：2021/8/10
 - 网站的域名变化：
--   https://ouyanghongqian.github.io/(可用)
--   https://github.ouyanghongqian.top/
--   https://ouyanghongqian.top/(可用)
+- https://ouyanghongqian.github.io/(可用)
+- https://github.ouyanghongqian.top/
+- https://ouyanghongqian.top/(可用)
+
 <br/>
+
 # 鸣谢名单
 请前往[https://ouyanghongqian.top/Thankyoulist](/Thankyoulist)
 # 关于作者
