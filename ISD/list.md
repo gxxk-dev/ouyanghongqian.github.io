@@ -34,6 +34,7 @@
 - <a href="https://ouyanghongqian.top/minecraft_">我的世界2D版</a>
 - <a href="https://ouyanghongqian.top/UTGE_">UndertaleGE线最终Boss战</a>
 - <a href="https://ouyanghongqian.top/PVZ_">植物大战僵尸在线版</a>
+- [三角符文](https://store.steampowered.com/app/1671210)
 <br>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
