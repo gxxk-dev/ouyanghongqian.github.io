@@ -1,5 +1,5 @@
 # 网站介绍
-# 注意：此网站为<kbd>[ouyanghongqian.top](https://ouyanghongqian.top)</kbd>的镜像站主页，可能会与主页出现版本间隔，若无特殊情况请前往<kbd>[ouyanghongqian.top](https://ouyanghongqian.top)</kbd>
+# 注意：此网站为<kbd><a href="https://ouyanghongqian.top">https://ouyanghongqian.top</a></kbd>的镜像站主页，可能会与主页出现版本间隔，若无特殊情况请前往<kbd><a href="https://ouyanghongqian.top">https://ouyanghongqian.top</a></kbd>
 Hello，我是<u>ouyanghongqian</u>，这个网站是我在github上已<u>配置\部署</u>好的网站，这个网站的域名是<kbd><a href="https://ouyanghongqian.top">ouyanghongqian.top</a></kbd>和<kbd><a href="https://ouyanghongqian.github.io">ouyanghongqian.github.io</a></kbd>，这个网站强制使用HTTPS流量，它是在2021/8/10被创建，也是在2021/8/10进行配置的
 ## 这个网站以后会用来做什么
 - 在上面写博客
