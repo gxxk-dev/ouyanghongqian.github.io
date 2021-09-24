@@ -1,4 +1,4 @@
-# 游戏索引
+# 游戏/文件索引
 - [IDM_Green_x64_x32](/idm.zip)
 - [.Net4.5_x32_x64](/net45.exe)
 - [PCL2_Beta_x32_x64](/ISD/PCL.7z)
