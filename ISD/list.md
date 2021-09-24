@@ -53,7 +53,8 @@
 - [Steam++官网](https://steampp.net/)
 - [油猴脚本下载](https://greasyfork.org/)
 - [我的世界工具箱_mcmod](https://www.mcmod.cn/tools/)
-<br>
+- [Bing_必应搜索引擎](https://cn.bing.com/)  作者：说实话，这玩意可比百度好用多了，每天亿张壁纸，从此远离二刺螈
+<br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
