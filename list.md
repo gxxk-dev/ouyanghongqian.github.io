@@ -3,7 +3,7 @@
 <br/>
 - <kbd><a href="https://ouyanghongqian.top/WPS_EP">WPS企业版下载与激活</a></kbd>
 - <kbd><a href="https://ouyanghongqian.top/py3installwin7">解决win7无法安装python3</a></kbd>
-- <kbd><a href="https://ouyanghongqian.top/ISD/list">游戏索引</a></kbd>
+- <kbd><a href="https://ouyanghongqian.top/ISD/list">网站（网站外和网站内）索引</a></kbd>
 - <kbd><a href="https://ouyanghongqian.top/kali/list">kali博客索引</a></kbd>
 - <kbd><a href="https://ouyanghongqian.top/mustsee">好康的</a></kbd>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
