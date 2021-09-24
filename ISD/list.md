@@ -35,7 +35,24 @@
 - <a href="https://ouyanghongqian.top/UTGE_">UndertaleGE线最终Boss战</a>
 - <a href="https://ouyanghongqian.top/PVZ_">植物大战僵尸在线版</a>
 - [三角符文](https://store.steampowered.com/app/1671210)
-- [我的世界地下城](https://store.steampowered.com/app/1672970/Minecraft_Dungeons/?snr=1_4_4__118)
+- [我的世界地下城](https://store.steampowered.com/app/1672970/Minecraft_Dungeons)
+- [Github520](https://github.com/521xueweihan/GitHub520)
+- [Github下载加速](http://toolwa.com/github/)
+- [BiliBili](https://www.bilibili.com/)
+- [编程导航](https://www.code-nav.cn/)
+- [系统下载（MSDN）](https://next.itellyou.cn/Original/Index)
+- [Win系统库](http://www.xitongku.com)
+- [Linux命令查询](https://www.linuxcool.com/)
+- [Python在线手册](https://docs.pythontab.com/)
+- [实用工具集合_haoji.me](http://tool.haoji.me/)
+- [Scratch转HTML](www.76w.net/htmlifier-offline-cn.html)
+- [Github](https://github.com)
+- [抖音](https://www.douyin.com/recommend)
+- [Scratch官网（国内）](https://www.scratch-cn.cn/)
+- [Steam下载](https://store.steampowered.com/about/)
+- [Steam++官网](https://steampp.net/)
+- [油猴脚本下载](https://greasyfork.org/)
+- [我的世界工具箱_mcmod](https://www.mcmod.cn/tools/)
 <br>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
