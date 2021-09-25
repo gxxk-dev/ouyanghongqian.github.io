@@ -18,6 +18,7 @@
 >[我的世界地下城](https://store.steampowered.com/app/1672970/Minecraft-Dungeons)<br/>
 >ZS!HELPTALE游戏本体 此版本请前往<http://oyhq.uepan.com>下载<br/>
 ### 学习
+<br/>
 >[Github520](https://github.com/521xueweihan/GitHub520)<br/>
 >[Github下载加速](http://toolwa.com/github/)<br/>
 >[BiliBili](https://www.bilibili.com/)<br/>
@@ -39,6 +40,7 @@
 >[传说之下](https://store.steampowered.com/app/391540/Undertale/)<br/>
 >[有道翻译](https://fanyi.youdao.com/)<br/>
 ### 工具
+<br/>
 >[浏览器-集装箱插件](https://a.newday.me/)<br/>
 >[chrome---提取码：2e1s](https://ouyhq.lanzoui.com/iqOdcsmtlfa)<br/>
 >[网络提速器---提取码：2nzk](https://ouyhq.lanzoui.com/iqJKdsmuc5c)<br/>
@@ -58,6 +60,7 @@
 >[CE-Green-x64-x32](/CE_G.zip)<br/>
 >[任务管理器---x64-x32--提取码：g7u2](https://ouyhq.lanzoui.com/iuOzhuh791e)<br/>
 ### 编程环境
+<br/>
 >[Python-3.9.5-x64](https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe)<br/>
 >[Python-3.9.5-x32](https://www.python.org/ftp/python/3.9.6/python-3.9.6.exe)<br/>
 >[JRE8-x32-x64---提取码：6ls7](https://ouyhq.lanzoui.com/b02ccecib)<br/>
@@ -66,6 +69,7 @@
 >[VisualStudioCode-x64](https://dl.softmgr.qq.com/original/Development/VSCodeUserSetup-x64-1.58.2.exe)<br/>
 >[易语言破解---x32-x64](http://www.downyi.com/downinfo/181214.html)<br/>
 ### 其他
+<br/>
 >[破解机房控制---Windows批处理--提取码：95pi](https://ouyhq.lanzoui.com/iU1ufuh7sda)<br/>
 <br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
