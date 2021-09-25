@@ -63,10 +63,10 @@
 >[JRE8-x32-x64---提取码：6ls7](https://ouyhq.lanzoui.com/b02ccecib)<br/>
 >[JDK16.0.2-x64](https://dfenghuoyunji.jb51.net/202103/tools/Java.SE.Development.Kit.16-jb51.rar)<br/>
 >[DevC++-x64](https://sm.myapp.com/original/Development/Dev-Cpp_5.11_TDM-GCC_4.9.2_Setup.exe)<br/>
->[VisualStudioCode-x64](https://dl.softmgr.qq.com/original/Development/VSCodeUserSetup-x64-1.58.2.exe)
->[易语言破解---x32-x64](http://www.downyi.com/downinfo/181214.html)
+>[VisualStudioCode-x64](https://dl.softmgr.qq.com/original/Development/VSCodeUserSetup-x64-1.58.2.exe)<br/>
+>[易语言破解---x32-x64](http://www.downyi.com/downinfo/181214.html)<br/>
 ### 其他
->[破解机房控制---Windows批处理--提取码：95pi](https://ouyhq.lanzoui.com/iU1ufuh7sda)
+>[破解机房控制---Windows批处理--提取码：95pi](https://ouyhq.lanzoui.com/iU1ufuh7sda)<br/>
 <br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
