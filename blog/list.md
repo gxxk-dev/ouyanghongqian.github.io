@@ -1,7 +1,7 @@
 # 博客索引
 >[使用简单的Windows批处理解除部分学校机房控制](https://ouyanghongqian.top/blog/NoSchoolControl)<br/>
->[树莓派安装kali](https://ouyanghongqian.top/kali/ikali)
->[Kali淦翻安卓手机](https://ouyanghongqian.top/kali/hiap)
+>[树莓派安装kali](https://ouyanghongqian.top/kali/ikali)<br/>
+>[Kali淦翻安卓手机](https://ouyanghongqian.top/kali/hiap)<br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
