@@ -84,6 +84,7 @@
 
 
 >[破解机房控制---Windows批处理--提取码：95pi](https://ouyhq.lanzoui.com/iU1ufuh7sda)<br/>
+>[51kim氪主页](https://www.51kim.com/)
 
 <br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
