@@ -43,6 +43,7 @@
 >[我的世界工具箱-mcmod](https://www.mcmod.cn/tools/)<br/>
 >[Bing-必应搜索引擎](https://cn.bing.com/)<br/>
 >[有道翻译](https://fanyi.youdao.com/)<br/>
+>[国家中小学网络云平台](https://ykt.eduyun.cn/)
 
 
 ## 工具
@@ -85,7 +86,7 @@
 
 >[破解机房控制---Windows批处理--提取码：95pi](https://ouyhq.lanzoui.com/iU1ufuh7sda)<br/>
 >[51kim氪主页](https://www.51kim.com/)
-
+>[路过图床](https://imgtu.com)
 <br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
