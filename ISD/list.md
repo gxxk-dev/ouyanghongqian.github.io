@@ -67,6 +67,10 @@
 >[7zip-x64](https://www.7-zip.org/a/7z1900-x64.exe)<br/>
 >[CE-Green-x64-x32](/CE_G.zip)<br/>
 >[任务管理器---x64-x32--提取码：g7u2](https://ouyhq.lanzoui.com/iuOzhuh791e)<br/>
+>[Win95模拟器-x64](http://soft.xitongxz.net/202101/Windows95MoNiQi_V1.4_XiTongZhiJia.zip)<br/>
+>[Virtual Desktop](http://www.virtualdesktop.org/complete/index.html)<br/>
+>[PCE-JS](https://jamesfriend.com.au/pce-js/)<br/>
+>[Win11模拟器](https://win11.blueedge.me/)<br/>
 
 
 ## 编程环境
