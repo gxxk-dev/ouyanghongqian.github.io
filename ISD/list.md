@@ -72,6 +72,8 @@
 >[Virtual Desktop](http://www.virtualdesktop.org/complete/index.html)<br/>
 >[PCE-JS](https://jamesfriend.com.au/pce-js/)<br/>
 >[Win11模拟器](https://win11.blueedge.me/)<br/>
+>[Github镜像站1](https://github.com.cnpmjs.org)
+>[Github镜像站2](https://hub.fastgit.org)
 
 
 ## 编程环境
