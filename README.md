@@ -18,8 +18,8 @@ Hello，我是<u>某不知名的Creeper</u>，这个网站是我在Github上已<
 
 <br/>
 
-# 鸣谢名单
-请前往[https://ouyanghongqian.top/Thankyoulist](/Thankyoulist)
+<!-- # 鸣谢名单 -->
+<!-- 请前往[https://ouyanghongqian.top/Thankyoulist](/Thankyoulist) -->
 # 关于作者
 请前往https://[ouyanghongqian.top/About the author](/About the author)
 # 赞助作者
