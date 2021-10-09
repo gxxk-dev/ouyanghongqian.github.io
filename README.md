@@ -1,7 +1,7 @@
 # 网站介绍
-Hello，欢迎来到我的博客！我是<u>某不知名的Creeper</u>！你可以在网站上找到你想要的[资源](https://ouyanghongqian.top/ISD/list)！或是找到很不错的[视频](https://ouyanghongqian.top/mustsee)！好了，享受网站吧
+Hello，欢迎来到我的博客！我是<u>某不知名的Creeper</u>！你可以在网站上找到你想要的[资源](/ISD/list)！或是找到很不错的[视频](/mustsee)！好了，享受网站吧
 # 网站索引
-请前往<kbd><a href="https://ouyanghongqian.top/list">ouyanghongqian.top/list</a></kbd>
+请前往<kbd>[ouyanghongqian.top/list](/list)</kbd>
 <br/>
 # 关于站点的一些信息
 - 网站创建时间：2021/8/10
