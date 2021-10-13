@@ -25,13 +25,6 @@ Hello，欢迎来到我的博客！我是<u>某不知名的Creeper</u>！你可�
 html{height:100%;}
 body{min-height:100%;}
 body{position:relative;}
-.footer{
-    height:100px;
-    background:white;
-    width:100%;
-    position:absolute;
-    bottom:0;
-    left:0;
 }
 .box{
     padding-bottom:130px;
