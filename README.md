@@ -27,7 +27,7 @@ body{min-height:100%;}
 body{position:relative;}
 .footer{
     height:100px;
-    background:red;
+    background:white;
     width:100%;
     position:absolute;
     bottom:0;
