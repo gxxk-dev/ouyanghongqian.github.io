@@ -20,7 +20,30 @@ Hello，欢迎来到我的博客！我是<u>某不知名的Creeper</u>！你可�
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
 <meta name="baidu-site-verification" content="code-mJ1kni7szD" />
-___
-　　<div id="page">鄂ICP备2021017388号</div> 
-<div id="footer"><a href="https://beian.miit.gov.cn">工业和信息化部网站备案系统</a></div>
-___
+<style>
+*{padding:0;margin:0;}
+html{height:100%;}
+body{min-height:100%;}
+body{position:relative;}
+.footer{
+    height:100px;
+    background:red;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.box{
+    padding-bottom:130px;
+}
+.box p{
+    line-height:30px;
+    text-align:center;
+    border:solid 1px green;
+}
+</style>
+<div class="box">
+    <p>鄂ICP备2021017388号</p>
+    <p><a href="https://beian.miit.gov.cn">鄂ICP备2021017388号</a></p>
+</div>
+<div class="footer"></div>
