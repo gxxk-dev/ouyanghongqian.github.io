@@ -43,7 +43,7 @@ body{position:relative;}
 }
 </style>
 <div class="box">
-    <p>鄂ICP备2021017388号</p>
-    <p><a href="https://beian.miit.gov.cn">鄂ICP备2021017388号</a></p>
+    <p>鄂ICP备2021017388号
+    <a href="https://beian.miit.gov.cn">工业和信息化部网站备案系统</a></p>
 </div>
 <div class="footer"></div>
