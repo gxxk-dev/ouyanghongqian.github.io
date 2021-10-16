@@ -297,3 +297,6 @@ async function parseYtVideoRedir(urlObj, newLen, res) {
 [![5GthtI.png](https://z3.ax1x.com/2021/10/16/5GthtI.png)](https://imgtu.com/i/5GthtI)
 粘贴完成后保存，访问你的页面，你就会看到代理网站了
 [![5Gtbng.md.png](https://z3.ax1x.com/2021/10/16/5Gtbng.md.png)](https://imgtu.com/i/5Gtbng)
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
