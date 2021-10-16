@@ -73,7 +73,9 @@
 >[PCE-JS](https://jamesfriend.com.au/pce-js/)<br/>
 >[Win11模拟器](https://win11.blueedge.me/)<br/>
 >[Github镜像站1](https://github.com.cnpmjs.org)<br/>
->[Github镜像站2](https://hub.fastgit.org)
+>[Github镜像站2](https://hub.fastgit.org)<br/>
+>[Python命令行多线程下载](https://ouyanghongqian.top/ISD/d.exe)
+
 
 
 ## 编程环境
