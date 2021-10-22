@@ -2,13 +2,13 @@
 <!-- ### 本站已开通[下载专区](http://abc.ouyanghongqian.top)，欢迎使用（短链接<https://t.im/2oyhq2>）-->
 ## 娱乐
 >[IDM-Green-x64-x32](/idm.zip)<br/>
->[.Net4.5-x32-x64---提取码：4kg4](https://ouyhq.lanzoui.com/idXwXuh6e3a)<br/>
+>[.Net4.5-x32-x64---提取码：4kg4](https://ouyhq.lanzoui.com/idXwXuh6e3a#4kg4)<br/>
 >[PCL2-Beta-x32-x64](/ISD/PCL.7z)<br/>
 >[ZS!HELPTALE游戏字体包](/zshtfont.7z)<br/>
 >[超级玛丽\吃豆人](/VNES.7z)<br/>
->[FDY-OverSave-tale0.23.1---提取码：dfxp](https://ouyhq.lanzoui.com/iMRfzsoiddg)<br/>
+>[FDY-OverSave-tale0.23.1---提取码：dfxp](https://ouyhq.lanzoui.com/iMRfzsoiddg#dfxp)<br/>
 >[FDM-x86-x64](https://www.freedownloadmanager.org/zh/)<br/>
->[Undertale-Demo--x86-x64--提取码：5qrb](https://ouyhq.lanzoui.com/i36THtywd2f)<br/>
+>[Undertale-Demo--x86-x64--提取码：5qrb](https://ouyhq.lanzoui.com/i36THtywd2f#5qrb)<br/>
 >[在线-与焦虑的冒险](https://z-lyen.github.io/anxiety/)<br/>
 >[人生重开模拟器](http://liferestart.syaro.io/view/index.html)<br/>
 >[人生重开模拟器-破解版](http://restart.sshh.top/view/)<br/>
@@ -18,16 +18,16 @@
 >[三角符文](https://store.steampowered.com/app/1671210)<br/>
 >[我的世界地下城](https://store.steampowered.com/app/1672970/Minecraft-Dungeons)<br/>
 >ZS!HELPTALE游戏本体 此版本请前往<http://oyhq.uepan.com>下载<br/>
+>[抖音](https://www.douyin.com/recommend)<br/>
 >[传说之下](https://store.steampowered.com/app/391540/Undertale/)<br/>
+>[Steam下载](https://store.steampowered.com/about/)<br/>
+>[BiliBili](https://www.bilibili.com/)<br/>
 >[Undercards](https://undercards.net/)
 
 
 ## 学习
 
 
->[Github520](https://github.com/521xueweihan/GitHub520)<br/>
->[Github下载加速](http://toolwa.com/github/)<br/>
->[BiliBili](https://www.bilibili.com/)<br/>
 >[编程导航](https://www.code-nav.cn/)<br/>
 >[系统下载（MSDN）](https://next.itellyou.cn/Original/Index)<br/>
 >[Win系统库](http://www.xitongku.com)<br/>
@@ -36,10 +36,7 @@
 >[实用工具集合-haoji.me](http://tool.haoji.me/)<br/>
 >[Scratch转HTML](www.76w.net/htmlifier-offline-cn.html)<br/>
 >[Github](https://github.com)<br/>
->[抖音](https://www.douyin.com/recommend)<br/>
 >[Scratch官网（国内）](https://www.scratch-cn.cn/)<br/>
->[Steam下载](https://store.steampowered.com/about/)<br/>
->[Steam++官网](https://steampp.net/)<br/>
 >[油猴脚本下载](https://greasyfork.org/)<br/>
 >[我的世界工具箱-mcmod](https://www.mcmod.cn/tools/)<br/>
 >[Bing-必应搜索引擎](https://cn.bing.com/)<br/>
@@ -50,24 +47,26 @@
 ## 工具
 
 
+>[Github520](https://github.com/521xueweihan/GitHub520)<br/>
+>[Github下载加速](http://toolwa.com/github/)<br/>
 >[浏览器-集装箱插件](https://a.newday.me/)<br/>
->[chrome---提取码：2e1s](https://ouyhq.lanzoui.com/iqOdcsmtlfa)<br/>
->[网络提速器---提取码：2nzk](https://ouyhq.lanzoui.com/iqJKdsmuc5c)<br/>
+>[chrome---提取码：2e1s](https://ouyhq.lanzoui.com/iqOdcsmtlfa#2eis)<br/>
+>[网络提速器---提取码：2nzk](https://ouyhq.lanzoui.com/iqJKdsmuc5c#2nzk)<br/>
 >[uTools](http://u.tools/)<br/>
->[ThunderSpeed---提取码：9x9r](https://ouyhq.lanzoui.com/iHANSuh6n9a)<br/>
->[ThunderSpeedCrack---提取码：9z7t](https://ouyhq.lanzoui.com/iPph8uh6gqf)<br/>
+>[Steam++官网](https://steampp.net/)<br/>
+>[ThunderSpeed---提取码：9x9r](https://ouyhq.lanzoui.com/iHANSuh6n9a#9x9r)<br/>
+>[ThunderSpeedCrack---提取码：9z7t](https://ouyhq.lanzoui.com/iPph8uh6gqf#9z7t)<br/>
 >[Dism++-x32-x64](http://www.chuyu.me/zh-Hans/)<br/>
->[RDT-EL---提取码：8ivf](https://ouyhq.lanzoui.com/iw3gfsp2xjc)<br/>
->[RDT-EL---提取码：fcjj](https://ouyhq.lanzoui.com/ifIKnsp3igf)<br/>
->[百分浏览器--提取码：6d88](https://ouyhq.lanzoui.com/iXMxmsq526h)<br/>
->[小迅雷](https://ouyhq.lanzoui.com/i5KcQtvae7g)<br/>
->[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d)<br/>
+>[RDT-EL---提取码：8ivf](https://ouyhq.lanzoui.com/iw3gfsp2xjc#8ivf)<br/>
+>[RDT-EL---提取码：fcjj](https://ouyhq.lanzoui.com/ifIKnsp3igf#fcjj)<br/>
+>[百分浏览器--提取码：6d88](https://ouyhq.lanzoui.com/iXMxmsq526h#6d88)<br/>
+>[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d#990b)<br/>
 >[FDM-x86-x64](https://www.freedownloadmanager.org/zh/)<br/>
->[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d)<br/>
+>[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d#990b)<br/>
 >[7zip-x32](https://www.7-zip.org/a/7z1900.exe)<br/>
 >[7zip-x64](https://www.7-zip.org/a/7z1900-x64.exe)<br/>
 >[CE-Green-x64-x32](/CE_G.zip)<br/>
->[任务管理器---x64-x32--提取码：g7u2](https://ouyhq.lanzoui.com/iuOzhuh791e)<br/>
+>[任务管理器---x64-x32--提取码：g7u2](https://ouyhq.lanzoui.com/iuOzhuh791e#g7u2)<br/>
 >[Win95模拟器-x64](http://soft.xitongxz.net/202101/Windows95MoNiQi_V1.4_XiTongZhiJia.zip)<br/>
 >[Virtual Desktop](http://www.virtualdesktop.org/complete/index.html)<br/>
 >[PCE-JS](https://jamesfriend.com.au/pce-js/)<br/>
@@ -75,7 +74,8 @@
 >[Github镜像站1](https://github.com.cnpmjs.org)<br/>
 >[Github镜像站2](https://hub.fastgit.org)<br/>
 >[Python命令行多线程下载](https://ouyanghongqian.top/ISD/d.exe)
-
+>[Tor Project---提取码：47af](https://ouyhq.lanzoui.com/b02ck06yf#47af)
+>[OnionShare](https://onionshare.org/)
 
 
 ## 编程环境
@@ -96,6 +96,7 @@
 >[破解机房控制---Windows批处理--提取码：95pi](https://ouyhq.lanzoui.com/iU1ufuh7sda)<br/>
 >[51kim氪主页](https://www.51kim.com/)<br/>
 >[路过图床](https://imgtu.com)<br/>
+>[某不知名的Creeper的聊天室_onion](http://ivo4lrxrpxtd7srjjhmgnbsli5dhikq4hyqw22m4b3w4wmnbcyneeiqd.onion)
 <br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
