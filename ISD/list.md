@@ -73,9 +73,9 @@
 >[Win11模拟器](https://win11.blueedge.me/)<br/>
 >[Github镜像站1](https://github.com.cnpmjs.org)<br/>
 >[Github镜像站2](https://hub.fastgit.org)<br/>
->[Python命令行多线程下载](https://ouyanghongqian.top/ISD/d.exe)
->[Tor Project---提取码：47af](https://ouyhq.lanzoui.com/b02ck06yf#47af)
->[OnionShare](https://onionshare.org/)
+>[Python命令行多线程下载](https://ouyanghongqian.top/ISD/d.exe)<br/>
+>[Tor Project---提取码：47af](https://ouyhq.lanzoui.com/b02ck06yf#47af)<br/>
+>[OnionShare](https://onionshare.org/)<br/>
 
 
 ## 编程环境
