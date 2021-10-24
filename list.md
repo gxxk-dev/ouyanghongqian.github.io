@@ -1,5 +1,4 @@
 # 网站索引
-没错，正如标题所说，这是一个网站索引，网站索引可以指出你可能在这个网站上想看到的，喏，下面就是啦(此处按时间排序，越早，排名越靠前)
 <br/>
 - <kbd><a href="https://ouyanghongqian.top/ISD/">网站（网站外和网站内）索引</a></kbd>
 - <kbd><a href="https://ouyanghongqian.top/blog/">博客索引</a></kbd>
