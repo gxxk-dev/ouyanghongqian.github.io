@@ -61,6 +61,7 @@
 >[RDT-EL---提取码：fcjj](https://ouyhq.lanzoui.com/ifIKnsp3igf#fcjj)<br/>
 >[百分浏览器--提取码：6d88](https://ouyhq.lanzoui.com/iXMxmsq526h#6d88)<br/>
 >[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d#990b)<br/>
+><a href="https://ouyanghongqian.top/W11B.bat">Win11部署脚本</a><br/>
 >[FDM-x86-x64](https://www.freedownloadmanager.org/zh/)<br/>
 >[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d#990b)<br/>
 >[7zip-x32](https://www.7-zip.org/a/7z1900.exe)<br/>
