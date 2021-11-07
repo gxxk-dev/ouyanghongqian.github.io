@@ -96,7 +96,8 @@
 >[破解机房控制---Windows批处理--提取码：95pi](https://ouyhq.lanzoui.com/iU1ufuh7sda)<br/>
 >[51kim氪主页](https://www.51kim.com/)<br/>
 >[路过图床](https://imgtu.com)<br/>
->[某不知名的Creeper的聊天室_onion](http://ivo4lrxrpxtd7srjjhmgnbsli5dhikq4hyqw22m4b3w4wmnbcyneeiqd.onion)
+>[《鱿鱼游戏》bt种子-720p](magnet:?xt=urn:btih:8f56c72bf3b459d3f21c8491584b0845e18bc97b&dn=[BD%E5%BD%B1%E8%A7%86%E5%88%86%E4%BA%ABbd2020.com]%E9%B1%BF%E9%B1%BC%E6%B8%B8%E6%88%8F.Squid.Game.S01.NF.DDP5.1.HD720P.%E5%86%85%E5%B0%81%E4%B8%AD%E5%AD%97&tr=http://tracker.trackerfix.com:80/announce&tr=udp://9.rarbg.me:2810&tr=udp://9.rarbg.to:2900&tr=udp://tracker.thinelephant.org:12760&tr=udp://tracker.slowcheetah.org:14750)
+>[《鱿鱼游戏》bt种子-1080p](magnet:?xt=urn:btih:146316439516089335a8f6956b4c631737ea720b&dn=[BD%E5%BD%B1%E8%A7%86%E5%88%86%E4%BA%ABbd2020.com]%E9%B1%BF%E9%B1%BC%E6%B8%B8%E6%88%8F.Squid.Game.S01.NF.DDP5.1.HD1080P.%E5%86%85%E5%B0%81%E4%B8%AD%E5%AD%97&tr=http://tracker.trackerfix.com:80/announce&tr=udp://9.rarbg.me:2960&tr=udp://9.rarbg.to:2720&tr=udp://tracker.fatkhoala.org:13800&tr=udp://tracker.tallpenguin.org:15710)
 <br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
