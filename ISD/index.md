@@ -1,7 +1,6 @@
 # 网站/文件索引
 <!-- ### 本站已开通[下载专区](http://abc.ouyanghongqian.top)，欢迎使用（短链接<https://t.im/2oyhq2>）-->
 ## 娱乐
->[IDM-Green-x64-x32](/idm.zip)<br/>
 >[.Net4.5-x32-x64---提取码：4kg4](https://ouyhq.lanzoui.com/idXwXuh6e3a#4kg4)<br/>
 >[PCL2-Beta-x32-x64](/ISD/PCL.7z)<br/>
 >[ZS!HELPTALE游戏字体包](/zshtfont.7z)<br/>
@@ -62,7 +61,6 @@
 >[百分浏览器--提取码：6d88](https://ouyhq.lanzoui.com/iXMxmsq526h#6d88)<br/>
 >[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d#990b)<br/>
 ><a href="https://ouyanghongqian.top/W11B.bat">Win11部署脚本</a><br/>
->[FDM-x86-x64](https://www.freedownloadmanager.org/zh/)<br/>
 >[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d#990b)<br/>
 >[7zip-x32](https://www.7-zip.org/a/7z1900.exe)<br/>
 >[7zip-x64](https://www.7-zip.org/a/7z1900-x64.exe)<br/>
@@ -77,6 +75,7 @@
 >[Python命令行多线程下载](https://ouyanghongqian.top/ISD/d.exe)<br/>
 >[Tor Project---提取码：47af](https://ouyhq.lanzoui.com/b02ck06yf#47af)<br/>
 >[OnionShare](https://onionshare.org/)<br/>
+>[Xdown---x64-x32](https://dl.xdown.org/windows/i386/xdown-2.0.4.4.zip)<br/>
 
 
 ## 编程环境
