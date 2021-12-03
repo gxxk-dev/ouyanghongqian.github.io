@@ -1,7 +1,7 @@
 # 网站索引
 <br/>
 - <kbd><a href="https://ouyanghongqian.top/ISD/">网站（网站外和网站内）索引</a></kbd><br/>
-- <kbd><a href="https://ouyanghongqian.top/blog/">博客索引</a></kbd><br/>
+- <kbd><a href="https://blog.ouyanghongqian.top/">博客索引</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/mustsee">好康的</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/NewRSS">订阅这个网站</a></kbd><br/>
 - <kbd><a href="https://github-speedup.oyhq.workers.dev/">GitHub文件加速</a></kbd><br/>
