@@ -1,5 +1,4 @@
-# 游戏下载
-坚决跟反游戏家长刚到底！
+# 无防沉迷游戏下载专区
 已收录游戏：___3个___
 ### 游戏-Windows_电脑端
 - [Deltarune-Chapter1&2](https://ouyanghongqian.top/game/deltarune)
