@@ -43,7 +43,8 @@
 >[Bing-必应搜索引擎](https://cn.bing.com/)<br/>
 >[有道翻译](https://fanyi.youdao.com/)<br/>
 >[国家中小学网络云平台](https://ykt.eduyun.cn/)<br/>
->[国家教育资源公共服务平台](https://eduyun.cn/)
+>[国家教育资源公共服务平台](https://eduyun.cn/)<br/>
+>[反向词典](https://wantwords.thunlp.org/)
 
 ## 工具
 
