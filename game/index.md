@@ -4,7 +4,7 @@
 - [Deltarune-Chapter1&2](https://ouyanghongqian.top/game/deltarune)
 - [Minecraft](https://ouyanghongqian.top/game/minecraft)
 - [I Wanna](https://ouyanghongqian.top/game/iwanna)-（包含5个分支游戏）
-- [Undertale](httos://ouyanghongqian.top/game/undertale)-（含Demo）
+- [Undertale](https://ouyanghongqian.top/game/undertale)-（含Demo）
 ### 游戏-Android_手机端
 - [Minecraft](https://ouyanghongqian.top/game/minecraft)<br/>
 
