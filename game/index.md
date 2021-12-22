@@ -1,10 +1,10 @@
 # 无防沉迷游戏下载专区
-已收录游戏：___9个___
+已收录游戏：___12个___
 ### 游戏-Windows_电脑端
 - [Deltarune-Chapter1&2](https://ouyanghongqian.top/game/deltarune)
 - [Minecraft](https://ouyanghongqian.top/game/minecraft)
 - [I Wanna](https://ouyanghongqian.top/game/iwanna)-（包含5个分支游戏）
-- [Undertale](https://ouyanghongqian.top/game/undertale)-（含Demo）
+- [Undertale](https://ouyanghongqian.top/game/undertale)-（含Demo 2个分支游戏）
 ### 游戏-Android_手机端
 - [Minecraft](https://ouyanghongqian.top/game/minecraft)<br/>
 
