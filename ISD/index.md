@@ -1,11 +1,10 @@
 # 网站/文件索引
-<!-- ### 本站已开通[下载专区](http://abc.ouyanghongqian.top)，欢迎使用（短链接<https://t.im/2oyhq2>）-->
 ## 娱乐
 >[哥谭噩梦之焯级英雄](https://wwp.lanzoui.com/s/GothamNightMare)<br/>
 >[.Net4.5-x32-x64---提取码：4kg4](https://ouyhq.lanzoui.com/idXwXuh6e3a#4kg4)<br/>
 >[i wanna grass](https://ouyhq.lanzouo.com/im3J0xg2fne#57x4)<br/>
->[ZS!HELPTALE游戏字体包](/zshtfont.7z)<br/>
->[超级玛丽\吃豆人](/VNES.7z)<br/>
+>[ZS!HELPTALE游戏字体包-密码:c79j]（https://ouyhq.lanzouo.com/i8v0Qxvju0d)<br/>
+>[超级玛丽FC版-密码:a2da](https://ouyhq.lanzouo.com/iZUaqumemjc)<br/>
 >[FDY-OverSave-tale0.23.1---提取码：dfxp](https://ouyhq.lanzoui.com/iMRfzsoiddg#dfxp)<br/>
 >[FDM-x86-x64](https://www.freedownloadmanager.org/zh/)<br/>
 >[Undertale-Demo--x86-x64--提取码：5qrb](https://ouyhq.lanzoui.com/i36THtywd2f#5qrb)<br/>
@@ -67,7 +66,6 @@
 >[鼠标连点器--提取码：990b](https://ouyhq.lanzoui.com/iLD9jtvaq2d#990b)<br/>
 >[7zip-x32](https://www.7-zip.org/a/7z1900.exe)<br/>
 >[7zip-x64](https://www.7-zip.org/a/7z1900-x64.exe)<br/>
->[CE-Green-x64-x32](/CE_G.zip)<br/>
 >[任务管理器---x64-x32--提取码：g7u2](https://ouyhq.lanzoui.com/iuOzhuh791e#g7u2)<br/>
 >[Win95模拟器-x64](http://soft.xitongxz.net/202101/Windows95MoNiQi_V1.4_XiTongZhiJia.zip)<br/>
 >[Virtual Desktop](http://www.virtualdesktop.org/complete/index.html)<br/>
@@ -75,7 +73,6 @@
 >[Win11模拟器](https://win11.blueedge.me/)<br/>
 >[Github镜像站1](https://github.com.cnpmjs.org)<br/>
 >[Github镜像站2](https://hub.fastgit.org)<br/>
->[Python命令行多线程下载](https://ouyanghongqian.top/ISD/d.exe)<br/>
 >[Tor Project---提取码：47af](https://ouyhq.lanzoui.com/b02ck06yf#47af)<br/>
 >[OnionShare](https://onionshare.org/)<br/>
 >[任务管理器](https://ouyhq.lanzouo.com/iuOzhuh791e#g7u2)<br/>
