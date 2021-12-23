@@ -3,7 +3,7 @@
 >[哥谭噩梦之焯级英雄](https://wwp.lanzoui.com/s/GothamNightMare)<br/>
 >[.Net4.5-x32-x64---提取码：4kg4](https://ouyhq.lanzoui.com/idXwXuh6e3a#4kg4)<br/>
 >[i wanna grass](https://ouyhq.lanzouo.com/im3J0xg2fne#57x4)<br/>
->[ZS!HELPTALE游戏字体包-密码:c79j]（https://ouyhq.lanzouo.com/i8v0Qxvju0d)<br/>
+>[ZS!HELPTALE游戏字体包-密码:c79j](https://ouyhq.lanzouo.com/i8v0Qxvju0d)<br/>
 >[超级玛丽FC版-密码:a2da](https://ouyhq.lanzouo.com/iZUaqumemjc)<br/>
 >[FDY-OverSave-tale0.23.1---提取码：dfxp](https://ouyhq.lanzoui.com/iMRfzsoiddg#dfxp)<br/>
 >[FDM-x86-x64](https://www.freedownloadmanager.org/zh/)<br/>
