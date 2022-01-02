@@ -10,6 +10,24 @@ https://ouyanghongqian.top 通常会使用加密技术来保护您的信息。Go
 ```
 # 解决方法
 打开<chrome://net-internals/#hsts>，滑到最底下Delete domain security policies处输入无法访问的域名，点击Delete后，刷新一下无法访问的网站即可打开。不行就多点Delete几下。
+<!--评论系统开始-->
+<div id="SOHUCS" sid="blog-HSTSError" ></div> 
+<!--SourceID为网页文章目录，将/替换为--->
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cyvQ2I0Tz'; 
+var conf = 'prod_e6acf501ae0255d8ac7fc1c4791a7a8c'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 1000) {
+var head = document.getElementsByTagName('head')[0]||document.head||document.documentElement;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.charset = 'utf-8';
+script.id = 'changyan_mobile_js';
+script.src = 'https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf;
+head.appendChild(script);
+} else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+<!--评论系统结束-->
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%" /></a>
 </div>
