@@ -79,7 +79,8 @@
 >[Xdown---x64-x32](https://dl.xdown.org/windows/i386/xdown-2.0.4.4.zip)<br/>
 >[ChineseFlash](https://space.ouyanghongqian.top/ChineseFlash-Patched-Win-34.0.0.209.7z)<br/>
 >[HRSword v5.0.47单文件版](https://space.ouyanghongqian.top/HRSword%20v5.0.47%20%E5%8D%95%E6%96%87%E4%BB%B6.exe)<br/>
->[Dev-Sidecar](https://gitee.com/docmirror/dev-sidecar)
+>[Dev-Sidecar](https://gitee.com/docmirror/dev-sidecar)<br/>
+>[变速齿轮](https://ouyhq.lanzouo.com/ieQV4yn0iwh)
 
 
 ## 编程环境
