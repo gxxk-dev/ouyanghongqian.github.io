@@ -12,6 +12,8 @@
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
 <meta name="baidu-site-verification" content="code-mJ1kni7szD" />
+<meta name="Keywords" context="网站 ouyhq2011 Blog Site 博客 个人空间"/>
+<meta name="Description" context="ouyhq2011的个人网站"/>
 <style>
 *{padding:0;margin:0;}
 html{height:100%;}
