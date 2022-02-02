@@ -1,4 +1,5 @@
 # 网站/文件索引
+___最后一次更新为2022/2/2，请注意部分内容是否失效___
 ## 娱乐
 >[哥谭噩梦之焯级英雄](https://wwp.lanzoui.com/s/GothamNightMare)<br/>
 >[.Net4.5-x32-x64---提取码：4kg4](https://ouyhq.lanzoui.com/idXwXuh6e3a#4kg4)<br/>
@@ -22,7 +23,8 @@
 >[Steam下载](https://store.steampowered.com/about/)<br/>
 >[BiliBili](https://www.bilibili.com/)<br/>
 >[Undercards](https://undercards.net/)<br/>
->[R.S.R](https://space.ouyanghongqian.top/R.S.R.exe)
+>[R.S.R](https://space.ouyanghongqian.top/R.S.R.exe)<br/>
+>[D-Chat轻量浏览器聊天插件](https://chrome.google.com/webstore/detail/d-chat/glnmkakdjcognfgonjfcklpmjiobijii)Google的特性大家都知道的，建议DogCloud+Clash配合使用<br/>
 
 
 ## 学习
@@ -43,7 +45,8 @@
 >[有道翻译](https://fanyi.youdao.com/)<br/>
 >[国家中小学网络云平台](https://ykt.eduyun.cn/)<br/>
 >[国家教育资源公共服务平台](https://eduyun.cn/)<br/>
->[反向词典](https://wantwords.thunlp.org/)
+>[反向词典](https://wantwords.thunlp.org/)<br/>
+>[书法字典](http://www.shufazidian.com/)
 
 ## 工具
 
@@ -106,6 +109,8 @@
 >[《鱿鱼游戏》bt种子-1080p](magnet:?xt=urn:btih:146316439516089335a8f6956b4c631737ea720b&dn=[BD%E5%BD%B1%E8%A7%86%E5%88%86%E4%BA%ABbd2020.com]%E9%B1%BF%E9%B1%BC%E6%B8%B8%E6%88%8F.Squid.Game.S01.NF.DDP5.1.HD1080P.%E5%86%85%E5%B0%81%E4%B8%AD%E5%AD%97&tr=http://tracker.trackerfix.com:80/announce&tr=udp://9.rarbg.me:2960&tr=udp://9.rarbg.to:2720&tr=udp://tracker.fatkhoala.org:13800&tr=udp://tracker.tallpenguin.org:15710)<br/>
 >[Shape Shifter（搬运）](https://space.ouyanghongqian.top/demo1)<br/>
 >[轻框 | LightFrame](https://ouyhq.lanzouo.com/iGABCy271ze)<br/>
+>[DuckDuckGo](https://duckduckgo.com/)打不开可以用[Tor Project---提取码：47af](https://ouyhq.lanzoui.com/b02ck06yf#47af)内的浏览器查看（记得使用网桥）<br/>
+>[Dogcloud狗子云](https://狗子云.com/)打不开可以在DuckDuckGo搜索dogcloud，一般第一个就是<br/>
 <br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
