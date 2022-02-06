@@ -8,6 +8,7 @@
 - <kbd><a href="https://homepage.oyhq.workers.dev/">超勇导航</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/game">游戏下载</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/mcserver"></kbd><br/>
+网站支持镜像访问,镜像网址:<https://oyhq.pages.dev/>,此镜像更新速度与主站仅有3分钟左右的间隔,如果主站cdn出问题了在访问这个
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
