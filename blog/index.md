@@ -11,7 +11,7 @@
 >[关于一个站点所需的好的特性](https://ouyanghongqian.top/blog/sitecharacteristics)<br/>
 >[网站搭建教程](https://ouyanghongqian.top/blog/BuildSite)<br/>
 >[网站搭建教程-自定义城名](https://ouyanghongqian.top/blog/BuildSite-2)<br/>
->[msf渗透win10](https://ouyanghongqian.top/kali/hiwp.md)<br/>
+>[msf渗透win10](https://ouyanghongqian.top/kali/hiwp)<br/>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
