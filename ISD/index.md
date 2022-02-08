@@ -85,8 +85,8 @@ ___最后一次更新为2022/2/2，请注意部分内容是否失效___
 >[Dev-Sidecar](https://gitee.com/docmirror/dev-sidecar)<br/>
 >[变速齿轮](https://ouyhq.lanzouo.com/ieQV4yn0iwh)<br/>
 >[Clash](https://docs.cfw.lbyczf.com/)<br/>
->[BilibiliAV号转BV好](https://lchzh3473.gitee.io/av2bv/)<br/>
->[]
+>[BilibiliAV号转BV号](https://lchzh3473.gitee.io/av2bv/)<br/>
+>[T.IM短链生成](http://t.im/)
 
 
 ## 编程环境
