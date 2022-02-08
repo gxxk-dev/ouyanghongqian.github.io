@@ -84,7 +84,9 @@ ___最后一次更新为2022/2/2，请注意部分内容是否失效___
 >[HRSword v5.0.47单文件版](https://space.ouyanghongqian.top/HRSword%20v5.0.47%20%E5%8D%95%E6%96%87%E4%BB%B6.exe)<br/>
 >[Dev-Sidecar](https://gitee.com/docmirror/dev-sidecar)<br/>
 >[变速齿轮](https://ouyhq.lanzouo.com/ieQV4yn0iwh)<br/>
->[Clash](https://docs.cfw.lbyczf.com/)
+>[Clash](https://docs.cfw.lbyczf.com/)<br/>
+>[BilibiliAV号转BV好](https://lchzh3473.gitee.io/av2bv/)<br/>
+>[]
 
 
 ## 编程环境
