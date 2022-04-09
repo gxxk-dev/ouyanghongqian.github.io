@@ -1,0 +1,4 @@
+# 正确下载BT文件
+
+我个人是很喜欢Peer to Peer(P2P)的下载机制的，所以我平常下载文件都用的FDM，但是我感觉FDM就算开到最高优先级的速度也只有几kb，也就是我为了配置一个RespberryPi要等很长时间，今天晚上刷Github的时候，看见了qBittorrent加强版和Tracker精选，接下来就讲一下配置方法~
+
