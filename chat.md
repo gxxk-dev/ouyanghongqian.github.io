@@ -16,7 +16,7 @@ Welcome to the chatroom！
 
 在您阅读完以上内容并同意之后，请按下下面的按钮，你需要提供一个正确的密码
 
-密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
+
 <script>
     function checkpwd(){
         var pwd=document.getElementById('pwdinput').value;
@@ -28,3 +28,4 @@ Welcome to the chatroom！
         }
     }
 </script>
+密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
