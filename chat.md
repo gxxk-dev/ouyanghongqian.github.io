@@ -28,6 +28,7 @@ Welcome to the chatroom！
             var s=document.createElement("script");
             s.src="//topurl.cn/chat.js";
             document.body.append(s);
+            document.cookie='pwd='+userpwd
         }else{
             alert('密码不对，给老子爬！');
         }
@@ -39,8 +40,6 @@ Welcome to the chatroom！
             var s=document.createElement("script");
             s.src="//topurl.cn/chat.js";
             document.body.append(s);
-        }else{
-            alert('Hey! xd 站长改密码了！快找他要密码去！')
         }
     }
     checkcookie()
