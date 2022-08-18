@@ -16,11 +16,10 @@ Welcome to the chatroom！
 
 在您阅读完以上内容并同意之后，请按下下面的按钮，你需要提供一个正确的密码
 
-
 <script>
     function checkpwd(){
         var pwd=document.getElementById('pwdinput').value;
-        if(pwd='145140'){
+        if(pwd=='145140'){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             document.getElementById('chatroom').innerHTML='<script src="//topurl.cn/chat.js" async="async" fold/>';
         }else{
