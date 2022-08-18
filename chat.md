@@ -16,12 +16,15 @@ Welcome to the chatroom！
 十分感谢[未来邮局](http://topurl.cn)站长开发的嵌入式聊天系统
 
 在您阅读完以上内容并同意之后，请按下下面的按钮，你需要提供一个正确的密码
+
+
 <script>
+    pwd='145140'
     function checkpwd(){
-        var pwd=document.getElementById('pwdinput').value;
-        if(pwd=='145140'){
+        var userpwd=document.getElementById('pwdinput').value;
+        if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
-            document.getElementById('tag').innerHTML='';
+            document.getElementById('tag').innerHTML='旅行者，你的身上似乎有了风的气息呢（下次进入时，会自动识别身份并开启聊天，一直到站长更改进入密码）';
             var s=document.createElement("script");
             s.src="//topurl.cn/chat.js";
             document.body.append(s);
@@ -29,6 +32,18 @@ Welcome to the chatroom！
             alert('密码不对，给老子爬！');
         }
     }
+    function checkcookie(){
+        var cookievalue = document.cookie.split("=")[1];
+        if (cookievalue==pwd){
+            alert('Welcome to the chatroom!')
+            var s=document.createElement("script");
+            s.src="//topurl.cn/chat.js";
+            document.body.append(s);
+        }else{
+            alert('Hey! xd 站长改密码了！快找他要密码去！')
+        }
+    }
+    checkcookie()
 </script>
 密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
 <p id="tag">如果密码正确，这句话将消失，同时右下角将会显示聊天框</p>
