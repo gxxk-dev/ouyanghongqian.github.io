@@ -22,10 +22,11 @@ Welcome to the chatroom！
         var pwd=document.getElementById('pwdinput').value;
         if(pwd='145140'){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
-            document.write('<script src="//topurl.cn/chat.js" async="async" fold/>');
+            document.getElementById('chatroom').innerHTML='<script src="//topurl.cn/chat.js" async="async" fold/>';
         }else{
             alert('密码不对，给老子爬！');
         }
     }
 </script>
 密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
+<p id="chatroom">如果密码正确，这句话将消失，同时右下角将会显示聊天框</p>
