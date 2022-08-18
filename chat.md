@@ -21,12 +21,15 @@ Welcome to the chatroom！
         var pwd=document.getElementById('pwdinput').value;
         if(pwd=='145140'){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
-            document.getElementById('chatroom').innerHTML='';
-            eval('<script src="//topurl.cn/chat.js" async="async" fold/>')
+            document.getElementById('tag').innerHTML='';
+            var script = document.createElement("script");
+            script.setAttribute("type","text/javascript");
+            script.src = "http://topurl.cn/chat.js";
+            document.getElementsByTagName("head")[0].appendChild(script);  
         }else{
             alert('密码不对，给老子爬！');
         }
     }
 </script>
 密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
-<p id="chatroom">如果密码正确，这句话将消失，同时右下角将会显示聊天框</p>
+<p id="tag">如果密码正确，这句话将消失，同时右下角将会显示聊天框</p>
