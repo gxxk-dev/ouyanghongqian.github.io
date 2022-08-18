@@ -22,7 +22,7 @@ Welcome to the chatroom！
         if(pwd=='145140'){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             document.getElementById('tag').innerHTML='';
-            eval('var s=document.createElement("script");s.src="//topurl.cn/chat.js";document.body.append(s);')
+            eval('<script>var s=document.createElement("script");s.src="//topurl.cn/chat.js";document.body.append(s);</script>')
         }else{
             alert('密码不对，给老子爬！');
         }
