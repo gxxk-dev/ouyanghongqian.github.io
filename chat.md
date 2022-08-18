@@ -21,7 +21,8 @@ Welcome to the chatroom！
         var pwd=document.getElementById('pwdinput').value;
         if(pwd=='145140'){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
-            document.getElementById('chatroom').innerHTML='<script src="//topurl.cn/chat.js" async="async" />';
+            document.getElementById('chatroom').innerHTML='';
+            eval('<script src="//topurl.cn/chat.js" async="async" fold/>')
         }else{
             alert('密码不对，给老子爬！');
         }
