@@ -2,6 +2,7 @@
 
 Welcome to the chatroom！
 
+如果这个链接在输入密码后没有正常运作，那大概是_CSP_的问题，试试[这个链接](http://ouyanghongqian.top/chat)吧！
 
 请在遵守[摸鱼联盟群规](https://ouyanghongqian.top/HostingOfOtherPages/moyulianmong/qungui)的群规下进入聊天室
 
