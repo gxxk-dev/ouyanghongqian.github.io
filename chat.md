@@ -18,11 +18,11 @@ Welcome to the chatroom！
 在您阅读完以上内容并同意之后，请按下下面的按钮，你需要提供一个正确的密码
 
 
-<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="./md5.js"></script>
 <script>
-    pwd='145140'    //此处的密码经过md5
+    pwd=str_md5('145140')    //此处的密码经过hash
     function checkpwd(){  
-        var userpwd=md5(document.getElementById('pwdinput').value);
+        var userpwd=str_md5(document.getElementById('pwdinput').value);
         if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             console.log('用户密码正确 注入中')
