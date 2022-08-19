@@ -19,7 +19,7 @@ Welcome to the chatroom！
 
 
 <script>
-    pwd='145140'
+    pwd='a344918f23428ba2167ec557b09a2369'
     function checkpwd(){
         var userpwd=document.getElementById('pwdinput').value;
         if(userpwd==pwd){
