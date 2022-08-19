@@ -7,7 +7,6 @@
 - <kbd><a href="https://github-speedup.oyhq.workers.dev/">GitHub文件加速</a></kbd><br/>
 - <kbd><a href="https://homepage.oyhq.workers.dev/">超勇导航</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/game">游戏下载</a></kbd><br/>
-- <kbd><a href="https://ouyanghongqian.top/mcserver">Minecraft服务器</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/Project/StudentSystem">个人项目-学生信息管理系统</a></kbd><br/>
 我是sb!
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
@@ -16,22 +15,3 @@
 <meta name="baidu-site-verification" content="code-mJ1kni7szD" />
 <meta name="Keywords" context="网站 ouyhq2011 Blog Site 博客 个人空间"/>
 <meta name="Description" context="ouyhq2011的个人网站"/>
-<style>
-*{padding:0;margin:0;}
-html{height:100%;}
-body{min-height:100%;}
-body{position:relative;}
-}
-.box{
-    padding-bottom:130px;
-}
-.box p{
-    line-height:30px;
-    text-align:center;
-    border:solid 1px green;
-}
-</style>
-<div class="box">
-    <p>鄂ICP备2021017388号<br/><a href="https://beian.miit.gov.cn">工业和信息化部网站备案系统</a></p>
-</div>
-<div class="footer"></div>
