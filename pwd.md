@@ -3,7 +3,7 @@
 <script>
     function md5(){
         var inputvalue=document.getElementById('md5str').value
-        console.log(str_md5(inputvalue))
+        console.log(md5(inputvalue))
     }
 </script>
 <input id="md5str" type="text"/><button onclick='md5()'>生成</button>
