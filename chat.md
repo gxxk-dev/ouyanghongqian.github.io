@@ -18,30 +18,44 @@ Welcome to the chatroom！
 在您阅读完以上内容并同意之后，请按下下面的按钮，你需要提供一个正确的密码
 
 
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
 <script>
-    pwd='a344918f23428ba2167ec557b09a2369'
-    function checkpwd(){
-        var userpwd=document.getElementById('pwdinput').value;
+    pwd='145140'    //此处的密码经过md5
+    function checkpwd(){  
+        var userpwd=md5(document.getElementById('pwdinput').value);
         if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
+            console.log('用户密码正确 注入中')
             document.getElementById('tag').innerHTML='旅行者，你的身上似乎有了风的气息呢（下次进入时，会自动识别身份并开启聊天，一直到站长更改进入密码）';
             var s=document.createElement("script");
             s.src="//topurl.cn/chat.js";
             document.body.append(s);
-            document.cookie='pwd='+userpwd
+            document.cookie='pwd='+userpwd+';islogin=t'
         }else{
             alert('密码不对，给老子爬！');
         }
     }
     function checkcookie(){
-        var cookievalue = document.cookie.split("=")[1];
+        var cookielist=document.cookie.split(';')
+        var cookievalue = cookielist[0].split("=")[1];
         if (cookievalue==pwd){
+            console.log('cookie正确 注入代码中...')
+            console.log('usercookieis ')
+            console.log(cookievalue)
             alert('Welcome to the chatroom!')
             var s=document.createElement("script");
             s.src="//topurl.cn/chat.js";
             document.body.append(s);
+        }else{   //无用的水代码时间！ 哈哈哈
+            if(cookielist[1]=='islogin=t'){
+                console.log('用户cookie不正确，但以前登陆过，判定为改密码了')
+                alert('hey 站长改密码了 gkd 找他要去');
+            }else{
+                console.log('用户为新用户')
+            }
         }
     }
+    console.log('用户访问页面，检查cookie中....')
     checkcookie()
 </script>
 密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
