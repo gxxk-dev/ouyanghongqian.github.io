@@ -21,11 +21,11 @@ Welcome to the chatroom！
     pwd='131477'   //此处的密码经过hash
     function checkpwd(){  
         var userpwd=document.getElementById('pwdinput').value;
+        password=prompt('来，给爷pwd，给了就进聊天室')
         if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
-            console.log('用户密码正确 注入中')
+            console.log('用户密码正确 注入cookie中')
             document.getElementById('tag').innerHTML='旅行者，你的身上似乎有了风的气息呢（下次进入时，会自动识别身份并开启聊天，一直到站长更改进入密码）';
-            var s=document.getElementById('tag2').value='<script src="//topurl.cn/chat.js" async="async"/>';
         }else{
             alert('密码不对，给老子爬！');
         }
@@ -38,13 +38,14 @@ Welcome to the chatroom！
             console.log('usercookieis ')
             console.log(cookievalue)
             alert('Welcome to the chatroom!')
-            document.body.append('<script src="//topurl.cn/chat.js" async="async"/>');
         }else{   //无用的水代码时间！ 哈哈哈
             if(cookielist[1]=='islogin=t'){
                 console.log('用户cookie不正确，但以前登陆过，判定为改密码了')
                 alert('hey 站长改密码了 gkd 找他要去');
+                checkpwd()
             }else{
                 console.log('用户为新用户')
+                checkpwd()
             }
         }
     }
