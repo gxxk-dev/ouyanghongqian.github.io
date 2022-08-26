@@ -25,10 +25,7 @@ Welcome to the chatroom！
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             console.log('用户密码正确 注入中')
             document.getElementById('tag').innerHTML='旅行者，你的身上似乎有了风的气息呢（下次进入时，会自动识别身份并开启聊天，一直到站长更改进入密码）';
-            var s=document.createElement("script");
-            s.src="//topurl.cn/chat.js";
-            document.body.append(s);
-            document.cookie='pwd='+userpwd+';islogin=t'
+            var s=document.getElementById('tag2').value='<script src="//topurl.cn/chat.js" async="async"/>';
         }else{
             alert('密码不对，给老子爬！');
         }
@@ -55,4 +52,5 @@ Welcome to the chatroom！
     checkcookie()
 </script>
 密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
-<p id="tag">如果密码正确，这句话将消失，同时右下角将会显示聊天框</p>
+<p id="tag">如果密码正确，右下角将会显示聊天框</p>
+<p id="tag2"></p>
