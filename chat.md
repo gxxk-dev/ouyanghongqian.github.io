@@ -41,7 +41,7 @@ Welcome to the chatroom！
             console.log('usercookieis ')
             console.log(cookievalue)
             alert('Welcome to the chatroom!')
-            document.body.append('<script src="//topurl.cn/chat.js" async="async"></script>');
+            document.body.append('<script src="//topurl.cn/chat.js" async="async"/>');
         }else{   //无用的水代码时间！ 哈哈哈
             if(cookielist[1]=='islogin=t'){
                 console.log('用户cookie不正确，但以前登陆过，判定为改密码了')
