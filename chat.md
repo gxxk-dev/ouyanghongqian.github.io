@@ -18,7 +18,7 @@ Welcome to the chatroom！
 在您阅读完以上内容并同意之后，请按下下面的按钮，你需要提供一个正确的密码
 
 <script>
-    pwd='145140'   //此处的密码经过hash
+    pwd='131477'   //此处的密码经过hash
     function checkpwd(){  
         var userpwd=document.getElementById('pwdinput').value;
         if(userpwd==pwd){
@@ -41,9 +41,7 @@ Welcome to the chatroom！
             console.log('usercookieis ')
             console.log(cookievalue)
             alert('Welcome to the chatroom!')
-            var s=document.createElement("script");
-            s.src="//topurl.cn/chat.js";
-            document.body.append(s);
+            document.body.append('<script src="//topurl.cn/chat.js" async="async"></script>');
         }else{   //无用的水代码时间！ 哈哈哈
             if(cookielist[1]=='islogin=t'){
                 console.log('用户cookie不正确，但以前登陆过，判定为改密码了')
