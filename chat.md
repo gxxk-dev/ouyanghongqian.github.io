@@ -23,8 +23,8 @@ Welcome to the chatroom！
         userword=prompt('来，给爷pwd，给了就进聊天室')
         if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
-            console.log('用户密码正确 注入cookie中')
-            document.getElementById('tag').innerHTML='旅行者，你的身上似乎有了风的气息呢（下次进入时，会自动识别身份并开启聊天，一直到站长更改进入密码）';
+            console.log('用户密码正确')
+            // document.getElementById('tag').innerHTML='旅行者，你的身上似乎有了风的气息呢（下次进入时，会自动识别身份并开启聊天，一直到站长更改进入密码）';
         }else{
             alert('密码不对，给老子爬！');
         }
@@ -48,8 +48,7 @@ Welcome to the chatroom！
             }
         }
     }
-    console.log('用户访问页面，检查cookie中....')
-    checkcookie()
+    checkpwd()
 </script>
 密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
 <p id="tag"></p>
