@@ -53,5 +53,5 @@ Welcome to the chatroom！
     checkcookie()
 </script>
 密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
-<p id="tag">如果密码正确，右下角将会显示聊天框</p>
-<p id="tag2"></p>
+<p id="tag"></p>
+<p id="tag2"><script src="//topurl.cn/chat.js" async="async"></script></p>
