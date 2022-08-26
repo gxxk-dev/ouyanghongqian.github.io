@@ -20,8 +20,7 @@ Welcome to the chatroom！
 <script>
     pwd='131477'   //此处的密码经过hash
     function checkpwd(){  
-        var userpwd=document.getElementById('pwdinput').value;
-        password=prompt('来，给爷pwd，给了就进聊天室')
+        userword=prompt('来，给爷pwd，给了就进聊天室')
         if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             console.log('用户密码正确 注入cookie中')
