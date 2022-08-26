@@ -29,27 +29,24 @@ Welcome to the chatroom！
             alert('密码不对，给老子爬！');
         }
     }
-    function checkcookie(){
-        var cookielist=document.cookie.split(';')
-        var cookievalue = cookielist[0].split("=")[1];
-        if (cookievalue==pwd){
-            console.log('cookie正确 注入代码中...')
-            console.log('usercookieis ')
-            console.log(cookievalue)
-            alert('Welcome to the chatroom!')
-        }else{   //无用的水代码时间！ 哈哈哈
-            if(cookielist[1]=='islogin=t'){
-                console.log('用户cookie不正确，但以前登陆过，判定为改密码了')
-                alert('hey 站长改密码了 gkd 找他要去');
-                checkpwd()
-            }else{
-                console.log('用户为新用户')
-                checkpwd()
-            }
+    var cookielist=document.cookie.split(';')
+    var cookievalue = cookielist[0].split("=")[1];
+    if (cookievalue==pwd){
+        console.log('cookie正确 注入代码中...')
+        console.log('usercookieis ')
+        console.log(cookievalue)
+        alert('Welcome to the chatroom!')
+    }else{   //无用的水代码时间！ 哈哈哈
+        if(cookielist[1]=='islogin=t'){
+            console.log('用户cookie不正确，但以前登陆过，判定为改密码了')
+            alert('hey 站长改密码了 gkd 找他要去');
+            checkpwd()
+        }else{
+            console.log('用户为新用户')
+            checkpwd()
         }
+    
     }
-    checkpwd()
 </script>
-密码：<input type="text" id="pwdinput"/><button onclick="checkpwd()">GO!</button>
 <p id="tag"></p>
 <p id="tag2"><script src="//topurl.cn/chat.js" async="async"></script></p>
