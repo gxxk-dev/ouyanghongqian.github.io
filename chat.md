@@ -24,6 +24,7 @@ Welcome to the chatroom！
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             console.log('用户密码正确')
             document.getElementById('tag').innerHTML='旅行者，你的身上似乎有了风的气息呢（下次进入时，会自动识别身份并开启聊天，一直到站长更改进入密码）';
+            console.log('pwd='+pwd+';islogin=t')
             document.cookie='pwd='+pwd+';islogin=t';
         }else{
             alert('密码不对，给老子爬！');
