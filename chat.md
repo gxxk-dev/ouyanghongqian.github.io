@@ -44,7 +44,7 @@ Welcome to the chatroom！
         }else{
             console.log('用户为新用户 开始判定url')
             console.log(window.location.href)
-            if ((window.location.href=='http://ouyanghongqian.top?pwd='+pwd)||(window.location.href=='https://ouyanghongqian.top?pwd='+pwd)){
+            if ((window.location.href=='http://ouyanghongqian.top/chat?pwd='+pwd)||(window.location.href=='https://ouyanghongqian.top/chat?pwd='+pwd)){
                 console.log('urlPwd正确')
             }else{
                 userpwd=prompt('来，给爷pwd，给了就进聊天室')
