@@ -43,8 +43,9 @@ Welcome to the chatroom！
             checkpwd()
         }else{
             console.log('用户为新用户 开始判定url')
+            console.log(window.location.herf)
             if (window.location.herf=='http://ouyanghongqian.top?pwd=131477'||window.location.herf=='https://ouyanghongqian.top?pwd=131477'){
-            console.log('urlPwd正确')
+                console.log('urlPwd正确')
             }else{
                 userpwd=prompt('来，给爷pwd，给了就进聊天室')
                 checkpwd()
