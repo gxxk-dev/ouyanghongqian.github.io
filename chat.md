@@ -17,7 +17,6 @@ Welcome to the chatroom！
 <script>
     pwd='131477'   //此处的密码经过hash
     function checkpwd(){  
-        userpwd=prompt('来，给爷pwd，给了就进聊天室')
         if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             console.log('用户密码正确')
@@ -26,10 +25,12 @@ Welcome to the chatroom！
         }else{
             alert('密码不对，给老子爬！');
             window.location.href="https://www.bilibili.com/video/BV1uT4y1P7CX"
+            document.getElementById('tag2').value=''
         }
     }
     var cookielist=document.cookie.split(';')
     var cookievalue = cookielist[0].split("=")[1];
+    
     if (cookievalue==pwd){
         console.log('cookie正确 注入代码中...')
         console.log('usercookieis ')
@@ -41,8 +42,14 @@ Welcome to the chatroom！
             alert('hey 站长改密码了 gkd 找他要去');
             checkpwd()
         }else{
-            console.log('用户为新用户')
-            checkpwd()
+            console.log('用户为新用户 开始判定url')
+            if (window.location.herf=='http://ouyanghongqian.top?pwd=131477'||window.location.herf=='https://ouyanghongqian.top?pwd=131477'){
+            console.log('urlPwd正确')
+            }else{
+                userpwd=prompt('来，给爷pwd，给了就进聊天室')
+                checkpwd()
+            }
+            
         }
     }
 </script>
