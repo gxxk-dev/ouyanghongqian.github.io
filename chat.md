@@ -20,7 +20,7 @@ Welcome to the chatroom！
         if(userpwd==pwd){
             alert('密码正确 Welcome to the chatroom! 愿风神护佑你');
             console.log('用户密码正确')
-            console.log('pwd=131477;islogin=t')
+            console.log('pwd='+pwd+';islogin=t')
             document.cookie='pwd='+pwd+';islogin=t';
         }else{
             alert('密码不对，给老子爬！');
@@ -43,8 +43,8 @@ Welcome to the chatroom！
             checkpwd()
         }else{
             console.log('用户为新用户 开始判定url')
-            console.log(window.location.herf)
-            if (window.location.herf=='http://ouyanghongqian.top?pwd=131477'||window.location.herf=='https://ouyanghongqian.top?pwd=131477'){
+            console.log(window.location.href)
+            if ((window.location.href=='http://ouyanghongqian.top?pwd='+pwd)||(window.location.href=='https://ouyanghongqian.top?pwd='+pwd)){
                 console.log('urlPwd正确')
             }else{
                 userpwd=prompt('来，给爷pwd，给了就进聊天室')
