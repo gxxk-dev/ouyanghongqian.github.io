@@ -26,8 +26,13 @@
 - <kbd><a href="https://homepage.oyhq.workers.dev/">超勇导航</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/game">游戏下载</a></kbd><br/>
 - <kbd><a href="https://ouyanghongqian.top/Project/StudentSystem">个人项目-学生信息管理系统</a></kbd><br/>
-- <kbd><a href="#" onclick="reward()">打赏</a></kbd><br/>
+- <kbd><a onclick="reward()">打赏</a></kbd><br/>
 <br/>
+
+
+来自站长的留言：这次更了一下评论系统和打赏~~（虽然没什么用）~~  不得不说这次更新是真的有点难，code5分钟，debug5小时
+
+
 <div id='rewardContext'></div>
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
