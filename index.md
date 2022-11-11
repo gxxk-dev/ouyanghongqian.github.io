@@ -8,12 +8,12 @@
         if (rewardContextMode){
             // 显示赞助内容
             rewardContextMode=false
-            document.getElementById('rewardContext').value=text
+            document.getElementById('rewardContext').innerHTML=text
             console.log('显示赞助内容')
         }else{
             // 清除内容
             rewardContextMode=true
-            document.getElementById('rewardContext').value=''
+            document.getElementById('rewardContext').innerHTML=''
             console.log('清除内容')
         }
     }
@@ -34,6 +34,8 @@
 
 
 <div id='rewardContext'></div>
+
+
 <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
     <a href="https://myssl.com/ouyanghongqian.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
 </div>
