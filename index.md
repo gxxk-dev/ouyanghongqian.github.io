@@ -7,12 +7,12 @@
         console.log('调用reward()')
         if (rewardContextMode){
             // 显示赞助内容
-            rewardContextMode=true
+            rewardContextMode=false
             document.getElementById('rewardContext').value=text
             console.log('显示赞助内容')
         }else{
             // 清除内容
-            rewardContextMode=false
+            rewardContextMode=true
             document.getElementById('rewardContext').value=''
             console.log('清除内容')
         }
