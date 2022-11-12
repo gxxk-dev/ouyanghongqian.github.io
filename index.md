@@ -6,7 +6,7 @@
    if(/Android/i.test(navigator.userAgent)){ //如果是安卓 就给一个超链接，点击自动跳转到微信
         text=text.format('<a href="wxp://f2f0Dnj42TFVu6IpMl7J9AsivbLjItxPEMpYJR5zZHhWcHI">',"</a>")
     }else{
-        text=text.format('','')
+        text=text.format("","")
     }
     function reward(){
         console.log('调用reward()')
