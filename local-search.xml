@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>教程-搭建能在网页玩的MC</title>
+    <link href="/1f7c.html"/>
+    <url>/1f7c.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="搭建能在网页玩的MC"><a href="#搭建能在网页玩的MC" class="headerlink" title="搭建能在网页玩的MC"></a>搭建能在网页玩的MC</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近小区被封了，我便多出来了一大段时间玩电脑（毕竟不用上学）<br>然后我在无意间看到了 <sup><a href="#fn_Eaglecraft" id="reffn_Eaglecraft">Eaglecraft</a></sup> 这个项目（详见<a href="https://www.minebbs.com/resources/eaglecraft-minecraft.4151/">MineBBS介绍帖</a>），赶紧把项目Clone下来，接着就开始折腾文件</p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ol><li>下载文件，地址：<a href="https://ouyhq.lanzoum.com/iUnkV0hftoub">https://ouyhq.lanzoum.com/iUnkV0hftoub</a>（提取码：a8gd）</li><li>安装 <a href="https://ouyhq.lanzoum.com/b02ccecib">Java8</a>（提取码：6ls7，请自行根据系统位数选择版本）</li><li>下载之后点击run.bat，可根据需要调整内存大小</li><li>出现 Done 字样后代表服务端可正常运行，继续下一步，如错误请检查文件完整性</li><li>关闭服务端</li><li>将本地所有文件上传至服务器，位置一定得是/var/www/html（推荐树莓派，也可以用云服务器）</li><li>执行代码：<code>sudo apt install apache2</code> 和 <code>sudo service apache2 start</code></li><li>登录服务器（建议使用SSH）进入目录，根据需求更改服务器内存</li><li>安装Java，运行服务器启动脚本</li><li>大功告成，现在可以通过服务器IP访问了<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2></li></ol><blockquote id="fn_Eaglecraft"><sup>Eaglecraft</sup>. 作者LAX1DUDE，网页版MC的核心，基于MC1.5.2反编译而来，<a href="https://imc.re">IMC.RE</a>的网页服务就基于此项目，由于微软的一些操作，导致Github原仓库地址404，本文提供版本为Github其他用户所Fork的版本<a href="#reffn_Eaglecraft" title="Jump back to footnote [Eaglecraft] in the text."> &#8617;</a></blockquote><p>为什么要开apache2</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>MC教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Minecraft</tag>
+      
+      <tag>开服</tag>
+      
+      <tag>网页版MC</tag>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>搭博客少走弯路-GithubPage备案篇</title>
     <link href="/36155.html"/>
     <url>/36155.html</url>
