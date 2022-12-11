@@ -16,15 +16,15 @@
   <meta name="author" content="ouyhq2011">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="无版权免费游戏集合 function iframLoad(ifm){          try{                     $(ifm).height(ifm.contentWindow.document.body.scrollHeight);             $(ifm).width(ifm.contentWindow.document.body.scrollWidth);">
+    <meta name="description" content="无版权免费游戏集合 function setIframe(){     var ifm &#x3D; document.getElementById(&#39;game&#39;);     ifm.height&#x3D;document.getElementById(&#39;iframeHeight&#39;).value+&quot;px&quot;; }  function edit_iframe(url){     if (url&#x3D;&#x3D;&#39;close&#39;){">
 <meta property="og:type" content="website">
 <meta property="og:title" content="游戏集合">
 <meta property="og:url" content="http://ouyanghongqian.top/games/index.html">
 <meta property="og:site_name" content="ouyhq2011的博客">
-<meta property="og:description" content="无版权免费游戏集合 function iframLoad(ifm){          try{                     $(ifm).height(ifm.contentWindow.document.body.scrollHeight);             $(ifm).width(ifm.contentWindow.document.body.scrollWidth);">
+<meta property="og:description" content="无版权免费游戏集合 function setIframe(){     var ifm &#x3D; document.getElementById(&#39;game&#39;);     ifm.height&#x3D;document.getElementById(&#39;iframeHeight&#39;).value+&quot;px&quot;; }  function edit_iframe(url){     if (url&#x3D;&#x3D;&#39;close&#39;){">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-11T08:54:23.000Z">
-<meta property="article:modified_time" content="2022-12-11T01:25:00.000Z">
+<meta property="article:modified_time" content="2022-12-11T06:54:02.000Z">
 <meta property="article:author" content="ouyhq2011">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -244,33 +244,61 @@
 
 <article class="page-content">
   <h1 id="无版权免费游戏集合"><a href="#无版权免费游戏集合" class="headerlink" title="无版权免费游戏集合"></a>无版权免费游戏集合</h1><script>
-function iframLoad(ifm){ 
-        try{        
-            $(ifm).height(ifm.contentWindow.document.body.scrollHeight);
-            $(ifm).width(ifm.contentWindow.document.body.scrollWidth);
-        }catch(e){
-            $(ifm).height(320);//默认高度
-            $(ifm).width(320); //默认宽度
-        }
-    }    
+function setIframe(){
+    var ifm = document.getElementById('game');
+    ifm.height=document.getElementById('iframeHeight').value+"px";
+}
 
 function edit_iframe(url){
-    document.getElementById("reportFrame").src = url;
-   }
-
+    if (url=='close'){
+        document.getElementById("game").src = "./game/test";
+        document.getElementById("playingGameURL").value = "未启动";
+    }else{
+        document.getElementById("game").src = url;
+        document.getElementById("playingGameURL").value = url;
+    }
+}
 </script>
 
-<h2 id="游戏选择区"><a href="#游戏选择区" class="headerlink" title="游戏选择区"></a>游戏选择区</h2><ul>
-<li><a href="javascript:void(0)" onclick="edit_iframe('./game/minecraft/')" >Minecraft1.5.2(Eaglercraft) </a> By:<a target="_blank" rel="noopener" href="https://github.com/lax1dude">LAX1DUDE</a></li>
+<h2 id="游戏设置区"><a href="#游戏设置区" class="headerlink" title="游戏设置区"></a>游戏设置区</h2><ul>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('./game/minecraft')" >Minecraft1.5.2(Eaglercraft) </a> By:<a target="_blank" rel="noopener" href="https://github.com/lax1dude">LAX1DUDE</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('http://jcw87.github.io/c2-smb1/')" >超级马里奥（NES版）</a> By:<a target="_blank" rel="noopener" href="https://github.com/jcw87">jcw87</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('http://jcw87.github.io/c2-sans-fight/')" >Undertale GE线Boss战</a> By:<a target="_blank" rel="noopener" href="https://github.com/jcw87">jcw87</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('https://phicommunity.com.cn/')" >PhiCommunity</a> By:<a target="_blank" rel="noopener" href="https://github.com/Yuameshi">Yuameshi</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('https://www.52txr.cn/game/Minesweeper/index.html')" >扫雷</a> By:<a target="_blank" rel="noopener" href="https://www.52txr.cn/">陶小桃</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('https://www.52txr.cn/game/3DMF/index.html')" >3D魔方</a> By:<a target="_blank" rel="noopener" href="https://www.52txr.cn/">陶小桃</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('https://www.52txr.cn/game/Fruits/index.html')" >水果忍者</a> By:<a target="_blank" rel="noopener" href="https://www.52txr.cn/">陶小桃</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('https://www.52txr.cn/game/PacMan/index.html')" >吃豆人</a> By:<a target="_blank" rel="noopener" href="https://www.52txr.cn/">陶小桃</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('https://www.52txr.cn/game/HitDS/index.html')" >打地鼠</a> By:<a target="_blank" rel="noopener" href="https://www.52txr.cn/">陶小桃</a></p>
+</li>
+<li><p><a href="javascript:void(0)" onclick="edit_iframe('close')" >销毁游戏窗口</a></p>
+</li>
 </ul>
-<blockquote>
-<p><a href="javascript:void(0)" onclick="edit_iframe('')" >销毁游戏窗口</a></p>
-</blockquote>
+<p>游戏窗口高（以像素为单位）：<input id="iframeHeight"></input>  <button onclick="setIframe()">应用设置</button></p>
+<p>当前正在游玩中的游戏的链接：<input id="playingGameURL" value="未启动"></input></p>
 <h2 id="游戏区"><a href="#游戏区" class="headerlink" title="游戏区"></a>游戏区</h2><p>下面是游戏窗口，在游戏选择区选择游戏后将自动启动</p>
-<iframe id="game" name="game" frameborder="0" width="100%" height="98%" style="display:none" οnlοad="iframLoad(this)"></iframe>
+<iframe id="game" width="100%" height="100%"  src="./game/test" scrolling="no">换个浏览器再来玩吧</iframe>
 
-<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><p>2022-12-11更新：移除顶部Minecraft入口，改为游戏集合</p>
-<h2 id="反馈区"><a href="#反馈区" class="headerlink" title="反馈区"></a>反馈区</h2><p>如果在使用时发现了BUG或想要提交游戏可在下方评论哦~<br><!--PC版--></p>
+<p><div id='tip'>
+Tip:这里是一个Tip
+</div></p>
+<script>
+function randomTip(){
+    tips=['评论系统设置为深色模式，建议在深色主题下评论','v我50体验疯狂星期4','如果显示错误的话，那么就调整一下游戏窗口的高吧~','上班摸鱼神器，不要998，不要98，免费直接带回家！','你又在反复看Tip了哦','游戏设置区下面可以复制游戏链接哦~']
+    document.getElementById('tip').innerHTML='Tip: '+tips[Math.round(Math.random()*tips.length)]
+}
+setInterval(randomTip,10000)</script>
+
+<h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><p>2022-12-11更新：移除顶部Minecraft入口，改为游戏集合，新增超级马里奥和UT GE线Boss战等游戏</p>
+<h2 id="反馈区"><a href="#反馈区" class="headerlink" title="反馈区"></a>反馈区</h2><p>如果在使用时发现了BUG或想要提交游戏可在下方评论哦~<br>注：本站没有游戏资源的版权，仅使用iframe嵌套框架实现（除部分游戏外，但其游戏本身开源，如Eaglercraft），资源由网友提供，与本站无关<br><!--PC版--></p>
 <p><div id="SOHUCS" ></div></p>
 <script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
 <script type="text/javascript">
