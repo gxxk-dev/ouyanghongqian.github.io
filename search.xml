@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title>搭博客少走弯路-GithubPage 百度SEO篇</title>
+      <link href="/9150.html"/>
+      <url>/9150.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="搭博客少走弯路-Github-Pages-Hexo-百度SEO篇"><a href="#搭博客少走弯路-Github-Pages-Hexo-百度SEO篇" class="headerlink" title="搭博客少走弯路-Github Pages Hexo 百度SEO篇"></a>搭博客少走弯路-Github Pages Hexo 百度SEO篇</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>其实关于百度SEO优化的方面早就想搞了，但是因为GithubPage屏蔽了百度爬虫，这方面一直闲置着在，现在给博客引擎换</p><p>成了<code>hexo</code>，方便了一些，而且<code>hexo</code>也有很多开箱即用的插件，很方便，所以现在经过一番摸索，找到了百度SEO优化的方法</p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><ul><li>博客引擎为<code>Hexo</code></li><li>博客使用自定义域名</li><li>博客已备案（关于GithubPage的备案可以去我写的另外一篇文章看看，传送门：<a href="#">Post not found: 36155</a>）</li></ul><h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><ol><li><p>安装Sitemap生成器，指令：<code>npm install hexo-generator-sitemap --save</code> （PS：之前看见一篇文章说要安装baidu版Sitemap生成器，其实这个可有可无，百度爬虫本身支持普通的sitemap的）</p></li><li><p>重新部署博客，指令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure></li><li><p>在<a href="https://ziyuan.baidu.com/linksubmit/index">https://ziyuan.baidu.com/linksubmit/index</a>注意要先绑定站点，站点必须备案</p></li><li><p>在上一步的连接中选择<code>普通收录-&gt;sitemap</code>，在下面的输入框内输入：<code>[站点域名]/sitemap.xml</code>（或<code>[站点域名]/sitemap.txt</code>）</p></li><li><p>等待百度收录完成</p></li><li><p>收录完成，此时可以在百度搜索：<code>site:[站点域名]</code>查看百度收录的所有页面</p></li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>GithubPage博客为什么不被百度收录：百度爬虫被Github屏蔽，seo优化方法：</p><p>安装Sitemap生成器并重新部署博客：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-generator-sitemap --save<br>hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure><p>在<a href="https://ziyuan.baidu.com/linksubmit/index">https://ziyuan.baidu.com/linksubmit/index</a>提交：<code>[站点域名]/sitemap.xml</code></p><p>在百度搜索：<code>site:[站点域名]</code>确认网站是否被收录</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 搭博客少走弯路系列 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> GitHubPages </tag>
+            
+            <tag> 百度SEO </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>实验室-JS更改iframe的src属性</title>
+      <link href="/a18f.html"/>
+      <url>/a18f.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="实验室-JS更改iframe的src属性"><a href="#实验室-JS更改iframe的src属性" class="headerlink" title="实验室-JS更改iframe的src属性"></a>实验室-JS更改iframe的src属性</h1><p>Tip:其实这个是游戏集合功能的前身，但是因为很多大网站为了避免服务器资源被其他网站引用，或多或少会有关于防盗链的机制，所以百度、Github等网站都会提示拒绝连接</p><h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p><script>function edit_iframe(){ // 定义修改iframe的函数    document.getElementById("main").src = document.getElementById("inputurl").value;}</script><br>URL：<input id="inputurl"></input><button onclick="edit_iframe()">应用</button></p><p><iframe id="main" width="100%" height="600px"  src="https://ouyanghongqian.top" scrolling="yes">换个浏览器再来玩吧</iframe></p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">edit_iframe</span>(<span class="hljs-params"></span>)&#123; <span class="hljs-comment">// 定义修改iframe的函数</span></span><br><span class="language-javascript">    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;main&quot;</span>).<span class="hljs-property">src</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&quot;inputurl&quot;</span>).<span class="hljs-property">value</span>;</span><br><span class="language-javascript">&#125;</span><br><span class="language-javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>URL：<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;inputurl&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">input</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;edit_iframe()&quot;</span>&gt;</span>应用<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br><span class="hljs-comment">&lt;!-- input标签和一个按钮 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;main&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100%&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;600px&quot;</span>  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://ouyanghongqian.top&quot;</span> <span class="hljs-attr">scrolling</span>=<span class="hljs-string">&quot;yes&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span> //iframe窗口<br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实验室 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 实验室 </tag>
+            
+            <tag> 前端 </tag>
+            
+            <tag> Javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>便签周报-Release0007</title>
       <link href="/4e57.html"/>
       <url>/4e57.html</url>
@@ -162,6 +220,8 @@
             <tag> Blog </tag>
             
             <tag> 备案 </tag>
+            
+            <tag> GithubPages </tag>
             
         </tags>
       
