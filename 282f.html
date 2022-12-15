@@ -16,25 +16,22 @@
   <meta name="author" content="ouyhq2011">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="实验室-JavaScript在前端创建文件并下载效果展示这里有一个输入框，在里面输入一些文本，再点击下面的按钮，将会生成一个文本文件，其中将包含输入框内输入的内容  生成  function download() {     const file &#x3D; new File([document.getElementById(&#39;downloadText&#39;).value], &quot;download.txt&quot;,">
+    <meta name="description" content="本站使用指南（虽然是借鉴了can1425的小站评论使用指南，但是我出这期绝不是为了水一篇文章） 主页现在主要是采用的Hexo博客引擎+Fluid主题，点击页面标题和正文预览即可进入文章，上方是导航栏，点击对应文字即可进入对应功能，点击搜索图标即可搜索站内文章，点击月亮&#x2F;太阳图标可切换至深色&#x2F;浅色模式，当浏览至最下方时可点击右下角的向上箭头返回值页面最上方，或点击下一页&#x2F;上一页图标浏览更多文章，最下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="实验室-JS创建文件并下载">
-<meta property="og:url" content="https://ouyanghongqian.top/468c.html">
+<meta property="og:title" content="本站使用指南">
+<meta property="og:url" content="https://ouyanghongqian.top/282f.html">
 <meta property="og:site_name" content="ouyhq2011的博客">
-<meta property="og:description" content="实验室-JavaScript在前端创建文件并下载效果展示这里有一个输入框，在里面输入一些文本，再点击下面的按钮，将会生成一个文本文件，其中将包含输入框内输入的内容  生成  function download() {     const file &#x3D; new File([document.getElementById(&#39;downloadText&#39;).value], &quot;download.txt&quot;,">
+<meta property="og:description" content="本站使用指南（虽然是借鉴了can1425的小站评论使用指南，但是我出这期绝不是为了水一篇文章） 主页现在主要是采用的Hexo博客引擎+Fluid主题，点击页面标题和正文预览即可进入文章，上方是导航栏，点击对应文字即可进入对应功能，点击搜索图标即可搜索站内文章，点击月亮&#x2F;太阳图标可切换至深色&#x2F;浅色模式，当浏览至最下方时可点击右下角的向上箭头返回值页面最上方，或点击下一页&#x2F;上一页图标浏览更多文章，最下">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-12-04T11:45:40.000Z">
-<meta property="article:modified_time" content="2022-12-04T11:45:40.000Z">
+<meta property="article:published_time" content="2022-12-15T09:22:06.000Z">
+<meta property="article:modified_time" content="2022-12-15T09:22:06.000Z">
 <meta property="article:author" content="ouyhq2011">
-<meta property="article:tag" content="实验室">
-<meta property="article:tag" content="JavaScript">
-<meta property="article:tag" content="文件下载">
-<meta property="article:tag" content="前端">
+<meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>实验室-JS创建文件并下载 - ouyhq2011的博客</title>
+  <title>本站使用指南 - ouyhq2011的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -226,7 +223,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="实验室-JS创建文件并下载"></span>
+            <span id="subtitle" data-typed-text="本站使用指南"></span>
           
         </div>
 
@@ -242,8 +239,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-04 11:45" pubdate>
-          2022年12月4日 中午
+        <time datetime="2022-12-15 09:22" pubdate>
+          2022年12月15日 上午
         </time>
       </span>
     
@@ -254,7 +251,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          890 字
         
       </span>
     
@@ -265,7 +262,7 @@
         
         
         
-          10 分钟
+          8 分钟
         
       </span>
     
@@ -303,32 +300,26 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">实验室-JS创建文件并下载</h1>
+            <h1 style="display: none">本站使用指南</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="实验室-JavaScript在前端创建文件并下载"><a href="#实验室-JavaScript在前端创建文件并下载" class="headerlink" title="实验室-JavaScript在前端创建文件并下载"></a>实验室-JavaScript在前端创建文件并下载</h1><h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p>这里有一个输入框，在里面输入一些文本，再点击下面的按钮，将会生成一个文本文件，其中将包含输入框内输入的内容<br/></p>
-<p><input id='downloadText'></input> <button onclick="download()">生成</button></p>
-<script>
-function download() {
-    const file = new File([document.getElementById('downloadText').value], "download.txt", {
-        type: "text/plain",
-    });
-    const tmpLink = document.createElement("a");
-    const objectUrl = URL.createObjectURL(file);
-
-    tmpLink.href = objectUrl;
-    tmpLink.download = file.name;
-    document.body.appendChild(tmpLink);
-    tmpLink.click();
-
-    document.body.removeChild(tmpLink);
-    URL.revokeObjectURL(objectUrl);
-}
-</script>
-
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&#x27;downloadText&#x27;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">input</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;download()&quot;</span>&gt;</span>生成<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">download</span>(<span class="hljs-params"></span>) &#123;</span><br><span class="language-javascript">    <span class="hljs-keyword">const</span> file = <span class="hljs-keyword">new</span> <span class="hljs-title class_">File</span>([<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;downloadText&#x27;</span>).<span class="hljs-property">value</span>], <span class="hljs-string">&quot;download.txt&quot;</span>, &#123; <span class="hljs-comment">// js创建文件</span></span><br><span class="language-javascript">        <span class="hljs-attr">type</span>: <span class="hljs-string">&quot;text/plain&quot;</span>,</span><br><span class="language-javascript">    &#125;);</span><br><span class="language-javascript">    <span class="hljs-keyword">const</span> tmpLink = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;a&quot;</span>); <span class="hljs-comment">// 创建一个a元素</span></span><br><span class="language-javascript">    <span class="hljs-keyword">const</span> objectUrl = <span class="hljs-variable constant_">URL</span>.<span class="hljs-title function_">createObjectURL</span>(file); <span class="hljs-comment">// 给之前创建的文件添加url</span></span><br><span class="language-javascript"></span><br><span class="language-javascript">    tmpLink.<span class="hljs-property">href</span> = objectUrl;  <span class="hljs-comment">// 将a元素的href(跳转到的位置)设置为之前设定的文件url</span></span><br><span class="language-javascript">    tmpLink.<span class="hljs-property">download</span> = file.<span class="hljs-property">name</span>; <span class="hljs-comment">// 设定文件名</span></span><br><span class="language-javascript">    <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">appendChild</span>(tmpLink); <span class="hljs-comment">// 将a元素添加至页面中</span></span><br><span class="language-javascript">    tmpLink.<span class="hljs-title function_">click</span>(); <span class="hljs-comment">//点击a元素</span></span><br><span class="language-javascript"></span><br><span class="language-javascript">    <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">removeChild</span>(tmpLink); <span class="hljs-comment">//移除a元素和设定url</span></span><br><span class="language-javascript">    <span class="hljs-variable constant_">URL</span>.<span class="hljs-title function_">revokeObjectURL</span>(objectUrl);</span><br><span class="language-javascript">&#125;</span><br><span class="language-javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>
+                <h1 id="本站使用指南"><a href="#本站使用指南" class="headerlink" title="本站使用指南"></a>本站使用指南</h1><p><del>（虽然是借鉴了can1425的小站评论使用指南，但是我出这期绝不是为了水一篇文章）</del></p>
+<h2 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h2><p>现在主要是采用的<code>Hexo</code>博客引擎+<code>Fluid</code>主题，点击页面标题和正文预览即可进入文章，上方是导航栏，点击对应文字即可进入对应功能，点击<code>搜索图标</code>即可搜索站内文章，点击<code>月亮/太阳</code>图标可切换至<code>深色/浅色</code>模式，当浏览至最下方时可点击右下角的向上箭头返回值页面最上方，或点击<code>下一页/上一页</code>图标浏览更多文章，最下方显示备案号和<code>Hexo博客引擎</code>、<code>Fluid主题</code>、<code>GitHub主页</code></p>
+<h2 id="归档"><a href="#归档" class="headerlink" title="归档"></a>归档</h2><p>点击本站内任意页面上方导航栏-归档即可进入，可在此浏览全部文章</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>会根据文章结尾的分类进行分组，点击对应分类即可展开此分类下的所有文章，点击标题浏览</p>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><p>会根据文章结尾给文章添加的标签进行分组，最终会根据标签在所有文章中占得数量设置对应标签的大小，点击标签后会列出所有含有对应标签的文章</p>
+<h2 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h2><p>（这里直接copy关于页的内容了，懒得介绍）</p>
+<p>感谢关注我的网站，本站是使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo博客引擎</a> 和 <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid主题</a> ，如果你觉得不错也不妨尝试一下</p>
+<p>我是一名学生，热爱编程，目前涉足 Python / Scratch 语言</p>
+<p>我也是一名游戏玩家，平常喜欢打音游还有各种奇奇怪怪的小游戏和 <a target="_blank" rel="noopener" href="https://bilibili.com/">Bilibili</a> <del>（同时是个社恐）</del></p>
+<p>我还会进行写作，本博客绝大部分文章都是我的原创作品，如果你喜欢，可以在文章下评论，与我交流</p>
+<p>以后我还会开发出更多的开源作品，再次感谢你的关注和阅读</p>
+<h2 id="游戏集合"><a href="#游戏集合" class="headerlink" title="游戏集合"></a>游戏集合</h2><p>目前上线的一个小游戏集合，点击导航栏上方即可进入，在游戏设置区选择想玩的游戏和游戏窗口的高即可游玩</p>
+<h2 id="友链"><a href="#友链" class="headerlink" title="友链"></a>友链</h2><p>友情链接，点击<code>头像\标题或介绍</code>即可跳转到对应链接，欢迎在友链链接下互换友链~</p>
+<h2 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h2><p>本站支持RSS订阅（简易信息聚合），链接<a href="https://ouyanghongqian.top/rss.xml">https://ouyanghongqian.top/rss.xml</a>，添加到RSS阅读器内即可使用</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>右方区域可选择需要浏览的部分，点击需要浏览部分的标题即可跳转到相应位置，文章如还进行过更新将会在文章上方显示，结尾可根据标签和分类跳转到对应的<code>分类页面/标签页面</code>，同时结尾还会显示此文作者、发布时间，许可协议，还可以跳转到下一篇继续阅读，或者在下面发表评论</p>
 
                 
               </div>
@@ -337,40 +328,6 @@ function download() {
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%AE%9E%E9%AA%8C%E5%AE%A4/" class="category-chain-item">实验室</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/%E5%AE%9E%E9%AA%8C%E5%AE%A4/">#实验室</a>
-      
-        <a href="/tags/JavaScript/">#JavaScript</a>
-      
-        <a href="/tags/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/">#文件下载</a>
-      
-        <a href="/tags/%E5%89%8D%E7%AB%AF/">#前端</a>
-      
-    </div>
   
 </div>
 
@@ -380,8 +337,8 @@ function download() {
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>实验室-JS创建文件并下载</div>
-      <div>https://ouyanghongqian.top/468c.html</div>
+      <div>本站使用指南</div>
+      <div>https://ouyanghongqian.top/282f.html</div>
     </div>
     <div class="license-meta">
       
@@ -393,7 +350,7 @@ function download() {
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年12月4日</div>
+          <div>2022年12月15日</div>
         </div>
       
       
@@ -425,18 +382,12 @@ function download() {
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/4e57.html" title="便签周报-Release0007">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">便签周报-Release0007</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/8e96.html" title="便签周报-Release0006">
-                        <span class="hidden-mobile">便签周报-Release0006</span>
+                      <a href="/9150.html" title="搭博客少走弯路-GithubPage 百度SEO篇">
+                        <span class="hidden-mobile">搭博客少走弯路-GithubPage 百度SEO篇</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
