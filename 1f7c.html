@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="zh-CN" data-default-color-scheme=dark>
-
+<link rel="manifest" href="/manifest.json">
 
 
 <head>
@@ -26,16 +26,15 @@
 <meta property="article:published_time" content="2022-12-01T13:44:53.000Z">
 <meta property="article:modified_time" content="2022-12-09T13:44:53.000Z">
 <meta property="article:author" content="ouyhq2011">
+<meta property="article:tag" content="教程">
 <meta property="article:tag" content="Minecraft">
 <meta property="article:tag" content="开服">
 <meta property="article:tag" content="网页版MC">
-<meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
   <title>教程-搭建能在网页玩的MC - ouyhq2011的博客</title>
-
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
@@ -83,9 +82,21 @@
   <script  src="/js/color-schema.js" ></script>
   
 
-
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function (registration) {
+                    console.log('sw.js 注册成功', registration.scope);
+                })
+                .catch(function (err) {
+                    console.log('sw.js 注册失败 ', err);
+                });
+         });
+    }
+  </script>
   
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
 </head>
 
 
@@ -157,18 +168,6 @@
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
               </a>
             </li>
           
@@ -361,13 +360,13 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
+        <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
+      
         <a href="/tags/Minecraft/">#Minecraft</a>
       
         <a href="/tags/%E5%BC%80%E6%9C%8D/">#开服</a>
       
         <a href="/tags/%E7%BD%91%E9%A1%B5%E7%89%88MC/">#网页版MC</a>
-      
-        <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
       
     </div>
   

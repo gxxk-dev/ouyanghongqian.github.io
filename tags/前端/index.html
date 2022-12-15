@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="zh-CN" data-default-color-scheme=dark>
-
+<link rel="manifest" href="/manifest.json">
 
 
 <head>
@@ -30,7 +30,6 @@
   
   
   <title>标签 - 前端 - ouyhq2011的博客</title>
-
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
@@ -72,9 +71,21 @@
   <script  src="/js/color-schema.js" ></script>
   
 
-
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function (registration) {
+                    console.log('sw.js 注册成功', registration.scope);
+                })
+                .catch(function (err) {
+                    console.log('sw.js 注册失败 ', err);
+                });
+         });
+    }
+  </script>
   
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
 </head>
 
 
@@ -146,18 +157,6 @@
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
               </a>
             </li>
           

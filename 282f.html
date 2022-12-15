@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="zh-CN" data-default-color-scheme=dark>
-
+<link rel="manifest" href="/manifest.json">
 
 
 <head>
@@ -32,7 +32,6 @@
   
   
   <title>本站使用指南 - ouyhq2011的博客</title>
-
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
@@ -80,9 +79,21 @@
   <script  src="/js/color-schema.js" ></script>
   
 
-
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function (registration) {
+                    console.log('sw.js 注册成功', registration.scope);
+                })
+                .catch(function (err) {
+                    console.log('sw.js 注册失败 ', err);
+                });
+         });
+    }
+  </script>
   
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
 </head>
 
 
@@ -154,18 +165,6 @@
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
                 标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
               </a>
             </li>
           
@@ -251,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          890 字
+          1.1k 字
         
       </span>
     
@@ -262,7 +261,7 @@
         
         
         
-          8 分钟
+          10 分钟
         
       </span>
     
@@ -318,8 +317,9 @@
 <p>以后我还会开发出更多的开源作品，再次感谢你的关注和阅读</p>
 <h2 id="游戏集合"><a href="#游戏集合" class="headerlink" title="游戏集合"></a>游戏集合</h2><p>目前上线的一个小游戏集合，点击导航栏上方即可进入，在游戏设置区选择想玩的游戏和游戏窗口的高即可游玩</p>
 <h2 id="友链"><a href="#友链" class="headerlink" title="友链"></a>友链</h2><p>友情链接，点击<code>头像\标题或介绍</code>即可跳转到对应链接，欢迎在友链链接下互换友链~</p>
-<h2 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h2><p>本站支持RSS订阅（简易信息聚合），链接<a href="https://ouyanghongqian.top/rss.xml">https://ouyanghongqian.top/rss.xml</a>，添加到RSS阅读器内即可使用</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>右方区域可选择需要浏览的部分，点击需要浏览部分的标题即可跳转到相应位置，文章如还进行过更新将会在文章上方显示，结尾可根据标签和分类跳转到对应的<code>分类页面/标签页面</code>，同时结尾还会显示此文作者、发布时间，许可协议，还可以跳转到下一篇继续阅读，或者在下面发表评论</p>
+<h2 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h2><p>本站支持RSS订阅（简易信息聚合），链接<a href="https://ouyanghongqian.top/rss.xml">https://ouyanghongqian.top/rss.xml</a>，添加到RSS阅读器（建议使用irreader）内即可使用</p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>右方区域可选择需要浏览的部分，点击需要浏览部分的标题即可跳转到相应位置，文章如还进行过更新将会在文章上方显示，结尾可根据标签和分类跳转到对应的<code>分类页面/标签页面</code>，同时结尾还会显示此文作者、发布时间，许可协议，还可以跳转到下一篇继续阅读，或者在下面发表评论，点击“印”字印下你对他人的看法</p>
+<h2 id="PWA应用"><a href="#PWA应用" class="headerlink" title="PWA应用"></a>PWA应用</h2><p>当您访问本站时，可能会注意到电脑端地址栏多出来的一个小图标，或是手机下方的<code>将“ouyhq2011的博客”添加至桌面</code> 的小按钮，看到这些，说明您的浏览器支持PWA应用，您可以点击添加按钮来将网页缓存至本地，并且将自动在桌面添加入口，点击桌面上的<code>ouyhq2011的博客</code>，将访问此网站，离线时自动启用有网时缓存的版本（浏览器并不会缓存所有内容，而是在PWA应用上浏览过的内容）</p>
 
                 
               </div>
@@ -381,6 +381,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/4292.html" title="搭博客少走弯路-Hexo启用PWA">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">搭博客少走弯路-Hexo启用PWA</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">

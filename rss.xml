@@ -6,7 +6,7 @@
   <link href="https://ouyanghongqian.top/rss.xml" rel="self"/>
   
   <link href="https://ouyanghongqian.top/"/>
-  <updated>2022-12-15T09:22:06.000Z</updated>
+  <updated>2022-12-15T20:40:21.000Z</updated>
   <id>https://ouyanghongqian.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭博客少走弯路-Hexo启用PWA</title>
+    <link href="https://ouyanghongqian.top/4292.html"/>
+    <id>https://ouyanghongqian.top/4292.html</id>
+    <published>2022-12-15T20:40:21.000Z</published>
+    <updated>2022-12-15T20:40:21.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;搭博客少走弯路-Hexo启用PWA&quot;&gt;&lt;a href=&quot;#搭博客少走弯路-Hexo启用PWA&quot; class=&quot;headerlink&quot; title=&quot;搭博客少走弯路-Hexo启用PWA&quot;&gt;&lt;/a&gt;搭博客少走弯路-Hexo启用PWA&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="搭博客少走弯路" scheme="https://ouyanghongqian.top/categories/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B0%91%E8%B5%B0%E5%BC%AF%E8%B7%AF/"/>
+    
+    
+    <category term="Hexo" scheme="https://ouyanghongqian.top/tags/Hexo/"/>
+    
+    <category term="PWA应用" scheme="https://ouyanghongqian.top/tags/PWA%E5%BA%94%E7%94%A8/"/>
+    
+    <category term="教程" scheme="https://ouyanghongqian.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>本站使用指南</title>
@@ -198,13 +224,13 @@
     <category term="MC教程" scheme="https://ouyanghongqian.top/categories/MC%E6%95%99%E7%A8%8B/"/>
     
     
+    <category term="教程" scheme="https://ouyanghongqian.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
     <category term="Minecraft" scheme="https://ouyanghongqian.top/tags/Minecraft/"/>
     
     <category term="开服" scheme="https://ouyanghongqian.top/tags/%E5%BC%80%E6%9C%8D/"/>
     
     <category term="网页版MC" scheme="https://ouyanghongqian.top/tags/%E7%BD%91%E9%A1%B5%E7%89%88MC/"/>
-    
-    <category term="教程" scheme="https://ouyanghongqian.top/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="zh-CN" data-default-color-scheme=dark>
-
+<link rel="manifest" href="/manifest.json">
 
 
 <head>
@@ -16,23 +16,20 @@
   <meta name="author" content="ouyhq2011">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="感谢关注我的网站，本站是使用 Hexo博客引擎 和 Fluid主题 ，如果你觉得不错也不妨尝试一下 我是一名学生，热爱编程，目前涉足 Python &#x2F; Scratch 语言 我也是一名游戏玩家，平常喜欢打音游还有各种奇奇怪怪的小游戏和 Bilibili （同时是个社恐） 我还会进行写作，本博客绝大部分文章都是我的原创作品，如果你喜欢，可以在文章下评论，与我交流 以后我还会开发出更多的开源作品，再次">
+    <meta name="description" content="只是一个个人博客而已">
 <meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="https://ouyanghongqian.top/about/index.html">
+<meta property="og:title" content="标签 - Hexo">
+<meta property="og:url" content="https://ouyanghongqian.top/tags/Hexo/index.html">
 <meta property="og:site_name" content="ouyhq2011的博客">
-<meta property="og:description" content="感谢关注我的网站，本站是使用 Hexo博客引擎 和 Fluid主题 ，如果你觉得不错也不妨尝试一下 我是一名学生，热爱编程，目前涉足 Python &#x2F; Scratch 语言 我也是一名游戏玩家，平常喜欢打音游还有各种奇奇怪怪的小游戏和 Bilibili （同时是个社恐） 我还会进行写作，本博客绝大部分文章都是我的原创作品，如果你喜欢，可以在文章下评论，与我交流 以后我还会开发出更多的开源作品，再次">
+<meta property="og:description" content="只是一个个人博客而已">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-11-18T20:22:50.000Z">
-<meta property="article:modified_time" content="2022-11-18T12:57:22.000Z">
 <meta property="article:author" content="ouyhq2011">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>关于我 - ouyhq2011的博客</title>
-
+  <title>标签 - Hexo - ouyhq2011的博客</title>
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
@@ -74,9 +71,21 @@
   <script  src="/js/color-schema.js" ></script>
   
 
-
+  <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function (registration) {
+                    console.log('sw.js 注册成功', registration.scope);
+                })
+                .catch(function (err) {
+                    console.log('sw.js 注册失败 ', err);
+                });
+         });
+    }
+  </script>
   
-<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/rss.xml" title="ouyhq2011的博客" type="application/atom+xml">
 </head>
 
 
@@ -87,7 +96,7 @@
     </script>
 
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 80vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -157,18 +166,6 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
               <a class="nav-link" href="/games/">
                 <i class="iconfont icon-th-large"></i>
                 游戏集合
@@ -217,13 +214,17 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="关于我"></span>
+            <span id="subtitle" data-typed-text="标签 - Hexo"></span>
           
         </div>
 
         
       </div>
 
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
       
     </div>
   </div>
@@ -244,18 +245,24 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<article class="page-content">
-  <p>感谢关注我的网站，本站是使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo博客引擎</a> 和 <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid主题</a> ，如果你觉得不错也不妨尝试一下</p>
-<p>我是一名学生，热爱编程，目前涉足 Python / Scratch 语言</p>
-<p>我也是一名游戏玩家，平常喜欢打音游还有各种奇奇怪怪的小游戏和 <a target="_blank" rel="noopener" href="https://bilibili.com">Bilibili</a> <del>（同时是个社恐）</del></p>
-<p>我还会进行写作，本博客绝大部分文章都是我的原创作品，如果你喜欢，可以在文章下评论，与我交流</p>
-<p>以后我还会开发出更多的开源作品，再次感谢你的关注和阅读</p>
-
-
+<div class="list-group">
+  <p class="h4">共计 1 篇文章</p>
+  <hr>
   
+  
+    
+      
+      <p class="h5">2022</p>
+    
+    <a href="/4292.html" class="list-group-item list-group-item-action">
+      <time>12-15</time>
+      <div class="list-group-item-title">搭博客少走弯路-Hexo启用PWA</div>
+    </a>
+  
+</div>
 
 
-</article>
+
 
 
               </div>
