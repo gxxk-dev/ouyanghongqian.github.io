@@ -16,12 +16,12 @@
   <meta name="author" content="ouyhq2011">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="搭博客少走弯路-Hexo启用PWA前言最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中支持PWA这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就支持多平台，电脑、手机均可使用，同时可离线访问，便赶紧给自己博客加上，但大多都不适合新版本使用，如hexo-pwa，不支持hexo@4.2.0及以上的版本，而hexo-offline说可">
+    <meta name="description" content="搭博客少走弯路-Hexo启用PWA前言最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中支持PWA这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就支持多平台，电脑、手机均可使用，同时可离线访问，便赶紧给自己博客加上，但大多都不适合新版本使用，如hexo-pwa，不支持hexo@4.2.0及以上的版本，最终翻了几篇教程，在实践了一下">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭博客少走弯路-Hexo启用PWA">
 <meta property="og:url" content="https://ouyanghongqian.top/4292.html">
 <meta property="og:site_name" content="ouyhq2011的博客">
-<meta property="og:description" content="搭博客少走弯路-Hexo启用PWA前言最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中支持PWA这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就支持多平台，电脑、手机均可使用，同时可离线访问，便赶紧给自己博客加上，但大多都不适合新版本使用，如hexo-pwa，不支持hexo@4.2.0及以上的版本，而hexo-offline说可">
+<meta property="og:description" content="搭博客少走弯路-Hexo启用PWA前言最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中支持PWA这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就支持多平台，电脑、手机均可使用，同时可离线访问，便赶紧给自己博客加上，但大多都不适合新版本使用，如hexo-pwa，不支持hexo@4.2.0及以上的版本，最终翻了几篇教程，在实践了一下">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-15T20:40:21.000Z">
 <meta property="article:modified_time" content="2022-12-15T20:40:21.000Z">
@@ -263,7 +263,7 @@
         
         
         
-          30 分钟
+          29 分钟
         
       </span>
     
@@ -306,7 +306,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="搭博客少走弯路-Hexo启用PWA"><a href="#搭博客少走弯路-Hexo启用PWA" class="headerlink" title="搭博客少走弯路-Hexo启用PWA"></a>搭博客少走弯路-Hexo启用PWA</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中<code>支持PWA</code>这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就<strong>支持多平台</strong>，电脑、手机均可使用，同时<strong>可离线访问</strong>，便赶紧给自己博客加上，但大多都不适合新版本使用，如<code>hexo-pwa</code>，不支持<code>hexo@4.2.0</code>及以上的版本，而<code>hexo-offline</code>说可以提供离线访问之类的效果，但是实际体验起来感觉似乎没什么区别（如果是我打开方式不对，请大佬指教），最终翻了几篇教程，在实践了一下，总结出一片教程，可通过非插件方式让<code>Hexo</code>支持<code>PWA</code></p>
+                <h1 id="搭博客少走弯路-Hexo启用PWA"><a href="#搭博客少走弯路-Hexo启用PWA" class="headerlink" title="搭博客少走弯路-Hexo启用PWA"></a>搭博客少走弯路-Hexo启用PWA</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中<code>支持PWA</code>这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就<strong>支持多平台</strong>，电脑、手机均可使用，同时<strong>可离线访问</strong>，便赶紧给自己博客加上，但大多都不适合新版本使用，如<code>hexo-pwa</code>，不支持<code>hexo@4.2.0</code>及以上的版本，最终翻了几篇教程，在实践了一下，总结出一片教程，可通过非插件方式让<code>Hexo</code>支持<code>PWA</code></p>
 <p>本文借鉴了<a target="_blank" rel="noopener" href="https://senorui.github.io/posts/bce7.html">https://senorui.github.io/posts/bce7.html</a>，作者<a target="_blank" rel="noopener" href="https://senorui.github.io/">Senorui</a></p>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
 <li>全站HTTPS，因为PWA仅支持HTTPS站点</li>
