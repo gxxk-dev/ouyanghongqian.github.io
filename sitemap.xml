@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ouyanghongqian.top/cbf1.html</loc>
+    
+    <lastmod>2022-12-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ouyanghongqian.top/1157.html</loc>
     
     <lastmod>2022-12-18</lastmod>
@@ -234,20 +243,6 @@
   </url>
   
   <url>
-    <loc>https://ouyanghongqian.top/tags/Hexo/</loc>
-    <lastmod>2022-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://ouyanghongqian.top/tags/PWA%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2022-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ouyanghongqian.top/tags/Blog/</loc>
     <lastmod>2022-12-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -263,6 +258,20 @@
   
   <url>
     <loc>https://ouyanghongqian.top/tags/GithubPages/</loc>
+    <lastmod>2022-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ouyanghongqian.top/tags/Hexo/</loc>
+    <lastmod>2022-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ouyanghongqian.top/tags/PWA%E5%BA%94%E7%94%A8/</loc>
     <lastmod>2022-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
