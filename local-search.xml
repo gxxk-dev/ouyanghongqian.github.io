@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>搭博客少走弯路-搭建Hexo博客</title>
+    <link href="/4028.html"/>
+    <url>/4028.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="搭博客少走弯路-搭建Hexo博客"><a href="#搭博客少走弯路-搭建Hexo博客" class="headerlink" title="搭博客少走弯路-搭建Hexo博客"></a>搭博客少走弯路-搭建Hexo博客</h1><p>（新年的第一篇文章！好耶~）</p><p>注：本文操作时为了图方便，使用虚拟机录制操作过程，实际操作时直接在实体机操作即可，同时本文仅提供搭建教程<span class="heimu" title="你知道的太多了（悲">（因为美化教程等一大堆的东西足够我再水一篇文章，所以这玩意就被我拿来放到下一期的内容了）</span></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近网上冲浪时发现百度上有很多质量残差不齐的搭建博客教程，这些教程大多都是互相抄袭，2023年发的还是2020的教程，没有多大的参考教程，于是我便打算自己来写一篇教程</p><h2 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h2><ul><li>电脑（如只能使用Android系统设备，请移步<a href="https://www.jianshu.com/p/4c3d679bb4d9">https://www.jianshu.com/p/4c3d679bb4d9</a>）</li><li>翻越GFW所用的<a href="https://web.doggo.top/#/register?code=XcEv90Ya">梯子</a>（Github的push服务器处于半墙状态，不稳定）</li><li>Git</li><li>Node.JS</li><li>NPM</li></ul><p>（如后3个软件环境没有，可参考下面的部署基础环境）</p><h2 id="部署基础环境"><a href="#部署基础环境" class="headerlink" title="部署基础环境"></a>部署基础环境</h2><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>在<a href="https://pc.qq.com/detail/13/detail_22693.html">https://pc.qq.com/detail/13/detail_22693.html</a>下载Git，不要选择安全下载，选择立即下载，下载完成后打开程序，直接无脑下一步即可</p><h3 id="Node-JS"><a href="#Node-JS" class="headerlink" title="Node.JS"></a>Node.JS</h3><p>下载传送门：<a href="https://pc.qq.com/detail/5/detail_24845.html">https://pc.qq.com/detail/5/detail_24845.html</a></p><p>和Git的下载步骤一样，无脑下一步即可，Node.JS安装后自带npm</p><p>此时如果安装完毕，在任意位置打开命令行，输入以下代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm -v<br>git -v<br></code></pre></td></tr></table></figure><p>一般出现下面的情况，就算是成功了（部分版本号可能存在微小差异，属正常现象）</p><p><img src="/img/post-4.png" alt=""></p><h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><p>在一个你喜欢的文件夹下打开命令行窗口，输入以下代码（记得去掉<code>//</code>以后的东西，也就是注释）：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm config <span class="hljs-built_in">set</span> registry https://registry.npm.taobao.com //更换镜像源<br>npm i hexo -g //安装Hexo<br>hexo init //初始化博客<br></code></pre></td></tr></table></figure><p>如果运行正常，这个目录下会产生这样的目录结构，这时，这个文件夹就成为了你的博客文件夹</p><p><img src="/img/post-5.png" alt=""></p><h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h2><div class="note note-warning">            <p>注：本文此部分仅介绍常用的几个配置选项，具体信息详见[官方文档]<a href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a>)</p>          </div><h3 id="站点信息"><a href="#站点信息" class="headerlink" title="站点信息"></a>站点信息</h3><div class="note note-info">            <p>具体位置：<code># Site</code></p>          </div><ul><li><p><code>title</code>：站点标题</p></li><li><p><code>subtitle</code>：站点子标题，部分主体会将此作为页面</p></li><li><p><code>description</code>：站点介绍，一般用于搜索引擎获取页面时的介绍</p></li><li><p><code>keywords</code>：站点关键词，一般用于搜索引擎给这个网站贴的“标签”</p></li><li><p><code>author</code>：站点文章作者，用于文章页显示文章作者，可开启多作者模式</p></li><li><p><code>language</code>：站点语言，此选项将影响到浏览器访问时会不会显示”将xx语言翻译为中文？”，建议<code>zh-CN</code></p></li><li><p><code>timezone</code>：站点时区，用于文章时间显示等功能，建议为<code>&#39;timezone&#39;</code></p></li></ul><h3 id="URL设置"><a href="#URL设置" class="headerlink" title="URL设置"></a>URL设置</h3><div class="note note-info">            <p>具体位置：<code># URL</code></p>          </div><ul><li><code>url</code>：站点访问地址</li><li><code>root</code>：站点根目录，建议为<code>/</code>，如果将站点放置于子目录时需要特别设置</li><li><code>permalink</code>：站点文章访问链接模板，不建议经常更改，可能会影响到SEO权重</li><li><p><code>pretty_urls</code>：</p><blockquote><p><code>trailing_index</code>：开启后，允许将访问目录重定向到访问目录下的<code>index.html</code><br><code>trailing_html</code>：开启后，路径后面将去掉.html后缀</p></blockquote></li></ul><h3 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h3><div class="note note-info">            <p>此处仅设置所使用的主题，不设置主题内细分出的各项设置</p>          </div><p>具体位置：<code># Extensions</code></p><ul><li><code>theme</code>：站点使用的主题</li></ul><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><div class="note note-info">            <p>注：此部分仅介绍常用的部署方式，具体信息详见<a href="https://hexo.io/zh-cn/docs/one-command-deployment">官方文档</a></p>          </div><p>具体位置： <code># Deployment</code></p><ul><li><p><code>deploy</code>：</p><blockquote><p><code>type</code>：部署所使用的类型，这里是 <code>Git</code><br><code>repo</code>：部署的仓库，一般为<code>https://xxx.com/xxx/xxx.git</code><br><code>branch</code>：部署的分支，建议为仓库初始分支，一般为 <code>master</code></p></blockquote></li></ul><h4 id="多端部署"><a href="#多端部署" class="headerlink" title="多端部署"></a>多端部署</h4><ul><li><code>deploy</code>：<blockquote><ul><li><code>type</code>：部署所用的类型<blockquote><p>此处是关于部署的详细信息</p></blockquote></li><li><code>type</code>：部署所用的类型<blockquote><p>此处是关于部署的详细信息</p></blockquote></li></ul></blockquote></li></ul><p>Hexo会按配置文件中的顺序执行每个部署设置</p><h2 id="本地预览博客"><a href="#本地预览博客" class="headerlink" title="本地预览博客"></a>本地预览博客</h2><p>在博客的文件夹下打开一个命令行窗口，直接输入<code>hexo s</code>即可</p><p>成功后，本机的<code>4000</code>端口会开放连接，访问<code>localhost:4000</code>即可预览</p><p>预览功能可与 <a href="/cbf1.html" title="搭博客少走弯路-在线管理Hexo站点">搭博客少走弯路-在线管理Hexo站点</a>）这篇文章所介绍的<code>Hexo-Admin</code>插件搭配使用，本地在线编辑，完成后直接发布到网络上</p><p>注：hexo清理已生成文件，生成新的博客文件只修改博客根目录下的<code>db.json</code>文件和<code>public</code>文件夹，实际预览是根据markdown文件源码生成的，所以hexo也可以做到修改后直接看到效果</p><h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><div class="note note-warning">            <p>注：此功能需要先配置好_config.yml内的deploy字段</p>          </div><p>在博客文件夹下打开一个命令行窗口，输入以下代码：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo cl<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>搭博客少走弯路</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+      <tag>教程</tag>
+      
+      <tag>Blog</tag>
+      
+      <tag>搭博客少走弯路</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>科普-什么是CDN</title>
     <link href="/4897.html"/>
     <url>/4897.html</url>

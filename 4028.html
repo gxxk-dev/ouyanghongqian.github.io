@@ -16,23 +16,28 @@
   <meta name="author" content="ouyhq2011">
   <meta name="keywords" content="Blog">
   
-    <meta name="description" content="科普-什么是CDN新系列来啦！ 欧耶~  其实 什么事CDN 这篇文章最开始的时候就写过一会，但是因为当时技术力欠佳，在网站更新中被删掉了   当时写的东西几乎都是答辩 没啥价值 属于是黑历史了 :P   而且这篇是仿照着Can1425的博客大揭秘写的，大佬轻喷pls  CDN的历史在1991年后的近十年时间，人们主要通过拨号方式入网，网络又慢又贵，但随着互联网的发展，提供内容的服务器和骨干传输网">
+    <meta name="description" content="搭博客少走弯路-搭建Hexo博客（新年的第一篇文章！好耶~） 注：本文操作时为了图方便，使用虚拟机录制操作过程，实际操作时直接在实体机操作即可，同时本文仅提供搭建教程（因为美化教程等一大堆的东西足够我再水一篇文章，所以这玩意就被我拿来放到下一期的内容了） 前言最近网上冲浪时发现百度上有很多质量残差不齐的搭建博客教程，这些教程大多都是互相抄袭，2023年发的还是2020的教程，没有多大的参考教程，于">
 <meta property="og:type" content="article">
-<meta property="og:title" content="科普-什么是CDN">
-<meta property="og:url" content="https://ouyanghongqian.top/4897.html">
+<meta property="og:title" content="搭博客少走弯路-搭建Hexo博客">
+<meta property="og:url" content="https://ouyanghongqian.top/4028.html">
 <meta property="og:site_name" content="ouyhq2011的博客">
-<meta property="og:description" content="科普-什么是CDN新系列来啦！ 欧耶~  其实 什么事CDN 这篇文章最开始的时候就写过一会，但是因为当时技术力欠佳，在网站更新中被删掉了   当时写的东西几乎都是答辩 没啥价值 属于是黑历史了 :P   而且这篇是仿照着Can1425的博客大揭秘写的，大佬轻喷pls  CDN的历史在1991年后的近十年时间，人们主要通过拨号方式入网，网络又慢又贵，但随着互联网的发展，提供内容的服务器和骨干传输网">
+<meta property="og:description" content="搭博客少走弯路-搭建Hexo博客（新年的第一篇文章！好耶~） 注：本文操作时为了图方便，使用虚拟机录制操作过程，实际操作时直接在实体机操作即可，同时本文仅提供搭建教程（因为美化教程等一大堆的东西足够我再水一篇文章，所以这玩意就被我拿来放到下一期的内容了） 前言最近网上冲浪时发现百度上有很多质量残差不齐的搭建博客教程，这些教程大多都是互相抄袭，2023年发的还是2020的教程，没有多大的参考教程，于">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-12-22T19:07:26.000Z">
-<meta property="article:modified_time" content="2022-12-22T19:07:26.000Z">
+<meta property="og:image" content="https://ouyanghongqian.top/img/post-4.png">
+<meta property="og:image" content="https://ouyanghongqian.top/img/post-5.png">
+<meta property="article:published_time" content="2023-01-11T08:47:07.000Z">
+<meta property="article:modified_time" content="2023-01-11T08:47:07.000Z">
 <meta property="article:author" content="ouyhq2011">
-<meta property="article:tag" content="科普">
-<meta property="article:tag" content="CDN">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="搭博客少走弯路">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ouyanghongqian.top/img/post-4.png">
   
   
   
-  <title>科普-什么是CDN - ouyhq2011的博客</title>
+  <title>搭博客少走弯路-搭建Hexo博客 - ouyhq2011的博客</title>
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
@@ -229,7 +234,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="科普-什么是CDN"></span>
+            <span id="subtitle" data-typed-text="搭博客少走弯路-搭建Hexo博客"></span>
           
         </div>
 
@@ -245,8 +250,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-22 19:07" pubdate>
-          2022年12月22日 晚上
+        <time datetime="2023-01-11 08:47" pubdate>
+          2023年1月11日 早上
         </time>
       </span>
     
@@ -257,7 +262,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          1.9k 字
         
       </span>
     
@@ -268,7 +273,7 @@
         
         
         
-          20 分钟
+          18 分钟
         
       </span>
     
@@ -305,47 +310,111 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">科普-什么是CDN</h1>
+            <h1 style="display: none">搭博客少走弯路-搭建Hexo博客</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="科普-什么是CDN"><a href="#科普-什么是CDN" class="headerlink" title="科普-什么是CDN"></a>科普-什么是CDN</h1><p><strong>新系列来啦！ 欧耶~</strong></p>
+                <h1 id="搭博客少走弯路-搭建Hexo博客"><a href="#搭博客少走弯路-搭建Hexo博客" class="headerlink" title="搭博客少走弯路-搭建Hexo博客"></a>搭博客少走弯路-搭建Hexo博客</h1><p>（新年的第一篇文章！好耶~）</p>
+<p>注：本文操作时为了图方便，使用虚拟机录制操作过程，实际操作时直接在实体机操作即可，同时本文仅提供搭建教程<span class="heimu" title="你知道的太多了（悲">（因为美化教程等一大堆的东西足够我再水一篇文章，所以这玩意就被我拿来放到下一期的内容了）</span></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近网上冲浪时发现百度上有很多质量残差不齐的搭建博客教程，这些教程大多都是互相抄袭，2023年发的还是2020的教程，没有多大的参考教程，于是我便打算自己来写一篇教程</p>
+<h2 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h2><ul>
+<li>电脑（如只能使用Android系统设备，请移步<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/4c3d679bb4d9">https://www.jianshu.com/p/4c3d679bb4d9</a>）</li>
+<li>翻越GFW所用的<a target="_blank" rel="noopener" href="https://web.doggo.top/#/register?code=XcEv90Ya">梯子</a>（Github的push服务器处于半墙状态，不稳定）</li>
+<li>Git</li>
+<li>Node.JS</li>
+<li>NPM</li>
+</ul>
+<p>（如后3个软件环境没有，可参考下面的部署基础环境）</p>
+<h2 id="部署基础环境"><a href="#部署基础环境" class="headerlink" title="部署基础环境"></a>部署基础环境</h2><h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>在<a target="_blank" rel="noopener" href="https://pc.qq.com/detail/13/detail_22693.html">https://pc.qq.com/detail/13/detail_22693.html</a>下载Git，不要选择安全下载，选择立即下载，下载完成后打开程序，直接无脑下一步即可</p>
+<h3 id="Node-JS"><a href="#Node-JS" class="headerlink" title="Node.JS"></a>Node.JS</h3><p>下载传送门：<a target="_blank" rel="noopener" href="https://pc.qq.com/detail/5/detail_24845.html">https://pc.qq.com/detail/5/detail_24845.html</a></p>
+<p>和Git的下载步骤一样，无脑下一步即可，Node.JS安装后自带npm</p>
+<p>此时如果安装完毕，在任意位置打开命令行，输入以下代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm -v<br>git -v<br></code></pre></td></tr></table></figure>
+<p>一般出现下面的情况，就算是成功了（部分版本号可能存在微小差异，属正常现象）</p>
+<p><img src="/img/post-4.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><p>在一个你喜欢的文件夹下打开命令行窗口，输入以下代码（记得去掉<code>//</code>以后的东西，也就是注释）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm config <span class="hljs-built_in">set</span> registry https://registry.npm.taobao.com //更换镜像源<br>npm i hexo -g //安装Hexo<br>hexo init //初始化博客<br></code></pre></td></tr></table></figure>
+<p>如果运行正常，这个目录下会产生这样的目录结构，这时，这个文件夹就成为了你的博客文件夹</p>
+<p><img src="/img/post-5.png" srcset="/img/loading.gif" lazyload alt=""></p>
+<h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h2><div class="note note-warning">
+            <p>注：本文此部分仅介绍常用的几个配置选项，具体信息详见[官方文档]<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a>)</p>
+          </div>
+<h3 id="站点信息"><a href="#站点信息" class="headerlink" title="站点信息"></a>站点信息</h3><div class="note note-info">
+            <p>具体位置：<code># Site</code></p>
+          </div>
+<ul>
+<li><p><code>title</code>：站点标题</p>
+</li>
+<li><p><code>subtitle</code>：站点子标题，部分主体会将此作为页面</p>
+</li>
+<li><p><code>description</code>：站点介绍，一般用于搜索引擎获取页面时的介绍</p>
+</li>
+<li><p><code>keywords</code>：站点关键词，一般用于搜索引擎给这个网站贴的“标签”</p>
+</li>
+<li><p><code>author</code>：站点文章作者，用于文章页显示文章作者，可开启多作者模式</p>
+</li>
+<li><p><code>language</code>：站点语言，此选项将影响到浏览器访问时会不会显示”将xx语言翻译为中文？”，建议<code>zh-CN</code></p>
+</li>
+<li><p><code>timezone</code>：站点时区，用于文章时间显示等功能，建议为<code>&#39;timezone&#39;</code></p>
+</li>
+</ul>
+<h3 id="URL设置"><a href="#URL设置" class="headerlink" title="URL设置"></a>URL设置</h3><div class="note note-info">
+            <p>具体位置：<code># URL</code></p>
+          </div>
+<ul>
+<li><code>url</code>：站点访问地址</li>
+<li><code>root</code>：站点根目录，建议为<code>/</code>，如果将站点放置于子目录时需要特别设置</li>
+<li><code>permalink</code>：站点文章访问链接模板，不建议经常更改，可能会影响到SEO权重</li>
+<li><p><code>pretty_urls</code>：</p>
 <blockquote>
-<p>其实 什么事CDN 这篇文章最开始的时候就写过一会，但是因为当时技术力欠佳，在网站更新中被删掉了   <span class="heimu" title="你知道的太多了">当时写的东西几乎都是答辩 没啥价值 属于是黑历史了 :P </span>  <span class="heimu" title="你知道的太多了">而且这篇是仿照着Can1425的<a target="_blank" rel="noopener" href="https://can1425.github.io/2022/12/22/blogssm/">博客大揭秘</a>写的，大佬轻喷pls</span></p>
+<p><code>trailing_index</code>：开启后，允许将访问目录重定向到访问目录下的<code>index.html</code><br><code>trailing_html</code>：开启后，路径后面将去掉.html后缀</p>
 </blockquote>
-<h2 id="CDN的历史"><a href="#CDN的历史" class="headerlink" title="CDN的历史"></a>CDN的历史</h2><p>在1991年后的近十年时间，人们主要通过拨号方式入网，网络又慢又贵，但随着互联网的发展，提供内容的服务器和骨干传输网络的压力越来越大。</p>
-<p>当时互联网上流传着一句：“World Wide Wait”，网民用这句话来吐槽网络的不稳定性。</p>
-<p>1995年，万维网发明者意识到，在这样继续下去，网络会变得越来越慢，得想一个办法解决，但自己根本抽不出时间来解决问题，于是发起了一个挑战，希望有人能有人能给出解决办法的方案</p>
-<p>这个挑战激起了Tom Leighton的兴趣，他组建了一支团队，经过两年的不懈奋斗，他和他的团队制定了可以在许多在地球上不同地方但可以相互连接的服务器上智能传送和复制内容的一种数学算法</p>
-<p>当有人访问网站时，就让离他最近的那个服务器给他发送网站的页面，而不是让一个服务器去承担全球各地的人们发来的信息</p>
-<p>但是俗话说得好：“耕当问奴,织当问婢”，这位教授有了技术，却不知怎样才能把技术推广出来</p>
-<p>当时麻省理工举行了5万美元年度创业大赛给了Tom Leighton机会，在9个月的竞赛期间内，他的团队迅速壮大，商业计划在100个参赛团队中入围6强。</p>
-<p>这次参赛结果表明，互联网内容传送具有很大的商业价值。</p>
-<p>后来，Tom Leighton和Lewin商量着开一家专门提供此类服务的公司。于是，1998年8月，大名鼎鼎的CDN服务提供商Akamai诞生了。</p>
-<p>Akamai在很短的时间内，迅速发展壮大。1999年迎来第一个大客户——当时全球访问量最大的网站Yahoo！</p>
-<p>巨大的商业利益，涌现了许多像Akamai一样的CDN服务商，所有人都以为CDN将迎来爆发式增长，不曾想21世纪初互联网的泡沫破灭，大批网站关停，CDN服务商骤减，CDN发展几乎停滞。</p>
-<p>2005年后，直到新的上网方式，带宽网络逐渐普及，速度也有了质的提升，加之网络基础设施能力提升、互联网行业的复苏，CDN行业才再度回到各大企业的视野。</p>
-<h2 id="CDN的基本原理"><a href="#CDN的基本原理" class="headerlink" title="CDN的基本原理"></a>CDN的基本原理</h2><p>CDN全称叫Content Delivery Network（内容分发网络）</p>
-<p>也就是说，可以把CDN理解成一个网络，这个网络里会有许多的服务器，他们被安排至各种地方，只要是可能会有用户访问的地方，CDN的提供商就有可能会布置服务器</p>
-<p>当你把网站接入CDN时，其实就是把网站的内容给了这个网络里面的服务器，假如有人要去看你的网站，这个时候因为你接入了CDN，所以要看你网站的人就不会直接找网站要资源，而是去CDN的网络里要资源，CDN这个网络，又会把他分到离他最近的服务器，这时才能成功要到资源</p>
-<p>举个例子，假如有ABCD4个服务器，A在北方，B在南方，C在西方，D在东方，A是你要看的网站，BCD都是CDN网络的服务器，A又接入了CDN，你在西方，你要去看网站，但直接去A会很慢，于是你就去了C服务器。因为你避开了A这个在网络中不稳定的服务器，而是去访问又快又稳定的服务器，你访问网站的速度就快了很多</p>
-<p>这个例子也体现出了CDN的核心机制：<strong>尽可能避开互联网上有可能影响数据传输速度和稳定性的瓶颈和环节，使内容传输得更快、更稳定。</strong></p>
-<h3 id="CDN对动态页面的处理"><a href="#CDN对动态页面的处理" class="headerlink" title="CDN对动态页面的处理"></a>CDN对动态页面的处理</h3><p>动态页面，其实就是用jsp、php甚至是python来写页面，这种页面可能每个人访问，显示的内容都不一样，关于这方面，主流有以下几种方法</p>
-<h4 id="CSI"><a href="#CSI" class="headerlink" title="CSI"></a>CSI</h4><p>通过iframe嵌套框架、js脚本、ajax 等方式将另外一个页面的内容动态包含进来实现动态化。</p>
-<p><strong>优点：</strong>可利用浏览器客户端处理此类代码时的特殊机制；基本不需要服务器支持和修改，计算和操作放在客户端，能够降低服务器端压力</p>
-<p><strong>缺点：</strong>SEO不好；JavaScript兼容性问题；客户端缓存可能导致服务器端内容更新后不能及时生效</p>
-<h4 id="SSI"><a href="#SSI" class="headerlink" title="SSI"></a>SSI</h4><p>SSI是HTML文件中，可通过注释调用的命令实现网站的内容更新，但SSI需要特殊的文件后缀(shtml,inc).</p>
-<p><strong>优点：</strong>通用技术不受具体语言限制，只需服务器支持即可，很多服务端对此都有较好的支持</p>
-<p><strong>缺点：</strong>SSI不能直接包含其他服务器的链接，只能在当前服务器上运行</p>
-<h4 id="ESI"><a href="#ESI" class="headerlink" title="ESI"></a>ESI</h4><p>ESI和SSI和功能类似。ESI使用简单的标记语言来对可加速和不可加速的网页中标记</p>
-<p>每个网页都被划分成不同的小部分，分别赋予不同的控制策略，使CDN服务器可以根据这些策略在将完整的网页发送给用户之前将不同的小部分动态地组合在一起。</p>
-<p>通过这种控制，可以有效地减少从源服务器获取页面的次数，而只用从原服务器中获取少量的不能缓存的片段，因此可以有效降低原服务器的压力，同时有效减少用户访问的时间。</p>
-<p><strong>优点：</strong> ESI更适合用于缓存服务器上，缓存整个页面或页面片段，对于布置和缓存都是最友好的。</p>
-<p><strong>缺点：</strong> 出来很久，一直没有多少人使用。会这个技术的程序员不多。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/362713728">一文看完CDN的发展历程 - 知乎</a> 作者 <a target="_blank" rel="noopener" href="https://www.zhihu.com/org/wecloud-10">蔚可云wecloud</a></p>
-<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%E7%BD%91%E7%BB%9C/4034265">内容分发网络 - 百度百科词条</a></p>
-<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1342272">[CDN]动态内容的缓存技术 CSI,SSI,ESI - 腾讯云开发者社区</a> 作者 <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/user/1198598">mariolu</a></p>
+</li>
+</ul>
+<h3 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h3><div class="note note-info">
+            <p>此处仅设置所使用的主题，不设置主题内细分出的各项设置</p>
+          </div>
+<p>具体位置：<code># Extensions</code></p>
+<ul>
+<li><code>theme</code>：站点使用的主题</li>
+</ul>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><div class="note note-info">
+            <p>注：此部分仅介绍常用的部署方式，具体信息详见<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment">官方文档</a></p>
+          </div>
+<p>具体位置： <code># Deployment</code></p>
+<ul>
+<li><p><code>deploy</code>：</p>
+<blockquote>
+<p><code>type</code>：部署所使用的类型，这里是 <code>Git</code><br><code>repo</code>：部署的仓库，一般为<code>https://xxx.com/xxx/xxx.git</code><br><code>branch</code>：部署的分支，建议为仓库初始分支，一般为 <code>master</code></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="多端部署"><a href="#多端部署" class="headerlink" title="多端部署"></a>多端部署</h4><ul>
+<li><code>deploy</code>：<blockquote>
+<ul>
+<li><code>type</code>：部署所用的类型<blockquote>
+<p>此处是关于部署的详细信息</p>
+</blockquote>
+</li>
+<li><code>type</code>：部署所用的类型<blockquote>
+<p>此处是关于部署的详细信息</p>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<p>Hexo会按配置文件中的顺序执行每个部署设置</p>
+<h2 id="本地预览博客"><a href="#本地预览博客" class="headerlink" title="本地预览博客"></a>本地预览博客</h2><p>在博客的文件夹下打开一个命令行窗口，直接输入<code>hexo s</code>即可</p>
+<p>成功后，本机的<code>4000</code>端口会开放连接，访问<code>localhost:4000</code>即可预览</p>
+<p>预览功能可与 <a href="/cbf1.html" title="搭博客少走弯路-在线管理Hexo站点">搭博客少走弯路-在线管理Hexo站点</a>）这篇文章所介绍的<code>Hexo-Admin</code>插件搭配使用，本地在线编辑，完成后直接发布到网络上</p>
+<p>注：hexo清理已生成文件，生成新的博客文件只修改博客根目录下的<code>db.json</code>文件和<code>public</code>文件夹，实际预览是根据markdown文件源码生成的，所以hexo也可以做到修改后直接看到效果</p>
+<h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><div class="note note-warning">
+            <p>注：此功能需要先配置好_config.yml内的deploy字段</p>
+          </div>
+<p>在博客文件夹下打开一个命令行窗口，输入以下代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo cl<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -364,7 +433,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%A7%91%E6%99%AE/" class="category-chain-item">科普</a>
+  <a href="/categories/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B0%91%E8%B5%B0%E5%BC%AF%E8%B7%AF/" class="category-chain-item">搭博客少走弯路</a>
   
   
 
@@ -379,9 +448,13 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%A7%91%E6%99%AE/">#科普</a>
+        <a href="/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
       
-        <a href="/tags/CDN/">#CDN</a>
+        <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
+      
+        <a href="/tags/Blog/">#Blog</a>
+      
+        <a href="/tags/%E6%90%AD%E5%8D%9A%E5%AE%A2%E5%B0%91%E8%B5%B0%E5%BC%AF%E8%B7%AF/">#搭博客少走弯路</a>
       
     </div>
   
@@ -393,8 +466,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>科普-什么是CDN</div>
-      <div>https://ouyanghongqian.top/4897.html</div>
+      <div>搭博客少走弯路-搭建Hexo博客</div>
+      <div>https://ouyanghongqian.top/4028.html</div>
     </div>
     <div class="license-meta">
       
@@ -406,7 +479,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年12月22日</div>
+          <div>2023年1月11日</div>
         </div>
       
       
@@ -450,18 +523,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/4028.html" title="搭博客少走弯路-搭建Hexo博客">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">搭博客少走弯路-搭建Hexo博客</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/cbf1.html" title="搭博客少走弯路-在线管理Hexo站点">
-                        <span class="hidden-mobile">搭博客少走弯路-在线管理Hexo站点</span>
+                      <a href="/4897.html" title="科普-什么是CDN">
+                        <span class="hidden-mobile">科普-什么是CDN</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
