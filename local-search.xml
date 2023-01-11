@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>搭博客少走弯路-Fluid随机背景图</title>
+    <link href="/a9da.html"/>
+    <url>/a9da.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="搭博客少走弯路-Fluid随机背景图"><a href="#搭博客少走弯路-Fluid随机背景图" class="headerlink" title="搭博客少走弯路-Fluid随机背景图"></a>搭博客少走弯路-Fluid随机背景图</h1><div class="note note-info">            <p>Tip:编辑配置文件时善用搜索功能</p><p>一般被[]包裹的是[注释]或[提示]</p>          </div><p>这次试着用新风格写这篇文章      <span class="heimu" title="作者在添加这段的黑幕效果时把 class='heimu' 写成了 heimu='class' 后来怎么排查都没发现BUG（别问我怎么排查出来的，问就是量子力学）">一天更2篇，不愧是我~</span></p><h2 id="文件定位"><a href="#文件定位" class="headerlink" title="文件定位"></a>文件定位</h2><div class="note note-info">            <p>实现<strong>随机背景图</strong>需要修改的文件在此处：<code>[主题文件夹]\layout\_partials\header\banner.ejs</code></p><p>随机<strong>背景存放</strong>于此处：<code>[主题文件夹]\source\img\random-bg</code>（这里和在<code>[博客根目录]\source\</code>目录下效果一样，生成时会将这个文件夹和那个文件夹一起合并到<code>/public</code>里面）</p>          </div><div class="note note-warning">            <p>注意：此次修改将导致<code>文章/页面</code>的<code>banner属性</code>无法正常生效（包括<code>_config.fluid.yml</code>）下的Banner配置，并且会在站点所有页面生效，目前没有<strong>任何</strong>办法修复，请提前做好准备</p>          </div><div class="note note-error">            <p>注：因为图片尺寸不齐，无法使用Javascript设置背景，如果强行设置会导致背景报错</p>          </div><h2 id="修改模板"><a href="#修改模板" class="headerlink" title="修改模板"></a>修改模板</h2><p>一般会在<code>第一行—第六行</code>，有一些变量定义的部分</p><p>其中找到<code>var banner_img</code>开头的内容 将等于号后面的内容,一般是<code>page.banner_img || theme.index.banner_img</code></p><p>将这里替换为”/img/random-bg/“+(Math.floor(Math.random() * 17)).toString()+”.jpg”</p><h2 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h2><p>打开存放文件夹，将所有图片放置于文件夹内，按照从<code>0</code>到<code>图片总数+1</code>（本文修改模板时所用的方法因为浮点数原因运算，只有<code>xx.999</code>或<code>xx+1</code>才能<strong>正常随机</strong>）的顺序给每张图片命名</p><h2 id="修改背景透明度"><a href="#修改背景透明度" class="headerlink" title="修改背景透明度"></a>修改背景透明度</h2><p><span class="heimu" title="你看什么！你又在期待什么？我可不会像我的兄弟【大人物】那样，把【链接已屏蔽】告诉你，这里没有什么，请你尊重我的隐私！好了，这里没有什么东西，把鼠标移开吧">虽然不是这篇文章说的内容，但是我就是要讲一下</span></p><p>这个修改位置和修改随机背景图的位置一样，打开文件后，找到开头为<code>&lt;div class=&quot;mask flex-center&quot;</code>的部分，在找到后面被<code>rgb(这里是中间一段内容)</code>包裹的地方，将其替换为<code>rgb(0,0,0,0.2)</code>，其中的<code>0.2</code>就是透明度，<code>1</code>就是完全不透明，<code>0</code>就是完全透明</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>搭博客少走弯路</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Fluid</tag>
+      
+      <tag>博客</tag>
+      
+      <tag>Blog</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>搭博客少走弯路-搭建Hexo博客</title>
     <link href="/4028.html"/>
     <url>/4028.html</url>
@@ -22,9 +53,9 @@
       
       <tag>博客</tag>
       
-      <tag>教程</tag>
-      
       <tag>Blog</tag>
+      
+      <tag>教程</tag>
       
       <tag>搭博客少走弯路</tag>
       
@@ -78,11 +109,11 @@
     
     <tags>
       
+      <tag>Hexo</tag>
+      
       <tag>博客</tag>
       
       <tag>Blog</tag>
-      
-      <tag>Hexo</tag>
       
     </tags>
     
@@ -107,9 +138,9 @@
     
     <tags>
       
-      <tag>教程</tag>
-      
       <tag>Hexo</tag>
+      
+      <tag>教程</tag>
       
       <tag>PWA应用</tag>
       
@@ -136,9 +167,9 @@
     
     <tags>
       
-      <tag>教程</tag>
-      
       <tag>Blog</tag>
+      
+      <tag>教程</tag>
       
     </tags>
     
@@ -362,9 +393,9 @@
       
       <tag>博客</tag>
       
-      <tag>教程</tag>
-      
       <tag>Blog</tag>
+      
+      <tag>教程</tag>
       
       <tag>备案</tag>
       
