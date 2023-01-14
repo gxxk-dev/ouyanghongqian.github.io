@@ -1,3 +1,4 @@
+info=["乒乓球","掌控版官方文档"]
 # Pong game for mPython
 # MIT license,Copyright (c) 2019 labplus@Tangliufeng
 

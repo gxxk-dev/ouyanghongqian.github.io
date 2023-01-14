@@ -1,3 +1,5 @@
+info=["俄罗斯方块","掌控版官方文档"]
+
 # Tetris game for mPython
 # MIT license,Copyright (c) 2019 labplus@Tangliufeng
 

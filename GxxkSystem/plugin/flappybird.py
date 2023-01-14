@@ -1,3 +1,4 @@
+info=["飞行小鸟","掌控版官方文档"]
 # Flappy Bird game for mPython
 # frok from github.com/zelacerda/micropython ,2017 - by zelacerda
 # modify from LabPlus@Tangliufeng

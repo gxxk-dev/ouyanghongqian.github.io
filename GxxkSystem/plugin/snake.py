@@ -1,3 +1,4 @@
+info=["贪吃蛇","掌控版官方文档"]
 # Snake game for mPython
 # MIT license,Copyright (c) 2019 labplus@Tangliufeng
 

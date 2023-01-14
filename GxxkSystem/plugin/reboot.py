@@ -1,3 +1,4 @@
+info=["重启","0f永蓝"]
 import time
 import machine
 from mpython import *
