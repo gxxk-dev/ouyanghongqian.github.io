@@ -1,4 +1,5 @@
 info=["飞行小鸟","掌控版官方文档"]
+import GxxkSystem.pluginApi as api
 # Flappy Bird game for mPython
 # frok from github.com/zelacerda/micropython ,2017 - by zelacerda
 # modify from LabPlus@Tangliufeng
@@ -105,16 +106,11 @@ class Game():
 
     # 保存最高分
     def write_high_score(self,n):
-        f = open('fb_high_score.txt', 'w')
-        f.write(str(n))
-        f.close()
+        api.writePluginConfig("flappybird",str(n))
 
     # 读取最高分
     def read_high_score(self):
-        if 'fb_high_score' in uos.listdir():
-            f = open('fb_high_score.txt', 'r')
-            high_score = f.read()
-            f.close()
+        if api.getPluginConfig("flappybird")!=None:
             return int(high_score)
         else:
             self.write_high_score(0)
