@@ -300,13 +300,6 @@
   </url>
   
   <url>
-    <loc>https://ouyanghongqian.top/tags/PWA%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2023-01-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://ouyanghongqian.top/tags/%E5%A4%87%E6%A1%88/</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -315,6 +308,13 @@
   
   <url>
     <loc>https://ouyanghongqian.top/tags/GithubPages/</loc>
+    <lastmod>2023-01-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://ouyanghongqian.top/tags/PWA%E5%BA%94%E7%94%A8/</loc>
     <lastmod>2023-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
