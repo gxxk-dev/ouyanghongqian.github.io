@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>教程-将代码编译为microPython字节码</title>
+      <link href="/dfa7.html"/>
+      <url>/dfa7.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="教程-将代码编译为microPython字节码"><a href="#教程-将代码编译为microPython字节码" class="headerlink" title="教程-将代码编译为microPython字节码"></a>教程-将代码编译为microPython字节码</h1><p>这篇教程站长写了114514天，评论一下加点人气吧qwp</p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近因为我的程序经常内存错误，翻了翻掌控版的帮助文档，想找找解决办法，发现在运行模块的时候，掌控版会先把代码编译成机器可以执行的字节码，然后再由掌控版中的microPython虚拟机来执行字节码<br>原文：<a href="https://mpython.readthedocs.io/zh/master/reference/constrained.html#id2">https://mpython.readthedocs.io/zh/master/reference/constrained.html#id2</a></p><p>（注：RAM可以理解为内存，但是与存储数据的内存并不一样，这里统一把运行数据的内存叫RAM，运行你刷入在掌控版里的代码也需要导入）<br>其中提到：字节码存储在RAM中。编译器本身需要RAM，但其在编译完成后才可用。<br>若已导入多个模块，则在没有足够的RAM来运行编译器时，在这种情况下，导入语句将引发内存异常。</p><p>文中还提到：若RAM仍不足够编译所有模块，一种解决方案是预编译模块。MicroPython有一个交叉编译器， 可将代码编译为字节码。<br>在大多数平台上，这样可以节省更多的RAM，因为字节码直接从闪存运行而没有存储在RAM中。</p><p>将这两者联系起来，我们就可以得出一个解决办法：将代码预编译为microPython字节码，使其不需要编译，直接导入RAM并由虚拟机执行即可</p><h3 id="为什么要这样做？"><a href="#为什么要这样做？" class="headerlink" title="为什么要这样做？"></a>为什么要这样做？</h3><p>LabPlus论坛内的系统大多都为单文件系统，一般情况下，编译代码需要双倍的内存，假设系统100kb，那么在编译时必定会内存错误<br>同时，这样可以加快系统的运行速度，方便运行，不会在内存方面出很大的问题</p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><h3 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h3><p>这里详见这篇教程：<a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624">https://www.liaoxuefeng.com/wiki/1016959663602400/1016959856222624</a></p><h3 id="获取编译器（mpy-cross）"><a href="#获取编译器（mpy-cross）" class="headerlink" title="获取编译器（mpy-cross）"></a>获取编译器（mpy-cross）</h3><h4 id="确定版本和架构"><a href="#确定版本和架构" class="headerlink" title="确定版本和架构"></a>确定版本和架构</h4><p>首先，在掌控版下运行这样一段代码，确定掌控版支持的预编译文件版本和架构：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">exec</span>(<span class="hljs-string">b&quot;import sys\nsys_mpy = sys.implementation.mpy\narch = [None,&#x27;x86&#x27;, &#x27;x64&#x27;,&#x27;armv6&#x27;,&#x27;armv6m&#x27;,&#x27;armv7m&#x27;,&#x27;armv7em&#x27;, &#x27;armv7emsp&#x27;,&#x27;armv7emdp&#x27;,&#x27;xtensa&#x27;, &#x27;xtensawin&#x27;][sys_mpy &gt;&gt; 10]\nprint(&#x27;\xe7\x89\x88\xe6\x9c\xac:&#x27;, sys_mpy &amp; 0xff)\nprint(&#x27;\xe6\x9e\xb6\xe6\x9e\x84: &#x27;, end=&#x27;&#x27;)\nif arch:print(arch, end=&#x27;&#x27;)\nelse:print(&#x27;\xe6\x97\xa0&#x27;)\nif True:\n    print(&#x27;&#x27;)&quot;</span>.decode())<br></code></pre></td></tr></table></figure><p>一般情况下，会返回这样一段内容：<br><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs text">版本: 5<br>架构: xtensawin<br></code></pre></td></tr></table></figure><br>如果不对的话，一般是新版本固件或硬件更改了架构，在后面的教程中会有详细注明如何操作</p><p>然后，按下<kbd>Win</kbd>+<kbd>R</kbd>，输入<code>cmd</code>，回车<br>然后再输入<code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple mpy-cross-v5</code></p><p>这一行代码是用于获取编译器用的，如果之前运行代码给出的版本不一样，那就把最后的v5中的5替换成别的版本号吧<br>如果提示安装失败，并且自定义选择了别的版本安装，可以去掉后面的3个字符试试</p><p>这个时候，尝试输入<code>mpy-cross-v5 --version</code>（版本号的v5这里同样也需要替换），应该会返回如下信息：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">MicroPython XXXXXXX on XXXX-XX-XX; mpy-cross emitting mpy vX<br></code></pre></td></tr></table></figure><p>X代表不固定的数字或字母，如果正常返回了这些信息，代表获取成功</p><h4 id="修改编译器路径"><a href="#修改编译器路径" class="headerlink" title="修改编译器路径"></a>修改编译器路径</h4><p>输入<code>mpy-cross-v5 --help</code>（同上，也需要替换版本号），获取帮助信息和本体存储地址，如果操作正确无误，那么会返回如下信息：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs text">usage: C:\Users\****\AppData\Roaming\Python\Python310\site-packages\mpy_cross-v5\mpy-cross-v5.exe [&lt;opts&gt;] [-X &lt;implopt&gt;] &lt;input filename&gt;<br>Options:<br>--version : show version information<br>-o : output file for compiled bytecode (defaults to input with .mpy extension)<br>-s : source filename to embed in the compiled bytecode (defaults to input file)<br>-v : verbose (trace various operations); can be multiple<br>-O[N] : apply bytecode optimizations of level N<br><br>Target specific options:<br>-msmall-int-bits=number : set the maximum bits used to encode a small-int<br>-mno-unicode : don&#x27;t support unicode in compiled strings<br>-march=&lt;arch&gt; : set architecture for native emitter; x86, x64, armv6, armv7m, armv7em, armv7emsp, armv7emdp, xtensa, xtensawin<br><br>Implementation specific options:<br>  emit=&#123;bytecode,native,viper&#125; -- set the default code emitter<br>  heapsize=&lt;n&gt; -- set the heap size for the GC (default 2097152)<br></code></pre></td></tr></table></figure><p>其中，第一行在<code>usage:</code>和<code>[&lt;opts&gt;]</code>之间的路径，就是编译器的本体的位置了，我们从只需要复制最后<code>mpy-cross-v5.exe</code>前面的内容，如：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">C:\Users\****\AppData\Roaming\Python\Python310\site-packages\mpy_cross-v5\<br></code></pre></td></tr></table></figure><p>然后按下<kbd>Win</kbd>+<kbd>E</kbd>，打开文件资源管理器，在上方显示路径的地方粘贴这个路径，然后找到目录下的<strong>唯一一个</strong>可执行文件，重命名为<code>mpy-cross.exe</code></p><h3 id="使用编译器编译"><a href="#使用编译器编译" class="headerlink" title="使用编译器编译"></a>使用编译器编译</h3><p>先把你的代码（py格式）放到一个文件夹内</p><p>按下<kbd>Win</kbd>+<kbd>R</kbd>，输入<code>cmd</code>，然后输入<code>cd</code>加空格，粘贴有代码的那个文件夹的<strong>绝对路径</strong>（如<code>C:\MyCode\mPython\</code>），按下回车</p><p>如果正常，<code>&gt;</code>左边的东西会变成你刚刚粘贴的路径，这个时候，我们再来输入<code>mpy-cross</code> ，后面写上你的代码名称，再加上<code>-march=xtensawin</code>，（这里的<code>xtensawin</code>是编译指定的架构，需要根据之前获取的数据确定），按下回车，如果没有问题，文件夹内会产生一个扩展名为<code>mpy</code>的文件，这就是成品了</p><h3 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h3><p>打开mPython软件，把这个文件刷入进掌控版（不是点击右上角刷入按钮）</p><p>然后进入代码模式，输入以下代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> 文件名（不带最后的.mpy后缀）<br></code></pre></td></tr></table></figure><p>然后点击右上角刷入，就可以加载代码啦~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 掌控版 </tag>
+            
+            <tag> mPython </tag>
+            
+            <tag> 编译 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>搭博客少走弯路-Fluid随机背景图</title>
       <link href="/a9da.html"/>
       <url>/a9da.html</url>
