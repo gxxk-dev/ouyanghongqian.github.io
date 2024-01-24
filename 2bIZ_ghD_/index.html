@@ -1,0 +1,287 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>搭博客少走弯路-Gridea实现HexoFluid同款Tag插件 | GxxkSite</title>
+
+<link rel="shortcut icon" href="https://gxxk.site/favicon.ico?v=1706099014521">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://gxxk.site/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            GxxkSite
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends/" class="menu gt-a-link">
+                            友链
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1706099014521" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    搭博客少走弯路-Gridea实现HexoFluid同款Tag插件
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-06-03 ·
+                    </time>
+                    
+                        <a href="https://gxxk.site/E90EBUfZN/" class="post-tags">
+                            # Hexo
+                        </a>
+                    
+                        <a href="https://gxxk.site/GTZ_CsPcS-/" class="post-tags">
+                            # Fluid
+                        </a>
+                    
+                        <a href="https://gxxk.site/RX-IbigzMS/" class="post-tags">
+                            # 搭博客少走弯路
+                        </a>
+                    
+                        <a href="https://gxxk.site/kN9gTnpP2/" class="post-tags">
+                            # Gridea
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>PS: 此类功能自己想要迁移也可以自行按照文中方法寻找</p>
+</blockquote>
+<!-- more -->
+<p>最近在迁移旧版博客文章时，发现Fluid主题有一个独占的功能，叫做Tag插件，官方是这样介绍的：<a href="https://imgse.com/i/pCpYIde"><img src="https://s1.ax1x.com/2023/06/03/pCpYIde.md.png" alt="pCpYIde.md.png" loading="lazy"></a></p>
+<p>这个功能好用，美观，但是我在迁移文章时发现Gridea不支持这些功能，没办法，只能自己动手复刻</p>
+<h1 id="寻找css">寻找CSS</h1>
+<p>按照之前添加萌百黑幕的经验，我决定先寻找此部分的CSS和JavaScript代码，果断进网站开DevTools查找，右键到Tag插件上，点击<strong>检查</strong>，是一个div，很干净，只给了一个class指定<br>
+<a href="https://imgse.com/i/pCpYbRI"><img src="https://s1.ax1x.com/2023/06/03/pCpYbRI.png" alt="pCpYbRI.png" loading="lazy"></a><br>
+大概率是把Tag插件的样式写在CSS/JS里面了，果断进行一波查找（纯静态建议直接在网页查找），JS没有，main.css却有19个匹配项，慢慢看，找到了具体的位置（我的在2001行），下面是全部Tag插件实现的CSS：</p>
+<pre><code class="language-css">.note {
+    padding: .75rem;
+    border-left: .35rem solid;
+    border-radius: .25rem;
+    margin: 1.5rem 0;
+    color: var(--text-color);
+    transition: color .2s ease-in-out;
+    font-size: .9rem
+}
+
+.note a {
+    color: var(--text-color);
+    transition: color .2s ease-in-out
+}
+
+.note :last-child {
+    margin-bottom: 0
+}
+
+.note-primary {
+    background-color: rgba(183,160,224,.25);
+    border-color: #6f42c1
+}
+
+.note-secondary,note-default {
+    background-color: rgba(187,187,187,.25);
+    border-color: #777
+}
+
+.note-success {
+    background-color: rgba(174,220,174,.25);
+    border-color: #5cb85c
+}
+
+.note-danger {
+    background-color: rgba(236,169,167,.25);
+    border-color: #d9534f
+}
+
+.note-warning {
+    background-color: rgba(248,214,166,.25);
+    border-color: #f0ad4e
+}
+
+.note-info {
+    background-color: rgba(160,197,228,.25);
+    border-color: #428bca
+}
+
+.note-light {
+    background-color: rgba(254,254,254,.25);
+    border-color: #0f0f0f
+}
+</code></pre>
+<h1 id="实装css">实装CSS</h1>
+<p>我使用的是Pure主题，这个很简单，在主题-自定义配置-自定义样式里面填入CSS就会直接应用到所有页面，十分方便</p>
+<h1 id="效果展示">效果展示</h1>
+<p class="note note-light">light</p>
+<p class="note note-info">info</p>
+<p class="note note-warning">warning</p>
+<p class="note note-danger">danger</p>
+<p class="note note-success">success</p>
+<p class="note note-secondary">secondary</p>
+<p class="note note-primary">primary</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://gxxk.site/HexoRandomBgImg/" class="post-title gt-a-link">
+                    搭博客少走弯路-Hexo-Fluid主题随机背景图
+                </a>
+            </div>
+        
+
+        
+            <span id="/2bIZ_ghD_//" class="leancloud_visitors" data-flag-title="搭博客少走弯路-Gridea实现HexoFluid同款Tag插件">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Cwz2dUkfTSvc1S9QRUsZ8MBY-MdYXbMMI',
+		appKey: 'Z0DQfPDQComYKCZZlqV0rWMH',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '这nm是评论区，不是无人区啊喂！！！',
+		visitor: true,
+		serverURLs: 'https://valine.gxxk.site',
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br/>
+本站所有文章遵循CC-BY-SA 4.0国际许可协议<br/>
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>本站总访客数<span id="busuanzi_value_site_uv"></span>位<br/>本页总访问量<span id="busuanzi_value_page_pv"></span>次
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://gxxk.site/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

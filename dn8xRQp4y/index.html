@@ -1,0 +1,345 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>搭博客少走弯路-Hexo启用PWA | GxxkSite</title>
+
+<link rel="shortcut icon" href="https://gxxk.site/favicon.ico?v=1706099014521">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://gxxk.site/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            GxxkSite
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends/" class="menu gt-a-link">
+                            友链
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1706099014521" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    搭博客少走弯路-Hexo启用PWA
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-06-03 ·
+                    </time>
+                    
+                        <a href="https://gxxk.site/XfgWZKG35/" class="post-tags">
+                            # PWA
+                        </a>
+                    
+                        <a href="https://gxxk.site/E90EBUfZN/" class="post-tags">
+                            # Hexo
+                        </a>
+                    
+                        <a href="https://gxxk.site/tFRKbZqVBH/" class="post-tags">
+                            # 博客
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>注：本文从旧版博客迁移而来，可能不适用于Gridea</p>
+</blockquote>
+<h1 id="前言">前言</h1>
+<p>最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中<code>支持PWA</code>这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就<strong>支持多平台</strong>，电脑、手机均可使用，同时<strong>可离线访问</strong>，便赶紧给自己博客加上，但大多都不适合新版本使用，如<code>hexo-pwa</code>，不支持<code>hexo@4.2.0</code>及以上的版本，最终翻了几篇教程，在实践了一下，总结出一片教程，可通过非插件方式让<code>Hexo</code>支持<code>PWA</code></p>
+<!-- more -->
+<h1 id="正文">正文</h1>
+<h2 id="准备工作">准备工作</h2>
+<ul>
+<li>
+<p>支持<code>HTTPS</code>的站点</p>
+</li>
+<li>
+<p>网站各种分辨率的图标</p>
+</li>
+</ul>
+<h2 id="教程">教程</h2>
+<ol>
+<li>
+<p>在<code>[站点根目录]/source</code>下新建文件 <code>manifest.json</code>，替换掉所有用<code>[]</code>包起来的部分（注意！配置文件内不要有任何注释！）</p>
+<pre><code class="language-json">{
+    &quot;lang&quot;: &quot;zh-CN&quot;,
+    &quot;name&quot;: &quot;[站点名称]&quot;,
+    &quot;short_name&quot;: &quot;[站点短名称，建议和上面的站点名称一样]&quot;,
+    &quot;description&quot;: &quot;[站点介绍]&quot;,
+    &quot;theme_color&quot;: &quot;[主题色，如：#000000]&quot;,
+    &quot;background_color&quot;: &quot;[应用开屏背景颜色，和上面那个填一样就行]&quot;,
+    &quot;start_url&quot;: &quot;[应用启动第一个显示的页面，，填 / 就行]&quot;,
+    &quot;Scope&quot;: &quot;[此配置文件的作用域，填 / 就行]&quot;,
+    &quot;display&quot;: &quot;[应用显示模式，填 standalone 就行]&quot;,
+    &quot;orientation&quot;: &quot;[应用的默认方向，填 any 就行]&quot;,
+    &quot;icons&quot;: [{
+        &quot;src&quot;: &quot;[像素大小为60x60的网站图标的地址,png格式]&quot;,
+        &quot;type&quot;: &quot;image/png&quot;,
+        &quot;sizes&quot;: &quot;60x60&quot;
+    },{
+        &quot;src&quot;: &quot;[像素大小为72x72的网站图标的地址,png格式]&quot;,
+        &quot;type&quot;: &quot;image/png&quot;,
+        &quot;sizes&quot;: &quot;72x72&quot;
+    },{   
+        &quot;src&quot;: &quot;[像素大小为96x96的网站图标的地址,png格式]&quot;,
+        &quot;type&quot;: &quot;image/png&quot;,
+        &quot;sizes&quot;: &quot;96x96&quot;
+    },{     
+        &quot;src&quot;: &quot;[像素大小为144x144的网站图标的地址,png格式]&quot;,
+        &quot;type&quot;: &quot;image/png&quot;,
+        &quot;sizes&quot;: &quot;144x144&quot;
+    },{    
+        &quot;src&quot;: &quot;[像素大小为144x144的网站图标的地址,png格式]&quot;,
+        &quot;type&quot;: &quot;image/png&quot;,
+        &quot;sizes&quot;: &quot;192x192&quot;
+    },{        
+        &quot;src&quot;: &quot;[像素大小为144x144的网站图标的地址,png格式]&quot;,
+        &quot;type&quot;: &quot;image/png&quot;,
+        &quot;sizes&quot;: &quot;512x512&quot;
+    }]
+}
+</code></pre>
+</li>
+<li>
+<p>在博客主题模板文件（一般为<code>layout.ejs</code>）的最上方引入此配置文件（<code>&lt;link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;&gt;</code>）</p>
+</li>
+<li>
+<p>在<code>[站点根目录]/source</code>新建<code>sw.js</code></p>
+<pre><code class="language-javascript">const version = 'offline-cache-v1'
+
+self.addEventListener('install', function (event) {
+    event.waitUntil(self.skipWaiting());
+});
+
+self.addEventListener('activate', function (event) {
+    event.waitUntil(
+        Promise.all([
+            self.clients.claim(),
+            caches.keys().then(function (cacheList) {
+                return Promise.all(
+                    cacheList.map(function (cacheName) {
+                        if (cacheName !== version) {
+                            return caches.delete(cacheName);
+                        }
+                    })
+                );
+            })
+        ])
+    );
+});
+
+self.addEventListener('fetch', function (event) {
+    
+    console.log('url is', event.request.url)
+
+    event.respondWith(
+        caches.match(event.request).then(function (response) {
+            if (response) {
+                return response;
+            }
+
+            var request = event.request.clone();
+            return fetch(request).then(function (httpRes) {
+                if (!httpRes || httpRes.status !== 200) {
+                    return httpRes;
+                }
+
+                var responseClone = httpRes.clone();
+                caches.open(version).then(function (cache) {
+                    cache.put(event.request, responseClone);
+                });
+
+                return httpRes;
+            });
+        })
+    );
+})
+</code></pre>
+</li>
+<li>
+<p>在刚刚编辑的站点主体模板文件内插入的那行代码下插入以下代码（引入sw.js）：</p>
+<pre><code class="language-html">&lt;script&gt;
+  if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js')
+              .then(function (registration) {
+                  console.log('sw.js 注册成功', registration.scope);
+              })
+              .catch(function (err) {
+                  console.log('sw.js 注册失败 ', err);
+              });
+       });
+  }
+&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p>重新部署即可查看效果</p>
+</li>
+</ol>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://gxxk.site/2bIZ_ghD_/" class="post-title gt-a-link">
+                    搭博客少走弯路-Gridea实现HexoFluid同款Tag插件
+                </a>
+            </div>
+        
+
+        
+            <span id="/dn8xRQp4y//" class="leancloud_visitors" data-flag-title="搭博客少走弯路-Hexo启用PWA">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Cwz2dUkfTSvc1S9QRUsZ8MBY-MdYXbMMI',
+		appKey: 'Z0DQfPDQComYKCZZlqV0rWMH',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '这nm是评论区，不是无人区啊喂！！！',
+		visitor: true,
+		serverURLs: 'https://valine.gxxk.site',
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br/>
+本站所有文章遵循CC-BY-SA 4.0国际许可协议<br/>
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>本站总访客数<span id="busuanzi_value_site_uv"></span>位<br/>本页总访问量<span id="busuanzi_value_page_pv"></span>次
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://gxxk.site/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

