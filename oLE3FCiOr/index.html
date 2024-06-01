@@ -1,0 +1,272 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>[核桃编程-Python]课程模式下的代码会被修改吗？ | GxxkSite</title>
+
+<link rel="shortcut icon" href="https://oyhq.eu.org/favicon.ico?v=1717266581618">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://oyhq.eu.org/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            GxxkSite
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends/" class="menu gt-a-link">
+                            友链
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1717266581618" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    [核桃编程-Python]课程模式下的代码会被修改吗？
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-10-05 ·
+                    </time>
+                    
+                        <a href="https://oyhq.eu.org/j9c2zh3Na/" class="post-tags">
+                            # 核桃编程
+                        </a>
+                    
+                        <a href="https://oyhq.eu.org/YFwat0c5ck/" class="post-tags">
+                            # Python
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h1 id="前言">前言</h1>
+<p>好吧万年一更的我又来了</p>
+<p>这是我很久之前就研究过的玩意，忽然想起来了临时写一下</p>
+<h1 id="摸索">摸索</h1>
+<p>最开始的起因是我运行代码时发现有时报错提示行数与代码本身错误位置行数不符合（旧版本客户端特性，目前似乎已被修复？）怀疑代码被修改，于是我：</p>
+<pre><code class="language-python">... # 代码
+print(__file__) 
+... # 代码
+</code></pre>
+<blockquote>
+<p>Tips: <code>__file__</code>变量存储的是当前正在运行的代码的路径，但在REPL下此变量不可用</p>
+</blockquote>
+<!-- more -->
+<p>如果没被修改，那么打印出来的结尾应该是code.py（核桃编程客户端默认代码文件名为code.py，而不是__init__.py或main.py等文件名）</p>
+<p>但实际上是这样的（马赛克用于遮挡课程信息，15~19行为1种读取真实运行代码内容的方法，如方法被拦截，可能会放出）<br>
+<img src="https://image-1302120057.cos.ap-nanjing.myqcloud.com/blog/20231005195557.png" alt="" loading="lazy"></p>
+<p>于是，我按照此路径，读取出来了课程的代码<br>
+（吐槽一下：现版本作弊通关还有点难，以前的版本直接<code>overWin(&quot;pass&quot;)</code>就可以了，我还向老师提交了这个通关方法（你猜这是真的还是假的））</p>
+<p>好玩的是，居然什么也没发生，程序照常运行，没有输出任何内容</p>
+<p>最开始，我怀疑是真实运行的代码不仅记录print内容，还在新版本更新中加上了一层过滤机制，于是，我使用<code>dir()</code>，查看了目前所有可调用对象：</p>
+<pre><code class="language-python">['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_p', 'check', 'correct_count', 'correct_country', 'country', 'country_medal_dict', 'hetao_message', 'i', 'index', 'input', 'input_list', 'ipt', 'json', 'l', 'medals', 'os', 'out_res', 'print', 'print_content', 'pt', 'r', 'random', 's', 's_json', 's_string', 'str_1', 'str_1_sub1', 'str_1_sub2', 'str_1_sub3', 'str_2', 'str_3', 'str_4', 'str_5', 'sys', 'time']
+</code></pre>
+<p>根据经验，真正的print名称一般是某个看起来比较抽象的缩写或同义词等，print函数只会在<code>pt()</code>,<code>print_content()</code>,<code>out_res()</code>,<code>_p()</code>这几个中出现</p>
+<p>经过实践，最终<code>_p()</code>才是真正的print函数，拿到真正的_p函数后，就可以快乐的读取真实代码了~</p>
+<p>ccc怎么这么长啊，不放了</p>
+<h1 id="分析通用对象">分析通用对象</h1>
+<p>总之大体分析了一下，根据经验，以下几个提到的东西应该大体上在这里通用</p>
+<p class="note note-warning">
+本文提到的所有对象可能在不同课程中不一样，请根据实际情况决定自己的行为
+</p>
+<ul>
+<li>
+<p>被替换的print函数（真正名称<code>pt</code>）<br>
+该对象用于记录学生使用print输出的内容到<code>print_content</code>，不支持原生print的sep/end/file/flush参数<br>
+此函数会对第一项传参（<code>print(第一项传参，第二项传参...)</code>）进行识别，如果其为<code>&quot;hetao-&quot;</code>或<code>&quot;&quot;</code>，就不会输出，也不会记录，直接停止函数运行<br>
+此外，该函数还会对无任何传参的print进行过滤，正常输出但不会记录至其中</p>
+</li>
+<li>
+<p>被替换的input函数（原input名为<code>ipt</code>）<br>
+此函数不会使用到任何真正的input操作，而是会返回变量<code> s_string</code><br>
+此变量会由index变量（一个由random模块中的randint函数（随机数字））操作</p>
+</li>
+<li>
+<p>报错函数（名为<code>out_res</code>）<br>
+hide-code.py内没有该函数的完整代码，调用此函数效果为正常的代码编写错误弹出的提示，并在右侧以红色输出<code>out_res</code>弹窗内相同的文字<br>
+该函数会定义一个名为<code>_str</code>的局部变量，然后将其设为函数传参的最后一个传参（源代码为<code>for _a in *args:_str=str(_a)</code>），随后以退出码<code>0</code>退出（<code>sys.exit(0)</code>）</p>
+</li>
+<li>
+<p>检查学生代码函数（名为<code>check</code>）<br>
+会根据使用print/input等输入/输出函数得到的值判断学生代码是否正确<br>
+检查逻辑是内置多个样本，每次运行随机选择样本输入，内置一份正确算法计算答案（存储此部分数据的变量开头一般为<code>correct_</code>），和学生运算的代码相比较，再根据细分出来的继续比较，找到代码错的原因并输出至用户界面<br>
+如果满足条件，会将hetao_message某（多）项的值设置为True，程序判断是否过关疑似依赖此部分<br>
+也有一部分课程中的练习，因为其难度较小且只用完成1-2行代码，可能会检测范围内是否有某特定词组/文本，如满足条件直接放行</p>
+</li>
+<li>
+<p>可疑代码（位于学生代码执行阶段附近）<br>
+此代码会出现于学生编写的代码的第一行的上一行，内容为<code>print(&quot;::walnut_cpp_scheme&quot;)</code>，疑似用于与核桃编程用户界面交互  <s>建议直接“一切皆文件”（</s></p>
+</li>
+<li>
+<p>程序结尾<br>
+此部分代码位于学生程序结尾，较简单，大致为调用<code>check</code>函数并根据其函数操作<code>hetao_message</code>的结果判断是否执行特定语句（如输出作业完成，点击提交等）</p>
+</li>
+</ul>
+<h1 id="结尾">结尾</h1>
+<p>看起来似乎每个课程都会有专属的附加代码，挺佩服核桃程序员的工作量的（）</p>
+<p>如果有任何纰漏欢迎在<a href="https://gxxk.site">https://gxxk.site</a>指出（</p>
+<p>对了顺便讲一声，此文在<a href="https://gxxk.site">https://gxxk.site</a>同时发布，可以来小站看看LOL</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://oyhq.eu.org/vvRbZpds4/" class="post-title gt-a-link">
+                    【水】【突发其想】掌控版注入病毒？
+                </a>
+            </div>
+        
+
+        
+            <span id="/oLE3FCiOr//" class="leancloud_visitors" data-flag-title="[核桃编程-Python]课程模式下的代码会被修改吗？">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Cwz2dUkfTSvc1S9QRUsZ8MBY-MdYXbMMI',
+		appKey: 'Z0DQfPDQComYKCZZlqV0rWMH',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '这nm是评论区，不是无人区啊喂！！！',
+		visitor: true,
+		serverURLs: 'https://valine.gxxk.site',
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br/>
+本站所有文章遵循CC-BY-SA 4.0国际许可协议<br/>
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>本站总访客数<span id="busuanzi_value_site_uv"></span>位<br/>本页总访问量<span id="busuanzi_value_page_pv"></span>次
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://oyhq.eu.org/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>GxxkSite</title>
+
+<link rel="shortcut icon" href="https://oyhq.eu.org/favicon.ico?v=1717266581618">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://oyhq.eu.org/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            GxxkSite
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends/" class="menu gt-a-link">
+                            友链
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1717266581618" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/gU4cRHN-c/">
+                            <span class="post-title gt-c-content-color-first">掌控板上的Ramdisk</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>在本文 掌控板被称为<code>hpy</code>,micropython被称为<code>mpy</code></p>
+</blockquote>
+<h1 id="何为ramdisk">何为Ramdisk?</h1>
+<p>Ramdisk是一种模拟出来的盘，其数据实际上存储在RAM(运行内存)之中。当电源切断时，存储在RAM盘上的数据将会消失。</p>
+<blockquote>
+<p>摘自<a href="https://baike.baidu.com/item/RAM%20disk/7510362">百度百科</a>，有删改</p>
+</blockquote>
+<p>其实Ramdisk并不陌生，它就在我们身边：</p>
+<ul>
+<li>维护电脑常使用的PE系统</li>
+<li>学校机房里一重启资料就会消失的电脑（部分）</li>
+<li>很多很多....</li>
+</ul>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2024-05-26 ·
+                        </time>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/BAt_EdAD5/">
+                            <span class="post-title gt-c-content-color-first">【教程/记录？】编译适用于掌控版的microPython固件</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>不多bb，进入正题 导入词我就懒得写了LOL<br>
+本文重点在于环境配置，在阅读本文前您需要熟知有关Linux的基本命令和一些WSL2特性（建议多查多做）<br>
+Tip:按顺序继续即可</p>
+</blockquote>
+<h1 id="提前准备">提前准备</h1>
+<p>环境：Windows10LTSC2021（手动安装了MicrosoftStore）<br>
+使用终端：新版UI的Powershell与GitBash</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-12-17 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/OfZeDgFXM/" class="post-tag">
+                                # 固件
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/W5RsnMhSc/" class="post-tag">
+                                # 掌控版
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/YFCfRHFg_J/" class="post-tag">
+                                # microPython
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/tVMFLaID95/" class="post-tag">
+                                # mPython
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/yKORIepqD-/" class="post-tag">
+                                # 编译
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/VJNwhqCfL/">
+                            <span class="post-title gt-c-content-color-first">【水】记一次有手就行的基于Metasploit的渗透</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>本文仅介绍此渗透方法，仅供学习，不承担执行此教程带来的任何损失！</p>
+</blockquote>
+<h1 id="话题导入初识msfpc">话题导入/初识msfpc</h1>
+<p>今天因为<span class="heimu">被班任用监控制裁</span>这一事十分不服，被叫到办公室训话时发现老师还有一个在高处的监控<span class="heimu">（老师靠那个看见我搞小动作的）</span>，并且还是用网页访问，心生一计，给老师电脑下马（指在老师电脑上下载并执行我可控的恶意软件），于是回家就开始研究起来</p>
+<p>Kali Linux 启动！</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-12-03 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/wLXBpfHjS/" class="post-tag">
+                                # 渗透
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/Z9xjw4i18m/" class="post-tag">
+                                # Metasploit
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/JlVNz7IZxt/" class="post-tag">
+                                # Kali
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/oLE3FCiOr/">
+                            <span class="post-title gt-c-content-color-first">[核桃编程-Python]课程模式下的代码会被修改吗？</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <h1 id="前言">前言</h1>
+<p>好吧万年一更的我又来了</p>
+<p>这是我很久之前就研究过的玩意，忽然想起来了临时写一下</p>
+<h1 id="摸索">摸索</h1>
+<p>最开始的起因是我运行代码时发现有时报错提示行数与代码本身错误位置行数不符合（旧版本客户端特性，目前似乎已被修复？）怀疑代码被修改，于是我：</p>
+<pre><code class="language-python">... # 代码
+print(__file__) 
+... # 代码
+</code></pre>
+<blockquote>
+<p>Tips: <code>__file__</code>变量存储的是当前正在运行的代码的路径，但在REPL下此变量不可用</p>
+</blockquote>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-10-05 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/j9c2zh3Na/" class="post-tag">
+                                # 核桃编程
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/YFwat0c5ck/" class="post-tag">
+                                # Python
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/vvRbZpds4/">
+                            <span class="post-title gt-c-content-color-first">【水】【突发其想】掌控版注入病毒？</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>众所周知，掌控版基于<strong>microPython</strong>，有许多好玩的模块/特性，包括但不限于：</p>
+<ul>
+<li>_thread多线程</li>
+<li>exec执行代码</li>
+<li>compile编译代码</li>
+<li>“胶水”语言</li>
+</ul>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-07-02 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/tVMFLaID95/" class="post-tag">
+                                # mPython
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/9NcwXevnf/">
+                            <span class="post-title gt-c-content-color-first">记录一下自己用到的一些小工具</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>如题，简单记录一下免安装的一些网页小工具（100%安全！）</p>
+<p>(持续更新中<span class="heimu">....?</span>)</p>
+<h1 id="视频播放工具箱">视频播放工具箱</h1>
+<p>其实主要就是就是可以快捷调整倍速这个功能，无聊，于是把一堆好玩（没用（划掉））的功能给搞了进</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-06-24 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/kLU1KFuWy/" class="post-tag">
+                                # 分享
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/CYe8WZnTWr/" class="post-tag">
+                                # JavaScript
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/DsBDdoLUJs/" class="post-tag">
+                                # 网页
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/gKpDP-UKw5/" class="post-tag">
+                                # 小工具
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/mz6lEJuK9/">
+                            <span class="post-title gt-c-content-color-first">记一下关于掌控版实现截屏的研究</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p><strong>多图预警</strong></p>
+<h1 id="开头">开头</h1>
+<p>6.20下午1点左右，在STFP钉钉总群内（后面提到的聊天内容若无特殊注明基本都在这个群里），群友“emo的程序大神”（在U圈子内名称为“沉默”，后面简称emo）提出了想法：</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-06-24 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/W5RsnMhSc/" class="post-tag">
+                                # 掌控版
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/tVMFLaID95/" class="post-tag">
+                                # mPython
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/yk76x5ZGr/">
+                            <span class="post-title gt-c-content-color-first">搭博客少走弯路-Gridea添加基于不蒜子的访问量统计</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>不蒜子是一款非常简洁，简单的计数器，无需登录，无需注册，也很小，只需将访问量代码添加到网站最下方底部信息（主题-底部信息）内即可使用，但是它只有PV/UV统计这一功能，适合轻度用户使用</p>
+<p>官网：<a href="https://busuanzi.ibruce.info/">https://busuanzi.ibruce.info/</a></p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-06-09 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/9-JHuHRw5/" class="post-tag">
+                                # 不蒜子
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/tFRKbZqVBH/" class="post-tag">
+                                # 博客
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/RX-IbigzMS/" class="post-tag">
+                                # 搭博客少走弯路
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/kN9gTnpP2/" class="post-tag">
+                                # Gridea
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/xIomO_plB/">
+                            <span class="post-title gt-c-content-color-first"> 搭博客少走弯路-GithubPage 百度SEO</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>本文从旧版博客迁移而来，可能不适用于Gridea，请知悉</p>
+</blockquote>
+<h1 id="前言">前言</h1>
+<p>其实关于百度SEO优化的方面早就想搞了，但是因为GithubPage屏蔽了百度爬虫，这方面一直闲置着在，现在给博客引擎换成了<code>hexo</code>，方便了一些，而且<code>hexo</code>也有很多开箱即用的插件，很方便，所以现在经过一番摸索，找到了百度SEO优化的方法</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-06-03 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/z9BN2Rr7r/" class="post-tag">
+                                # 百度
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/zaqhsd2c0N/" class="post-tag">
+                                # SEO
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/2NFKipfCiT/" class="post-tag">
+                                # Github Pages
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/E90EBUfZN/" class="post-tag">
+                                # Hexo
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://oyhq.eu.org/dn8xRQp4y/">
+                            <span class="post-title gt-c-content-color-first">搭博客少走弯路-Hexo启用PWA</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>注：本文从旧版博客迁移而来，可能不适用于Gridea</p>
+</blockquote>
+<h1 id="前言">前言</h1>
+<p>最近看到我朋友博客换主题了，点进这个主题介绍页，功能还蛮多的，其中<code>支持PWA</code>这一项就吸引了我的眼球，后来查了一下，本质上就是一个App，但是和传统App还是有很多区别的，其中就<strong>支持多平台</strong>，电脑、手机均可使用，同时<strong>可离线访问</strong>，便赶紧给自己博客加上，但大多都不适合新版本使用，如<code>hexo-pwa</code>，不支持<code>hexo@4.2.0</code>及以上的版本，最终翻了几篇教程，在实践了一下，总结出一片教程，可通过非插件方式让<code>Hexo</code>支持<code>PWA</code></p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-06-03 ·
+                        </time>
+                        
+                            <a href="https://oyhq.eu.org/XfgWZKG35/" class="post-tag">
+                                # PWA
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/E90EBUfZN/" class="post-tag">
+                                # Hexo
+                            </a>
+                        
+                            <a href="https://oyhq.eu.org/tFRKbZqVBH/" class="post-tag">
+                                # 博客
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+    </div>
+</div>
+
+        <div class="pagination-container">
+    
+    
+        <a href="https://oyhq.eu.org/page/2" class="prev-page gt-a-link">下一页</a>
+    
+</div>
+
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br/>
+本站所有文章遵循CC-BY-SA 4.0国际许可协议<br/>
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>本站总访客数<span id="busuanzi_value_site_uv"></span>位<br/>本页总访问量<span id="busuanzi_value_page_pv"></span>次
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://oyhq.eu.org/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

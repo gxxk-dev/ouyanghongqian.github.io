@@ -1,0 +1,246 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>记录一下自己用到的一些小工具 | GxxkSite</title>
+
+<link rel="shortcut icon" href="https://oyhq.eu.org/favicon.ico?v=1717266581618">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://oyhq.eu.org/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            GxxkSite
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends/" class="menu gt-a-link">
+                            友链
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1717266581618" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    记录一下自己用到的一些小工具
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-06-24 ·
+                    </time>
+                    
+                        <a href="https://oyhq.eu.org/kLU1KFuWy/" class="post-tags">
+                            # 分享
+                        </a>
+                    
+                        <a href="https://oyhq.eu.org/CYe8WZnTWr/" class="post-tags">
+                            # JavaScript
+                        </a>
+                    
+                        <a href="https://oyhq.eu.org/DsBDdoLUJs/" class="post-tags">
+                            # 网页
+                        </a>
+                    
+                        <a href="https://oyhq.eu.org/gKpDP-UKw5/" class="post-tags">
+                            # 小工具
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>如题，简单记录一下免安装的一些网页小工具（100%安全！）</p>
+<p>(持续更新中<span class="heimu">....?</span>)</p>
+<h1 id="视频播放工具箱">视频播放工具箱</h1>
+<p>其实主要就是就是可以快捷调整倍速这个功能，无聊，于是把一堆好玩（没用（划掉））的功能给搞了进</p>
+<!-- more -->
+<pre><code class="language-javascript">javascript:userInput=prompt(&quot;---视频播放工具箱---\n请输入需要使用的选项(使用序号标注，可选输入：1-6之间的数)：\n  倍速设置\n  视频播放进度修改\n  暂停时自动播放\n  禁用播放器的pause函数\n  播放视频\n  强制暂停视频（4选项启用后仍可使用）&quot;);if(userInput==1){try{document.querySelector(&quot;video&quot;).playbackRate=parseInt(prompt(&quot;请输入要调整的视频倍速：0.1~16&quot;));alert(&quot;已成功将使用 `&lt;video&gt;`   标签的视频调整为指定倍速&quot;)}catch(error){alert(&quot;调整失败！请输入正确的值！&quot;)}};if(userInput==2){try{document.querySelector(&quot;video&quot;).currentTime=parseFloat(prompt(&quot;请输入指定时间（以秒为单位，可使用小数点）&quot;))}catch(error){alert(&quot;调整失败！请确保输入的是否是正确的数据！&quot;)}}if(userInput==3){document.querySelector(&quot;video&quot;).addEventListener(&quot;pause&quot;,function(){document.querySelector(&quot;video&quot;).play()});alert(&quot;启用成功！如刷新页面，此功能将消失&quot;)}if(userInput==4){PauseFunc=document.querySelector(&quot;video&quot;).pause; document.querySelector(&quot;video&quot;).pause=function(){};alert(&quot;启用成功！如刷新页面，此功能将消失&quot;)}if(userInput==5){document.querySelector(&quot;video&quot;).play()}if(userInput==6){PauseFunc()}
+</code></pre>
+<h1 id="网页翻译">网页翻译</h1>
+<p>来源于我在Gitee上看见的一个很优秀的开源项目，可实现HTML全自动翻译为指定语言</p>
+<p>项目传送门：<a href="https://gitee.com/mail_osc/translate">https://gitee.com/mail_osc/translate</a></p>
+<p>然后在这一栏中，给出了一个对于非开发者用户使用的代码，于是经过我极少量修改后拿来用了（见下方）<br>
+<a href="https://gitee.com/mail_osc/translate/blob/master/doc/README.cn.md#%E5%85%88%E6%8B%BF%E5%88%AB%E4%BA%BA%E7%9A%84%E7%BD%91%E7%AB%99%E5%8A%A8%E6%89%8B%E8%AF%95%E8%AF%95">https://gitee.com/mail_osc/translate/blob/master/doc/README.cn.md#先拿别人的网站动手试试</a></p>
+<p>下边是代码：</p>
+<pre><code class="language-javascript">javascript:try{dom=document.getElementById(&quot;translate&quot;);dom.parentNode.removeChild(dom);}catch(error){var head= document.getElementsByTagName('head')[0]; var script= document.createElement('script'); script.type= 'text/javascript'; script.src= 'https://res.zvo.cn/translate/inspector_v2.js'; head.appendChild(script);}
+</code></pre>
+<p>这个里面我还加了一个功能：加载翻译窗口后，再执行一次会关闭原来的翻译窗口</p>
+<h1 id="外挂聊天室">外挂聊天室</h1>
+<p>此“外挂”非你们想的那个vape/wurst之类的游戏作弊软件，而是字面意义上的外挂（外置的网站聊天室）</p>
+<p>此工具出处:<a href="https://ld246.com/article/1534741351807?r=icheer">https://ld246.com/article/1534741351807?r=icheer</a></p>
+<p>下边是代码：</p>
+<pre><code class="language-javascript">javascript:var s=document.createElement('script');s.src='//topurl.cn/chat.js';document.body.append(s);
+</code></pre>
+<h1 id="网页控制台">网页控制台</h1>
+<p>这个是基于由腾讯编写的前端轻量网页开发控制台（很绕对不对？理解成一个很牛x的到处都能用的网页修改器就ok了）<strong>vConsole</strong>而来的</p>
+<p>vConsole项目链接：<a href="https://gitee.com/Tencent/vConsole">https://gitee.com/Tencent/vConsole</a></p>
+<p>这里我们按照常规操作，先创建一个JS对象，指定代码来源网址（src属性），然后添加到网页内，等待几秒后运行</p>
+<p>代码：</p>
+<pre><code class="language-javascript">javascript:var s=document.createElement('script');s.src='//unpkg.com/vconsole@latest/dist/vconsole.min.js';document.body.append(s);setTimeout(function(){var vConsole = new window.VConsole();},5000)
+</code></pre>
+<p>其中的5000是延时时间，单位为毫秒，代码导入开始到结束是有一段时间的，这段时间动不了模块内的函数，所以需要做延时处理</p>
+<p>当然，上边这堆东西，直接添加到书签内，或者在打开页面后把代码粘贴到地址栏内回车运行，都可以使用</p>
+<p>遇到Bug:<br>
+所有小脚本<strong>都经过本人实质性验证</strong>，有基础的可以自行尝试把代码放到DevTools内执行分析Bug，一般情况下出现<strong>xxxx未定义</strong>，一般是这个脚本需要导入外部的另一个脚本，在<strong>没有导入完成</strong>的时候，代码刚好直接<strong>启动外部脚本</strong>，建议<strong>划到页面最开始的地方等待脚本加载</strong>，如果还出错误，大概率是<strong>CSP</strong>的锅，这个是个网站安全规则的设置问题，部分相对而言安全的网站有可能启用了CSP，这玩意可以防攻击，但是加载从JS导入外部脚本并且脚本所在位置不是网站的地址的话，这个导入就会有可能被ban掉</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://oyhq.eu.org/mz6lEJuK9/" class="post-title gt-a-link">
+                    记一下关于掌控版实现截屏的研究
+                </a>
+            </div>
+        
+
+        
+            <span id="/9NcwXevnf//" class="leancloud_visitors" data-flag-title="记录一下自己用到的一些小工具">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Cwz2dUkfTSvc1S9QRUsZ8MBY-MdYXbMMI',
+		appKey: 'Z0DQfPDQComYKCZZlqV0rWMH',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '这nm是评论区，不是无人区啊喂！！！',
+		visitor: true,
+		serverURLs: 'https://valine.gxxk.site',
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br/>
+本站所有文章遵循CC-BY-SA 4.0国际许可协议<br/>
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>本站总访客数<span id="busuanzi_value_site_uv"></span>位<br/>本页总访问量<span id="busuanzi_value_page_pv"></span>次
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://oyhq.eu.org/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

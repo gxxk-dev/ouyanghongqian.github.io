@@ -1,0 +1,242 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>搭博客少走弯路-Hexo-Fluid主题随机背景图 | GxxkSite</title>
+
+<link rel="shortcut icon" href="https://oyhq.eu.org/favicon.ico?v=1717266581618">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://oyhq.eu.org/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            GxxkSite
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/friends/" class="menu gt-a-link">
+                            友链
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1717266581618" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    搭博客少走弯路-Hexo-Fluid主题随机背景图
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-06-03 ·
+                    </time>
+                    
+                        <a href="https://oyhq.eu.org/E90EBUfZN/" class="post-tags">
+                            # Hexo
+                        </a>
+                    
+                        <a href="https://oyhq.eu.org/tFRKbZqVBH/" class="post-tags">
+                            # 博客
+                        </a>
+                    
+                        <a href="https://oyhq.eu.org/GTZ_CsPcS-/" class="post-tags">
+                            # Fluid
+                        </a>
+                    
+                        <a href="https://oyhq.eu.org/RX-IbigzMS/" class="post-tags">
+                            # 搭博客少走弯路
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>本文从旧版博客迁移至此，部分信息已经过时或不适用于基于Gridea的博客，本文需要一个基于<strong>Hexo</strong>博客引擎，使用<strong>Fluid</strong>主题的纯静态博客</p>
+</blockquote>
+<div class="note note-info">
+<p>Tip:编辑配置文件时善用搜索功能</p>
+<p>一般被[]包裹的是[注释]或[提示]</p>
+</div>
+<p>这次试着用新风格写这篇文章      <span class="heimu" title="作者在添加这段的黑幕效果时把 class='heimu' 写成了 heimu='class' 后来怎么排查都没发现BUG（别问我怎么排查出来的，问就是量子力学）">一天更2篇，不愧是我~</span></p>
+<!-- more -->
+<h2 id="文件定位">文件定位</h2>
+<div class="note note-info">
+<p>实现<strong>随机背景图</strong>需要修改的文件在此处：<code>[主题文件夹]\layout\_partials\header\banner.ejs</code></p>
+<p>随机<strong>背景存放</strong>于此处：<code>[主题文件夹]\source\img\random-bg</code>（这里和在<code>[博客根目录]\source\</code>目录下效果一样，生成时会将这个文件夹和那个文件夹一起合并到<code>/public</code>里面）</p>
+</div>
+<div class="note note-warning">
+<p>注意：此次修改将导致<code>文章/页面</code>的<code>banner属性</code>无法正常生效（包括<code>_config.fluid.yml</code>）下的Banner配置，并且会在站点所有页面生效，目前没有<strong>任何</strong>方法修复，请提前做好准备</p>
+</div>
+<div class="note note-errror">
+<p>注：因为图片尺寸不齐，无法使用Javascript设置背景，如果强行设置会导致背景报错</p>
+</div>
+<h2 id="修改模板">修改模板</h2>
+<p>一般会在<code>第一行—第六行</code>，有一些变量定义的部分</p>
+<p>其中找到<code>var banner_img</code>开头的内容 将等于号后面的内容,一般是<code>page.banner_img || theme.index.banner_img</code></p>
+<p>将这里替换为&quot;/img/random-bg/&quot;+(Math.floor(Math.random() * 17)).toString()+&quot;.jpg&quot;</p>
+<h2 id="修改文件">修改文件</h2>
+<p>打开存放文件夹，将所有图片放置于文件夹内，按照从<code>0</code>到<code>图片总数+1</code>（本文修改模板时所用的方法因为浮点数原因运算，只有<code>xx.999</code>或<code>xx+1</code>才能<strong>正常随机</strong>）的顺序给每张图片命名</p>
+<h2 id="修改背景透明度">修改背景透明度</h2>
+<p><span class="heimu" title="你看什么！你又在期待什么？我可不会像我的兄弟【大仁物】那样，把【链接已屏蔽】告诉你，这里没有什么，请你尊重我的隐私！好了，这里没有什么东西，把鼠标移开吧">虽然不是这篇文章说的内容，但是我就是要讲一下，毕竟改了之后有的图不怎么好看，要改改透明度</span></p>
+<p>这个修改位置和修改随机背景图的位置一样，打开文件后，找到开头为<code>&lt;div class=&quot;mask flex-center&quot;</code>的部分，在找到后面被<code>rgb(这里是中间一段内容)</code>包裹的地方，将其替换为<code>rgb(0,0,0,0.2)</code>，其中的<code>0.2</code>就是透明度，<code>1</code>就是完全不透明，<code>0</code>就是完全透明</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://oyhq.eu.org/compileMPythonCode/" class="post-title gt-a-link">
+                    将代码编译为掌控版可运行的字节码
+                </a>
+            </div>
+        
+
+        
+            <span id="/HexoRandomBgImg//" class="leancloud_visitors" data-flag-title="搭博客少走弯路-Hexo-Fluid主题随机背景图">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+        
+
+        
+
+        
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'Cwz2dUkfTSvc1S9QRUsZ8MBY-MdYXbMMI',
+		appKey: 'Z0DQfPDQComYKCZZlqV0rWMH',
+		avatar: '',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: '这nm是评论区，不是无人区啊喂！！！',
+		visitor: true,
+		serverURLs: 'https://valine.gxxk.site',
+	});
+</script>
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a><br/>
+本站所有文章遵循CC-BY-SA 4.0国际许可协议<br/>
+ <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span><br/>本站总访客数<span id="busuanzi_value_site_uv"></span>位<br/>本页总访问量<span id="busuanzi_value_page_pv"></span>次
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://oyhq.eu.org/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
